@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Павел  Лыгорев](https://up.htmlacademy.ru/htmlcss/26/user/874017).
-* Наставник: `Неизвестно`.
+* Наставник: [Святослав Родионов](https://htmlacademy.ru/profile/rodionsv).
 
 ---
 
