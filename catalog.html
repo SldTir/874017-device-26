@@ -10,8 +10,12 @@
         <a href="index.html">
           <img src="img/logo.svg" alt="Логотип DEVICE">
         </a>
-
-        <!-- Здесь будет поле-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input type="search" name="search" placeholder="Поиск по сайту">
+            </label>
+        </form>
         <a>
           <!-- Фоновая картика человчка -->
           Валентин Петухов
@@ -27,7 +31,16 @@
         </a>
         <ul>
           <li><a href="#">Каталог товаров</a>
-            <button type="button">+</button></li>
+            <button type="button">+</button>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камера</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -38,16 +51,72 @@
       <h1>Моноподы для селфи</h1>
 
       <section>
-        <h2>Хлебные крошки</h2>
+        <h2 class="visually-hidden">Хлебные крошки</h2>
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Католог товаров</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
         </ul>
       </section>
-
       <!-- Красная область с фильтрами и полями -->
-
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Фильтр</legend>
+          <label>
+            Стоимость
+            <input type="range" name="cost" max="8000" min="0">
+          </label>
+          <h2>Цвет</h2>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="color" value="black" checked>
+                Чёрный
+              </label>
+            </li>
+            <li>
+                <label>
+                  <input type="checkbox" name="color" value="white">
+                  Белый
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="checkbox" name="color" value="blue" checked>
+                  Синий
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="checkbox" name="color" value="red" checked>
+                  Красный
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="checkbox" name="color" value="pink">
+                  Розовый
+                </label>
+            </li>
+          </ul>
+          <h2>Bluetooth</h2>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="Bluetooth" value="yes" checked>
+                Есть
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="Bluetooth" value="no">
+                Нет
+              </label>
+            </li>
+          </ul>
+          <button type="submit">Показать</button>
+        </fieldset>
+      </form>
       <section>
         <h2>Изоброжение товаров</h2>  
         <ul>
@@ -84,23 +153,23 @@
       </a>
 
       <section>
-        <h2>Интерфейс</h2>
-        <a>
+        <h2 class="visually-hidden">Интерфейс</h2>
+        <a href="#">
           <!-- Фоновая картика человчка -->
           Валентин Петухов</a>
         <button type="button">Выйти</button>
-        <a>
+        <a href="#">
           <!-- Фоновая картика диограммы -->
           Сравнить
         </a>
-        <a>
+        <a href="#">
           <!-- Фоновая картика диограммы -->
           Корзина
         </a>
       </section> 
       
       <section>
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p>г. Москва, ул. Строителей, 15</p>
         <ul>
           <li><a href="#">ДОСТАВКА</a></li>
@@ -113,11 +182,11 @@
       <!-- Фоновая картика полосочки -->
       
       <section>
-        <h2>Соцсети</h2>
+        <h2 class="visually-hidden">Соцсети</h2>
           <ul>
-          <li><a href="#"><!-- Фоновая картика Фейсбук --></a></li>
-          <li><a href="#"><!-- Фоновая картика Инстаграмм --></a></li>
-          <li><a href="#"><!-- Фоновая картика Твиттер --></a></li>
+          <li><a href="https://www.facebook.com"><!-- Фоновая картика Фейсбук --></a></li>
+          <li><a href="https://www.instagram.com"><!-- Фоновая картика Инстаграмм --></a></li>
+          <li><a href="https://twitter.com"><!-- Фоновая картика Твиттер --></a></li>
         </ul>   
       </section>
             
