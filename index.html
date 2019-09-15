@@ -65,33 +65,6 @@
           <a href="#"><img src="img/map-stroiteley-street-17.jpg" alt="г. Москва, ул. Строителей, 15"></a>
           <a href="#">НАПИШИТЕ НАМ</a>
           <!--Не понимаю куда вставлять пулпап-->
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-            <legend>Отправка письма</legend>
-              <button type="button">Закрыть</button>
-              <ul>
-                <li>
-                  <label>
-                    <strong>Ваше имя:</strong>
-                    <input type="text" name="name" placeholder="Имя Фамилия">
-                  </label>
-                </li>
-               <li>
-                    <label>
-                      <strong>Ваш e-mail:</strong>
-                      <input type="email"  name="email" placeholder="email@example.com">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                      <strong>Текст пиьсма:</strong>
-                      <textarea cols="50" rows="5" name="text-letter"  placeholder="В свободной форме">В свободной форме</textarea>
-                    </label>
-                </li>
-              </ul>
-              <button type="submit">Отправить</button>
-            </fieldset>
-          </form>
       </section>
 
     </main>
@@ -139,8 +112,68 @@
       <a href="https://htmlacademy.ru">
         <img src="img/background-yellow-logo-html.svg" alt="Логотип HTML Academy">
       </a>
-
     </footer>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+      <legend class="visually-hidden">Отправка письма</legend>
+        <button type="button">Закрыть</button>
+        <ul>
+          <li>
+            <label>
+              <strong>Ваше имя:</strong>
+              <input type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </li>
+         <li>
+              <label>
+                <strong>Ваш e-mail:</strong>
+                <input type="email"  name="email" placeholder="email@example.com">
+              </label>
+          </li>
+          <li>
+              <label>
+                <strong>Текст пиьсма:</strong>
+                <textarea cols="50" rows="5" name="text-letter"  placeholder="В свободной форме">В свободной форме</textarea>
+              </label>
+          </li>
+        </ul>
+        <button type="submit">Отправить</button>
+      </fieldset>
+    </form>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button type="button">Закрыть</button>
+      <img src="img/popup-map-big.png" alt="г. Москва, ул. Строителей, 15">
+    </section>
+
+    <section class="visually-hidden">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="text" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="••••••••">
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember">
+            Запомните меня
+          </label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button type="submit">
+          Войти
+        </button>
+      </form>
+      <button type="button">
+        Закрыть
+      </button>
+    </section>
   </body>
 </html>
    
