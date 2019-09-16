@@ -8,19 +8,18 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
+          <img src="img/background-black-logo.svg" alt="Логотип Device">
         </a>
         <form action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input type="search" name="search" placeholder="Поиск по сайту">
-            </label>
-        </form>
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button type="submit">Найти</button>
+        </form>        
         <a href="#">
           <!-- Фоновая картика человчка -->
           Валентин Петухов
         </a>
-        <button type="button">Выйти</button>      
+        <a href="#">Выйти</a>      
         <a href="#">
           <!-- Фоновая картика диограммы -->
           Сравнить
@@ -31,7 +30,7 @@
         </a>
         <ul>
           <li><a href="#">Каталог товаров</a>
-            <button type="button">+</button>
+            <!--Декоративный элемент +-->
               <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
@@ -50,14 +49,13 @@
     <main>
       <h1>Моноподы для селфи</h1>
 
-      <section>
-        <h2 class="visually-hidden">Хлебные крошки</h2>
+      <nav>
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Католог товаров</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
         </ul>
-      </section>
+      </nav>
       <!-- Красная область с фильтрами и полями -->
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
@@ -160,47 +158,50 @@
         <img src="img/background-yellow-logo.svg" alt="Логотип DEVICE">
       </a>
 
-      <section>
-        <h2 class="visually-hidden">Интерфейс</h2>
-        <a href="#">
-          <!-- Фоновая картика человчка -->
-          Валентин Петухов</a>
-        <button type="button">Выйти</button>
-        <a href="#">
-          <!-- Фоновая картика диограммы -->
-          Сравнить
-        </a>
-        <a href="#">
-          <!-- Фоновая картика диограммы -->
-          Корзина
-        </a>
-      </section>    
+      <ul>
+          <li> 
+            <a href="#">
+              <!-- Фоновая картика человчка -->
+              Валентин Петухов
+            </a>
+            <a href="#">Выйти</a>
+          </li>
+          <li>
+            <a href="#">
+            <!-- Фоновая картинка диограмма -->
+            Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <!-- Фоновая картинка корзины -->
+            Корзина
+            </a>
+          </li>
+      </ul>   
       
-      <section>
-        <h2 class="visually-hidden">Контакты</h2>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul>
-          <li><a href="#">ДОСТАВКА</a></li>
-          <li><a href="#">ГАРАНТИЯ</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
-        </ul>
-        <p>Тел: +7 (495)495-95-95</p>
-      </section>  
+      <p>г. Москва, ул. Строителей, 15</p>
 
-      <!-- Фоновая картика полосочки -->
-      
-      <section>
-        <h2 class="visually-hidden">Соцсети</h2>
-          <ul>
-          <li><a href="https://www.facebook.com"><!-- Фоновая картика Фейсбук --></a></li>
-          <li><a href="https://www.instagram.com"><!-- Фоновая картика Инстаграмм --></a></li>
-          <li><a href="https://twitter.com"><!-- Фоновая картика Твиттер --></a></li>
-        </ul>   
-      </section>
-            
-      <a href="https://htmlacademy.ru">
-        <img src="img/background-yellow-logo-html.svg" alt="Логотип HTML Academy">
-      </a>
+      <ul>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+      <p>Тел: +7 (495)495-95-95</p>
+
+
+    <!-- Фоновая картика полосочки -->
+
+      <ul>
+        <li><a href="https://www.facebook.com"><!-- Фоновая картика Фейсбук --></a></li>
+        <li><a href="https://www.instagram.com"><!-- Фоновая картика Инстаграмм --></a></li>
+        <li><a href="https://twitter.com"><!-- Фоновая картика Твиттер --></a></li>
+      </ul>
+
+    <a href="https://htmlacademy.ru">
+      <img src="img/background-yellow-logo-html.svg" alt="Логотип HTML Academy">
+    </a>
 
     </footer>
   </body>

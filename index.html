@@ -4,18 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
-  <body>
-    <h1 class="visually-hidden">DEVICE</h1>
-    <header class="page-header">
+  <body>    
+    <header class="page-header">      
       <nav class="page-nav">
         <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
-        
+          
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label>
-            <span class="visually-hidden">Поиск по сайту</span>
-            <input type="search" name="search" placeholder="Поиск по сайту">
-          </label>
-        </form>
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button type="submit">Найти</button>
+        </form>   
 
         <a href="#">
           <!-- Фоновая картика человчка -->
@@ -30,8 +28,9 @@
           Корзина
         </a>
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a>
-            <button type="button">+</button></li>
+          <li><a href="catalog.html">Каталог товаров
+            <!--Декоративный элемент +--></a>
+            </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -39,6 +38,7 @@
       </nav>
     </header>
     <main class="page-main">
+    <h1 class="visually-hidden">Device</h1>
 
       <!-- Фоновая картинка полосочки -->
 
@@ -53,7 +53,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#">ПОДРОБНЕЕ О НАС</a>
+        <a href="#">Подробнее о нас</a>
       </section>
 
       <!-- Фоновая картинка полосочки -->
@@ -63,56 +63,60 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
           <a href="#"><img src="img/map-stroiteley-street-17.jpg" alt="г. Москва, ул. Строителей, 15"></a>
-          <a href="#">НАПИШИТЕ НАМ</a>
-          <!--Не понимаю куда вставлять пулпап-->
+          <a href="#">Напишите нам</a>
+          
       </section>
 
     </main>
     <footer class="page-footer">       
       <img src="img/background-yellow-logo.svg" alt="Логотип DEVICE">
-
-      <section>
-        <h2 class="visually-hidden">Интерфейс</h2>
-        <a href="#">
-          <!-- Фоновая картинка человечка -->
-          Войти
-        </a>
-        <a href="#">
-          <!-- Фоновая картинка диограмма -->
-          Сравнить
-        </a>
-        <a href="#">
-          <!-- Фоновая картинка корзины -->
-          Корзина
-        </a>
-      </section>
-
-      <section>
-        <h2 class="visually-hidden">Контакты</h2>
-        <p>г. Москва, ул. Строителей, 15</p>
         <ul>
-          <li><a href="#">ДОСТАВКА</a></li>
-          <li><a href="#">ГАРАНТИЯ</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
+          <li> 
+            <a href="#">
+            <!-- Фоновая картинка человечка -->
+            Войти
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <!-- Фоновая картинка диограмма -->
+            Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <!-- Фоновая картинка корзины -->
+            Корзина
+            </a>
+          </li>
         </ul>
+
+        <p>г. Москва, ул. Строителей, 15</p>
+
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+
         <p>Тел: +7 (495)495-95-95</p>
-      </section>  
+
 
       <!-- Фоновая картика полосочки -->
 
-      <section>    
-        <h2 class="visually-hidden">Соцсети</h2> 
         <ul>
           <li><a href="https://www.facebook.com"><!-- Фоновая картика Фейсбук --></a></li>
           <li><a href="https://www.instagram.com"><!-- Фоновая картика Инстаграмм --></a></li>
           <li><a href="https://twitter.com"><!-- Фоновая картика Твиттер --></a></li>
         </ul>
-      </section>
 
       <a href="https://htmlacademy.ru">
         <img src="img/background-yellow-logo-html.svg" alt="Логотип HTML Academy">
       </a>
     </footer>
+
+    <section>  
+    <h2 class="visually-hidden">Отправка письма</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
       <legend class="visually-hidden">Отправка письма</legend>
@@ -140,6 +144,7 @@
         <button type="submit">Отправить</button>
       </fieldset>
     </form>
+    </section>  
 
     <section>
       <h2 class="visually-hidden">Как до нас добраться</h2>
