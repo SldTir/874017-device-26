@@ -3,16 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic" 
+     rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>    
-    <header class="page-header">      
-      <nav class="page-nav">
+    <header class="main-header">      
+      <nav class="main-navigation">
+        <a href="#">
         <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
-          
-        <form action="https://echo.htmlacademy.ru" method="post">
+        </a>
+        
+        <div class="header-interface font-2">
+        <form class="pole-header" action="https://echo.htmlacademy.ru" method="post">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
+          <input class="search-header" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="visually-hidden button-search" type="submit">Найти</button>
         </form>   
 
         <a href="#">
@@ -27,14 +34,25 @@
           <!--Фоновая картинка корзина-->
           Корзина
         </a>
-        <ul>
-          <li><a href="catalog.html">Каталог товаров
+        </div>
+        
+        <ul class="header-navigation font-1">
+          <li><a class="catalog-header" href="catalog.html">Каталог товаров
             <!--Декоративный элемент +--></a>
-            </li>
+            <ul class="catalog-list font-2">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камера</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
+
       </nav>
     </header>
     <main class="page-main">
@@ -44,18 +62,18 @@
         <!--Этоn блок будет промослайдером-->
         <img src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
         <!--Фоновая картинка 01-->
-        <h2>Делай селфи, как Бен Стиллер!</h2>        
-        <p>Самая длинная палка селфи доступна в нашем магазине
+        <h2 class="font-1">Делай селфи, как Бен Стиллер!</h2>        
+        <p class="font-2">Самая длинная палка селфи доступна в нашем магазине
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.
         </p>
-        <a href="#">Подробнее</a>
+        <a class="button-info font-1" href="#">Подробнее</a>
         <table>
-          <tr>
+          <tr class="">
             <td>8,5м</td>
             <td>5кг</td>
             <td>Карбон</td>
            </tr>
-          <tr>
+          <tr class="font-2">
             <td>Длина палки</td>
             <td>Вес палки</td>
             <td>Материал</td>
@@ -64,39 +82,39 @@
       </section>
       <!-- Фоновая картинка полосочки, таблица и переключатель -->
       <section>
-        <h2>Названия разделов</h2>
+        <h2 class="visually-hidden">Названия разделов</h2>
         <ul>
-          <li>
+          <li class="section-main">
            <a href="#">
              <h3>Виртуальная реальность</h3>
              <img src="img/index-virtual-reality.png" alt="Изоброжения раздела Виртуальная реальность">
            </a>
             </li>
-          <li>
+          <li class="section-main">
             <a href="catalog.html">
               <h3>Моноподы для селфи</h3>
               <img src="img/index-monopods-for-selfi.png" alt="Изоброжения раздела Моноподы для селфи">
             </a>
             </li>
-          <li>
+          <li class="section-main">
             <a href="#">
               <h3>Экшн-камеры</h3>
               <img src="img/index-action-camera.png" alt="Изоброжения раздела Экшн-камеры">
             </a>
             </li>
-          <li>
+          <li class="section-main">
             <a href="#">
               <h3>Фитнес-браслеты</h3>
               <img src="img/index-fitness-bracelet.png" alt="Изоброжения раздела Фитнес-браслеты">
             </a>
             </li>
-            <li>
+          <li class="section-main">
               <a href="#">
                 <h3>Умные часы</h3>
                 <img src="img/index-smartwatch.png" alt="Изоброжения раздела Умные часы">
               </a>
               </li>
-            <li>
+          <li class="section-main">
               <a href="#">
                <h3>Квадрокоптеры</h3>
                 <img src="img/index-quadcopter.png" alt="Изоброжения раздела Квадрокоптеры">
