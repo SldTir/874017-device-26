@@ -1,0 +1,279 @@
+
+body {
+  margin: 0;
+  padding: 0;    
+ 
+  color: #000000;
+  text-transform: none;
+
+  background-color: #ffffff;
+  background-position: top center;
+}
+
+@font-face {
+  font-family: "Gilroy";  
+  font-weight: normal;
+  font-style: normal;
+  src: url("Gilroy-ExtraBold.woff");
+  /*Разобраться как подключить 3ий шрифт
+  src: url("Gilroy-Light.woff")
+  */
+}
+
+.font-1 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+}
+
+.font-2 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  visibility: hidden;
+} 
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-navigation {
+  background-color: #f7e296;  
+}
+
+.button-search {
+  font: inherit;
+
+  border: 2px solid black;
+  background-color:  #f7e296;
+}
+
+.button-search:hover {
+  border: 2px solid black;
+  background-color:  black;
+
+  color: white;
+}
+
+.button-search:active {
+  border: 2px solid black;
+  background-color:  black;
+
+  color: #434343;
+}
+
+.search-header {
+  font: inherit;
+  color: #cab97b;
+
+  border: 0;
+  background-color: #f7e296; 
+}
+
+.search-header:hover {
+  color: #9e9060;
+}
+
+.search-header:focus {
+  border-bottom: 2px solid black;
+
+  color: #423c28; 
+}
+
+.search-header:focus + .visually-hidden { 
+  visibility: visible;
+}
+
+.header-navigation {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.header-interface a,
+.header-navigation a {
+  color: #000000;
+}
+
+.header-interface a:hover,
+.header-interface a:focus,
+.header-navigation a:hover,
+.header-navigation a:focus {
+  color: #635a3c;
+}
+
+.header-interface a:active,
+.header-navigation a:active {
+  color: #ac9e69;
+}
+
+.dropdonw-header {
+  list-style: none;
+  text-transform: capitalize;
+  display: none;
+}
+
+.catalog-header:hover + .dropdonw-header {
+  display: inline;
+}
+.catalog-header:focus + .dropdonw-header {
+  display: inline;
+}
+
+.button-info {
+  background-color: #f0c52e; 
+}
+
+.section-main {
+  background-color: #f7e296;
+
+  list-style: none;
+}
+
+.section-main:hover,
+.section-main:focus {
+background-color: #f0c52e;
+}
+
+/* Разобраться как делать прозрачность изоброжениям
+.section-main img:active {
+color: #b89a30;
+}
+*/
+
+.slider-main-2 {
+  background-color: #e5e5e5;
+
+  list-style: none;
+}
+
+.slider-main-2 a {
+  text-transform: uppercase;
+
+  background-color: #f0c52e;
+}
+
+/* Разобраться как изменять фоновое изображение кнопки
+.slider-main-2 a:hover,
+.slider-main-2 a:focus {
+
+}
+*/
+.slider-main-2 a:active {
+  color: #f7e184;
+
+  background-color: black;
+}
+
+.slider-item-2,
+.slider-item-3 {
+  display: none;
+}
+
+.slider-item-2:active,
+.slider-item-3:active {
+  display: inline;
+}
+
+.list-logo {
+  list-style: none;
+}
+
+/*Разобраться почему не вставляется картинка через background-color
+.logo-dji:hover,
+.logo-dji:focus {
+  background-color: url("img/logo-dji-bg.png");
+}
+*/
+
+.section-1-title {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+/* Фотошоп не показывает размеры и отступы шрифта*/
+.section-1-list {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.section-1-a {
+  background-color: #f0c52e;
+}
+
+/* Разобраться с background
+.section-1-a:hover,
+.section-1-a:focus {
+  background-color: #f0c52e;
+}
+*/
+.section-1-a:active {
+  color: #f7e184;
+
+  background-color: black;
+}
+
+.section-2-title {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+
+.section-2-a {
+  background-color: #f0c52e;
+}
+
+/* Разобраться с background
+.section-1-a:hover,
+.section-1-a:focus {
+  background-color: #f0c52e;
+}
+*/
+.section-2-a:active {
+  color: #f7e184;
+
+  background-color: black;
+}
+
+.page-footer {
+  color: white;
+
+  background-color: #464646;
+}
+
+.footer-interface a {
+  color: #bfbfbf;
+}
+
+.footer-interface a:hover,
+.footer-interface a:focus {
+  color: #f3f3f3;
+}
+
+.footer-interface a:active {
+  color: #676767;
+}
+
+.list-footer {
+  list-style: none;
+}
+
+.list-footer a {
+  color: #ffffff;
+}
+
+.list-footer a:hover,
+.list-footer a:focus {
+  color: #b5b5b5;
+}
+
+.list-footer a {
+  color: #6f6f6f;
+}
+
+/*Разобраться с изменением цвета SVG*/
