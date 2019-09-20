@@ -115,7 +115,7 @@ a {
 }
 
 .header-interface a:active,
-.header-navigation a:active,
+.product-catalog a:active,
 .contacts-header a:active {
   color: #ac9e69;
 }
@@ -133,12 +133,6 @@ a {
 .product-catalog a:focus + .dropdonw-product-catalog {
   display: inline;
  } 
-
- .product-catalog a:active + .dropdonw-product-catalog {
-  display: inline;
- } 
-
-
 
 /* Красная область
 .button-info {
@@ -207,18 +201,31 @@ color: #b89a30;
 }
 */
 
-.section-1-title {
+.about-us h2 {
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
 }
 
 /* Фотошоп не показывает размеры и отступы шрифта*/
-.section-1-list {
+.about-us p {
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
 }
 
-.section-1-a {
+.about-us li{
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.about-us a {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
   background-color: #f0c52e;
 }
 
@@ -228,21 +235,25 @@ color: #b89a30;
   background-color: #f0c52e;
 }
 */
-*/
-.section-1-a:active {
+
+.about-us a:active {
   color: #f7e184;
 
   background-color: black;
 }
 
-.section-2-title {
+.contacts-main h2 {
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
 }
 
 
-.section-2-a {
-  background-color: #f0c52e;
+
+.contacts-main p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 /* Разобраться с background
@@ -251,46 +262,65 @@ color: #b89a30;
   background-color: #f0c52e;
 }
 */
-.section-2-a:active {
+
+.contacts-main a:last-child {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: #f0c52e;
+}
+
+.contacts-main a:last-child:active {
   color: #f7e184;
 
   background-color: black;
 }
 
-.page-footer {
+.footer {
   color: white;
 
   background-color: #464646;
 }
 
-.footer-interface a {
-  color: #bfbfbf;
+.interface-footer li {
+  list-style: none;  
 }
 
-.footer-interface a:hover,
-.footer-interface a:focus {
+.interface-footer a {
+  color: #bfbfbf;  
+}
+
+.interface-footer li a:hover,
+.interface-footer li a:focus {
   color: #f3f3f3;
 }
 
-.footer-interface a:active {
+.interface-footer li a:active {
   color: #676767;
 }
 
-.list-footer {
+.contacts-footer {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  
   list-style: none;
 }
 
-.list-footer a {
+.contacts-footer a {
   color: #ffffff;
 }
 
-.list-footer a:hover,
-.list-footer a:focus {
+.contacts-footer a:hover,
+.contacts-footer a:focus {
   color: #b5b5b5;
 }
 
-.list-footer a {
-  color: #6f6f6f;
+.contacts-footer li a:active {
+  color: #7e7e7e;
 }
 
 /*Разобраться с изменением цвета SVG*/
