@@ -15,31 +15,39 @@
         <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
         </a>
         
-        <div class="header-interface font-2">
-        <form class="pole-header" action="https://echo.htmlacademy.ru" method="post">
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input class="search-header" id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="visually-hidden button-search" type="submit">Найти</button>
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+          <label for="search" class="lable-search visually-hidden">Поиск по сайту</label>
+          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="button-search visually-hidden" type="submit">Найти</button>
         </form>   
 
-        <a href="#">
-          <!-- Фоновая картика человчка -->
-          Войти
-        </a>
-        <a href="#">
-          <!-- Фоновая картинка диограмма-->
-          Сравнить
-        </a>
-        <a href="#">
-          <!--Фоновая картинка корзина-->
-          Корзина
-        </a>
-        </div>
+  
+          <ul class="interface-header">
+          <li>
+            <a href="#">
+            <!-- Фоновая картика человчка -->
+            Войти
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <!-- Фоновая картинка диограмма-->
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <!--Фоновая картинка корзина-->
+            Корзина
+            </a>
+          </li>
+          </ul>
+
         
-        <ul class="header-navigation font-1">
-          <li><a class="catalog-header" href="catalog.html">Каталог товаров
+        <ul>
+          <li class="product-catalog"><a href="catalog.html">Каталог товаров
             <!--Декоративный элемент +--></a>
-            <ul class="dropdonw-header font-2">
+            <ul class="dropdonw-product-catalog">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камера</a></li>
@@ -48,6 +56,9 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
+        </ul>
+
+        <ul class="contacts-header">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -149,7 +160,7 @@
             </div>
           </li>
           <li class="">
-            <a class="font-1" href="#">Кретид</a>
+            <a class="font-1" href="#">Кредит</a>
             <div class="slider-item-3">
               <h3 class="font-1">Кредит</h3>
               <p class="font-2">Залезть в долговую яму стало проще! Кредитные

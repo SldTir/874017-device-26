@@ -2,8 +2,11 @@
 body {
   margin: 0;
   padding: 0;    
- 
+  
+  font-family: "Open Sans", Gilroy, Arial, sans-serif;
   color: #000000;
+  font-size: 15px;
+  line-height: 30px;
   text-transform: none;
 
   background-color: #ffffff;
@@ -20,20 +23,6 @@ body {
   */
 }
 
-.font-1 {
-  font-family: Gilroy, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 900;
-}
-
-.font-2 {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 400;
-}
-
 .visually-hidden {
   visibility: hidden;
 } 
@@ -44,6 +33,8 @@ a {
 }
 
 .main-navigation {
+  color: black; 
+  
   background-color: #f7e296;  
 }
 
@@ -68,7 +59,11 @@ a {
   color: #434343;
 }
 
-.search-header {
+.lable-search {
+  display: block;
+}
+
+.search {
   font: inherit;
   color: #cab97b;
 
@@ -76,55 +71,76 @@ a {
   background-color: #f7e296; 
 }
 
-.search-header:hover {
+.search:hover {
   color: #9e9060;
 }
 
-.search-header:focus {
+.search:focus {
   border-bottom: 2px solid black;
 
   color: #423c28; 
 }
 
-.search-header:focus + .visually-hidden { 
+.search:focus + .visually-hidden { 
   visibility: visible;
 }
 
-.header-navigation {
+.interface-header,
+.product-catalog,
+.contacts-header {
   list-style: none;
-  text-transform: uppercase;
-}
+  }
 
-.header-interface a,
-.header-navigation a {
+.product-catalog,
+.contacts-header {
+  font-family: Gilroy, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+}
+  
+.interface-header a,
+.product-catalog a,
+.contacts-header a {
   color: #000000;
 }
 
-.header-interface a:hover,
-.header-interface a:focus,
-.header-navigation a:hover,
-.header-navigation a:focus {
+.interface-header a:hover,
+.interface-header a:focus,
+.product-catalog a:hover,
+.product-catalog a:focus,
+.contacts-header a:hover,
+.contacts-header a:focus {
   color: #635a3c;
 }
 
 .header-interface a:active,
-.header-navigation a:active {
+.header-navigation a:active,
+.contacts-header a:active {
   color: #ac9e69;
 }
 
-.dropdonw-header {
+.dropdonw-product-catalog {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
   list-style: none;
   text-transform: capitalize;
   display: none;
 }
 
-.catalog-header:hover + .dropdonw-header {
+.product-catalog a:hover + .dropdonw-product-catalog,
+.product-catalog a:focus + .dropdonw-product-catalog {
   display: inline;
-}
-.catalog-header:focus + .dropdonw-header {
-  display: inline;
-}
+ } 
 
+ .product-catalog a:active + .dropdonw-product-catalog {
+  display: inline;
+ } 
+
+
+
+/* Красная область
 .button-info {
   background-color: #f0c52e; 
 }
@@ -140,11 +156,11 @@ a {
 background-color: #f0c52e;
 }
 
-/* Разобраться как делать прозрачность изоброжениям
+ Разобраться как делать прозрачность изоброжениям
 .section-main img:active {
 color: #b89a30;
 }
-*/
+
 
 .slider-main-2 {
   background-color: #e5e5e5;
@@ -158,12 +174,12 @@ color: #b89a30;
   background-color: #f0c52e;
 }
 
-/* Разобраться как изменять фоновое изображение кнопки
+ Разобраться как изменять фоновое изображение кнопки
 .slider-main-2 a:hover,
 .slider-main-2 a:focus {
 
 }
-*/
+
 .slider-main-2 a:active {
   color: #f7e184;
 
@@ -211,6 +227,7 @@ color: #b89a30;
 .section-1-a:focus {
   background-color: #f0c52e;
 }
+*/
 */
 .section-1-a:active {
   color: #f7e184;
