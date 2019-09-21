@@ -21,7 +21,9 @@ body {
   font-family: "Gilroy";  
   font-weight: normal;
   font-style: normal;
-  src: url("Gilroy-ExtraBold.woff");
+  src: 
+  url("Gilroy-ExtraBold.woff"),
+  url("Gilroy-Light.woff");
   /*Разобраться как подключить 3ий шрифт
   src: url("Gilroy-Light.woff")
   */
@@ -411,6 +413,24 @@ color: #b89a30;
   font-size: 16px;
   line-height: 24px;
   text-transform: none;
+
+  text-align: right;
+}
+
+.pagination {
+  background-color: #ebebeb;
+}
+
+.pagination a {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.pagination-list {
+  list-style: none;
 }
 /*Страница каталога закончилась*/
 
@@ -435,6 +455,10 @@ color: #b89a30;
 
 .interface-footer li a:active {
   color: #676767;
+}
+
+.exit {
+  color: #d4c281;
 }
 
 .contacts-footer {
