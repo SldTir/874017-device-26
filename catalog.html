@@ -3,98 +3,111 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic" 
+    rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/background-black-logo.svg" alt="Логотип Device">
+  <body class="inner-page">
+    <header class="main-header">      
+      <nav class="main-navigation">
+
+        <a href="#" class="logo-device">
+          <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
-        </form>        
-        <a href="#">
-          <!-- Фоновая картика человчка -->
-          Валентин Петухов
-        </a>
-        <a href="#">Выйти</a>      
-        <a href="#">
-          <!-- Фоновая картика диограммы -->
-          Сравнить
-        </a>
-        <a href="#">
-          <!-- Фоновая картика корзина -->
-          Корзина
-        </a>
-        <ul>
-          <li><a href="#">Каталог товаров</a>
-            <!--Декоративный элемент +-->
-              <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камера</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
+        
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+          <label for="search" class="lable-search visually-hidden">Поиск по сайту</label>
+          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="button-search visually-hidden" type="submit">Найти</button>
+        </form>   
+
+  
+          <ul class="interface-header">
+          <li>
+            <a href="#">
+            <!-- Фоновая картика человчка -->
+            Валентин Петухов
+            </a>
+            <a href="#">Выйти</a>
           </li>
+          <li>
+            <a href="#">
+              <!-- Фоновая картинка диограмма-->
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <!--Фоновая картинка корзина-->
+            Корзина
+            </a>
+          </li>
+          </ul>
+
+        
+        <ul>
+          <li class="product-catalog"><a href="catalog.html">Каталог товаров
+            <!--Декоративный элемент +--></a>
+            <ul class="dropdonw-product-catalog">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камера</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="contacts-header">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
+
       </nav>
     </header>
     <main>
-      <h1>Моноподы для селфи</h1>
+      <h1 class="page-title">Моноподы для селфи</h1>
 
       <nav>
-        <ul>
+        <ul class="breadcrambs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Католог товаров</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
         </ul>
       </nav>
       <!-- Красная область с фильтрами и полями -->
-      <section>
-        <h2>Фильтр</h2>
+      <section  class="filter">
+        <h2>Фильтр:</h2>
 
+        <h3>Стоимость</h3>
         <!--Фильтр с двумя ползунками-->
 
       <form action="https://echo.htmlacademy.ru" method="get"> 
         <fieldset>
           <legend>Цвет</legend>
           <ul>
-            <li>
-              <label>
-                <input type="checkbox" name="color" value="black" checked>
-                Чёрный
-              </label>
+            <li>      
+              <input id="black" class="filter-input" type="checkbox" name="color" value="black" checked>
+              <label for="black">Чёрный</label>
+            </li>
+            <li> 
+              <input id="white" class="filter-input" type="checkbox" name="color" value="white">
+              <label for="white">Белый</label>
             </li>
             <li>
-                <label>
-                  <input type="checkbox" name="color" value="white">
-                  Белый
-                </label>
+              <input id="blue" class="filter-input" type="checkbox" name="color" value="blue" checked>
+              <label for="blue">Синий</label>
             </li>
             <li>
-                <label>
-                  <input type="checkbox" name="color" value="blue" checked>
-                  Синий
-                </label>
+              <input id="red" class="filter-input" type="checkbox" name="color" value="red" checked>
+              <label for="red">Красный</label>
             </li>
             <li>
-                <label>
-                  <input type="checkbox" name="color" value="red" checked>
-                  Красный
-                </label>
-            </li>
-            <li>
-                <label>
-                  <input type="checkbox" name="color" value="pink">
-                  Розовый
-                </label>
+              <input id="pink" class="filter-input" type="checkbox" name="color" value="pink">
+              <label for="pink">Розовый</label>
             </li>
           </ul>
         </fieldset>
@@ -102,16 +115,12 @@
           <legend>Bluetooth</legend>
           <ul>
             <li>
-              <label>
-                <input type="radio" name="Bluetooth" value="yes" checked>
-                Есть
-              </label>
+              <input id="yes" type="radio" name="Bluetooth" value="yes" checked>
+              <label for="yes">Есть</label>
             </li>
             <li>
-              <label>
-                <input type="radio" name="Bluetooth" value="no">
-                Нет
-              </label>
+              <input id="no" type="radio" name="Bluetooth" value="no">
+              <label for="no">Нет</label>
             </li>
           </ul>
           <button type="submit">Показать</button>
@@ -119,12 +128,12 @@
       </form>
       </section>
 
-      <div>
+      <div class="sort">
         <h2>Сортировка:</h2>
         <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По популярности</li>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
         </ul>
         <!--Декоративный элемент два треугольничка-->
       </div>
@@ -132,8 +141,8 @@
 
       <section>
         <h2>Изоброжение товаров</h2>  
-        <ul>
-          <li>
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка">
             </a>
@@ -142,7 +151,7 @@
             </a>
             <span>500 руб</span>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
               <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка">
             </a>
@@ -151,7 +160,7 @@
             </a>
             <span>1 500 руб</span>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
               <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка">
             </a>
@@ -160,7 +169,7 @@
             </a>
             <span>2 500 руб</span> 
            </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
               <img src="img/selfie-stick-follow-me.jpg" alt="Селфи-палка Следуй за мной">
               <!--Контентное изоброжение NEW которое наложено на картику-->

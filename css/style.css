@@ -13,6 +13,10 @@ body {
   background-position: top center;
 }
 
+.inner-page {
+  
+}
+
 @font-face {
   font-family: "Gilroy";  
   font-weight: normal;
@@ -97,6 +101,7 @@ a {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: 4px;
 }
   
 .interface-header a,
@@ -114,7 +119,7 @@ a {
   color: #635a3c;
 }
 
-.header-interface a:active,
+.interface-header a:active,
 .product-catalog a:active,
 .contacts-header a:active {
   color: #ac9e69;
@@ -124,8 +129,11 @@ a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
-  list-style: none;
   text-transform: capitalize;
+  letter-spacing: normal;
+
+  list-style: none;
+  
   display: none;
 }
 
@@ -218,6 +226,7 @@ color: #b89a30;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
+
 }
 
 .about-us a {
@@ -225,6 +234,7 @@ color: #b89a30;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 4px;
 
   background-color: #f0c52e;
 }
@@ -268,6 +278,7 @@ color: #b89a30;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 4px;
 
   background-color: #f0c52e;
 }
@@ -277,6 +288,131 @@ color: #b89a30;
 
   background-color: black;
 }
+
+/*Страница каталога*/
+
+.page-title {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  text-transform: none;
+}
+
+.breadcrambs {
+  list-style: none;
+}
+
+.breadcrambs a {
+  color: #b7b7b7;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.breadcrambs a:hover,
+.breadcrambs a:focus {
+  color: #8f8f8f;
+}
+
+.breadcrambs a:active {
+  color: #e5e5e5;
+}
+
+.filter h2 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  background-color: #dcdcdc;
+}
+
+.filter h3 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+  
+
+  background-color: #eeeeee;
+}
+
+.filter form {
+  background-color: #eeeeee;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 40px; 
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+
+  opacity: 0.5;
+}
+
+.sort {
+  background-color: #ebebeb;
+}
+
+.sort h2 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort a {
+  color: #bcbcbc;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sort a:hover,
+.sort a:focus {
+  color: #666666;
+}
+
+.sort a:active {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a:nth-child(2) {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.catalog-item span {
+  /*Здесь должен быть третий шрифт*/
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+}
+/*Страница каталога закончилась*/
 
 .footer {
   color: white;
@@ -306,6 +442,7 @@ color: #b89a30;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 4px;
   
   list-style: none;
 }
@@ -324,3 +461,4 @@ color: #b89a30;
 }
 
 /*Разобраться с изменением цвета SVG*/
+/*Модальные окна и всплывающие элементы будут стилизоваться после 7го раздела*/
