@@ -23,7 +23,7 @@ body {
   font-style: normal;
   src: 
   url("Gilroy-ExtraBold.woff"),
-  url("Gilroy-Light.woff");
+  url("Gilroy-Light.eot");
   /*Разобраться как подключить 3ий шрифт
   src: url("Gilroy-Light.woff")
   */
@@ -144,7 +144,7 @@ a {
   display: inline;
  } 
 
-/* Красная область
+
 .button-info {
   background-color: #f0c52e; 
 }
@@ -209,7 +209,7 @@ color: #b89a30;
 .logo-dji:focus {
   background-color: url("img/logo-dji-bg.png");
 }
-*/
+
 
 .about-us h2 {
   font-family: Gilroy, Arial, sans-serif;
@@ -486,3 +486,22 @@ color: #b89a30;
 
 /*Разобраться с изменением цвета SVG*/
 /*Модальные окна и всплывающие элементы будут стилизоваться после 7го раздела*/
+
+/*-------Строчные стили------*/
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+/*Временно для сетки */
+/*background-image: url('../img/device-index.jpg');
+background-size: 1372 auto;
+background-repeat: no-repeat;
+}
+
+.main-header {
+  
+}
