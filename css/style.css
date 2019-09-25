@@ -19,14 +19,20 @@ body {
 
 @font-face {
   font-family: "Gilroy";  
-  font-weight: normal;
-  font-style: normal;
   src: 
-  url("Gilroy-ExtraBold.woff"),
-  url("Gilroy-Light.eot");
-  /*Разобраться как подключить 3ий шрифт
-  src: url("Gilroy-Light.woff")
-  */
+  url("../fonts/Gilroy/Gilroy-ExtraBold.woff"),
+  url("../fonts/Gilroy/Gilroy-Extrabold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";  
+  src: 
+  url("../fonts/Gilroy/Gilroy-Light.woff"),
+  url("../fonts/Gilroy/Gilroy-Light.woff2");
+  font-weight: lighter;
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -42,6 +48,15 @@ a {
   color: black; 
   
   background-color: #f7e296;  
+}
+
+.logo-device:hover,
+.logo-device:focus {
+  opacity: 0.6;
+}
+
+.logo-device:active {
+  opacity: 0.3;
 }
 
 .button-search {
@@ -100,35 +115,31 @@ a {
 .product-catalog,
 .contacts-header {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 4px;
 }
   
-.interface-header a,
-.product-catalog a,
-.contacts-header a {
-  color: #000000;
-}
-
 .interface-header a:hover,
 .interface-header a:focus,
 .product-catalog a:hover,
 .product-catalog a:focus,
 .contacts-header a:hover,
 .contacts-header a:focus {
-  color: #635a3c;
+  opacity: 0.6;
 }
 
 .interface-header a:active,
 .product-catalog a:active,
 .contacts-header a:active {
-  color: #ac9e69;
+  opacity: 0.3;
 }
 
 .dropdonw-product-catalog {
   font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
   font-size: 15px;
   line-height: 36px;
   text-transform: capitalize;
@@ -142,29 +153,65 @@ a {
 .product-catalog a:hover + .dropdonw-product-catalog,
 .product-catalog a:focus + .dropdonw-product-catalog {
   display: inline;
- } 
+ }
 
+/*Промо слайдер*/
 
-.button-info {
-  background-color: #f0c52e; 
-}
-
-.section-main {
-  background-color: #f7e296;
-
+.promo-slider-list {
   list-style: none;
 }
 
-.section-main:hover,
-.section-main:focus {
-background-color: #f0c52e;
+.promo-slider-list h3 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: normal;
+  font-size: 47px;
+  line-height: 56px;
+ }
+
+.promo-slider-list span {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: normal;
+  font-size: 179px;
+  line-height: 179px;
+ }
+
+ .promo-slider-list p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: none;
+ }
+
+.promo-slider-list .button-info {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  background-color: #f0c52e;
 }
 
- Разобраться как делать прозрачность изоброжениям
-.section-main img:active {
-color: #b89a30;
+.promo-slider-list table tr:first-child {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: lighter;
+  text-transform: normal;
+  font-size: 36px;
+  line-height: 48px;
 }
 
+.promo-slider-list table tr:last-child {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: lighter;
+  text-transform: normal;
+  font-size: 13px;
+  line-height: 20px;
+}
 
 .slider-main-2 {
   background-color: #e5e5e5;
@@ -188,6 +235,15 @@ color: #b89a30;
   color: #f7e184;
 
   background-color: black;
+}
+
+.table-of-characteristics td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: capitalize;
+  letter-spacing: normal;
 }
 
 .slider-item-2,

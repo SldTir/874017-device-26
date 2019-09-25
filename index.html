@@ -12,8 +12,8 @@
     <header class="main-header">      
       <nav class="main-navigation">
 
-        <a href="#" class="logo-device">
-          <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
+        <a href="#">
+          <img class="logo-device" src="img/background-black-logo.svg" alt="Логотип DEVICE">
         </a>
         
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
@@ -45,8 +45,8 @@
           </ul>
 
         
-        <ul>
-          <li class="product-catalog"><a href="catalog.html">Каталог товаров
+        <ul class="product-catalog">
+          <li><a href="catalog.html">Каталог товаров
             <!--Декоративный элемент +--></a>
             <ul class="dropdonw-product-catalog">
               <li><a href="#">Виртуальная реальность</a></li>
@@ -71,31 +71,31 @@
       <h1 class="visually-hidden">Device</h1>
 
       <section class="container">
-        <h2 class="">Промо слайдер</h2>
-        <ul>
+        <h2 class="visually-hidden">Промо слайдер</h2>
+        <ol class="promo-slider-list">
           <li class="slider-stick-selfie">
             <img src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
-            <h3 class="font-1">Делай селфи, как Бен Стиллер!</h3>  
+            <h3 class="">Делай селфи, как Бен Стиллер!</h3>  
             <span>01</span>      
-            <p class="font-2">Самая длинная палка селфи доступна в нашем магазине
+            <p class="">Самая длинная палка селфи доступна в нашем магазине
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.
             </p>
         <a class="button-info" href="#">Подробнее</a>
-        <table>
+        <table class="">
           <tr class="">
             <td>8,5м</td>
             <td>5кг</td>
             <td>Карбон</td>
            </tr>
-          <tr class="font-2">
+          <tr class="">
             <td>Длина палки</td>
             <td>Вес палки</td>
             <td>Материал</td>
            </tr>
         </table>
         </li>
-        <li class="">
-          <img src="img/fitness-bracelet.png" alt="Изоброжение Фитнесс браслет">
+        <li class="slide-fitness-bracelet">
+          <img src="img/slider-fitness-bracelet.png" alt="Изоброжение Фитнесс браслет">
           <h3>Худеем правильно!</h3>
           <span>02</span>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -132,54 +132,47 @@
             </tr>
           </table>
         </li>
-        </ul>
+      </ol>
       </section>
       
       <!-- Фоновая картинка полосочки, таблица и переключатель -->
-      <section>
-        <h2 class="visually-hidden">Названия разделов</h2>
+      <div>
         <ul>
           <li class="section-main">
            <a href="#">
-             <h3>Виртуальная реальность</h3>
-             <img src="img/index-virtual-reality.svg" alt="Изоброжения раздела Виртуальная реальность">
+             Виртуальная реальность
            </a>
             </li>
           <li class="section-main">
             <a href="catalog.html">
-              <h3>Моноподы для селфи</h3>
-              <img src="img/index-monopods-for-selfi.svg" alt="Изоброжения раздела Моноподы для селфи">
+              Моноподы для селфи
             </a>
             </li>
           <li class="section-main">
             <a href="#">
-              <h3>Экшн-камеры</h3>
-              <img src="img/index-action-camera.svg" alt="Изоброжения раздела Экшн-камеры">
+              Экшн-камеры
             </a>
             </li>
           <li class="section-main">
             <a href="#">
-              <h3>Фитнес-браслеты</h3>
-              <img src="img/index-fitness-bracelet.svg" alt="Изоброжения раздела Фитнес-браслеты">
+              Фитнес-браслеты
             </a>
             </li>
           <li class="section-main">
               <a href="#">
-                <h3>Умные часы</h3>
-                <img src="img/index-smartwatch.svg" alt="Изоброжения раздела Умные часы">
+                Умные часы
               </a>
               </li>
           <li class="section-main">
               <a href="#">
-               <h3>Квадрокоптеры</h3>
-                <img src="img/index-quadcopter.svg" alt="Изоброжения раздела Квадрокоптеры">
+               Квадрокоптеры
               </a>
               </li>
         </ul>
-      </section>
+      </div>
 
+      <!--Этот блок будет слайдером-->
       <section>
-        <!--Этот блок будет слайдером-->
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="slider-main-2">
           <li><a class="font-1" href="#">Доставка</a>
@@ -322,7 +315,7 @@
  
     </footer>
 
-    <section style="display: none;">  
+    <section>  
     <h2 class="visually-hidden">Отправка письма</h2>
     <form action="https://echo.htmlacademy.ru" method="post">      
         <button type="button">Закрыть</button>
@@ -344,13 +337,13 @@
     </form>
     </section>  
 
-    <section style="display: none;">
+    <section>
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!--Кнопка изображение закрыть-->
       <img src="img/popup-map-big.png" alt="г. Москва, ул. Строителей, 15">
     </section>
 
-    <section class="visually-hidden" style="display: none;">
+    <section class="visually-hidden">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
       <form action="https://echo.htmlacademy.ru" method="post">
