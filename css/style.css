@@ -197,6 +197,15 @@ a {
   background-color: #f0c52e;
 }
 
+.promo-slider-list .button-info:hover,
+.promo-slider-list .button-info:focus {
+
+}
+
+.promo-slider-list .button-info:active {
+  opacity: 0.3;
+}
+
 .promo-slider-list table tr:first-child {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: lighter;
@@ -213,46 +222,76 @@ a {
   line-height: 20px;
 }
 
-.slider-main-2 {
+/*Список разделов*/
+.sections-list li {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  background-color: #f7e296;
+
+  list-style: none;
+}
+
+.sections-list li:hover {
+  background-color: #f0c52e;
+}
+
+/*Слайдер услуг*/
+.slider-services {
   background-color: #e5e5e5;
 
   list-style: none;
 }
 
-.slider-main-2 a {
+.slider-services a {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;  
+  letter-spacing: 4px;
 
   background-color: #f0c52e;
 }
 
  Разобраться как изменять фоновое изображение кнопки
-.slider-main-2 a:hover,
-.slider-main-2 a:focus {
+.slider-services a:hover,
+.slider-services a:focus {
 
 }
 
-.slider-main-2 a:active {
+.slider-services a:active {
   color: #f7e184;
 
   background-color: black;
 }
 
-.table-of-characteristics td {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: lighter;
-  font-size: 36px;
-  line-height: 48px;
-  text-transform: capitalize;
-  letter-spacing: normal;
+.slider-services h3 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 47px;
+  line-height: 48px;  
 }
 
-.slider-item-2,
-.slider-item-3 {
+.slider-services p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: lighter;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 30px;  
+}
+
+.guarantee,
+.loan {
   display: none;
 }
 
-.slider-item-2:active,
-.slider-item-3:active {
+.guarantee:active,
+.loan:active {
   display: inline;
 }
 
@@ -274,14 +313,26 @@ a {
 }
 
 /* Фотошоп не показывает размеры и отступы шрифта*/
+
+/*О нас*/
+.about-us h2 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 47px;
+  line-height: 48px;
+}
+
 .about-us p {
   font-family: "Open Sans", Arial, sans-serif;
+  font-weight: lighter;
   font-size: 15px;
   line-height: 30px;
 }
 
 .about-us li{
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 15px;
   line-height: 30px;
 
@@ -289,6 +340,7 @@ a {
 
 .about-us a {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -310,8 +362,11 @@ a {
   background-color: black;
 }
 
+
+/*Контакты*/
 .contacts-main h2 {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 47px;
   line-height: 48px;
 }
@@ -320,19 +375,14 @@ a {
 
 .contacts-main p {
   font-family: "Open Sans", Arial, sans-serif;
+  font-weight: lighter;
   font-size: 15px;
   line-height: 30px;
 }
 
-/* Разобраться с background
-.section-1-a:hover,
-.section-1-a:focus {
-  background-color: #f0c52e;
-}
-*/
-
 .contacts-main a:last-child {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -351,6 +401,7 @@ a {
 
 .page-title {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 47px;
   line-height: 48px;
   text-transform: none;
@@ -361,22 +412,24 @@ a {
 }
 
 .breadcrambs a {
-  color: #b7b7b7;
+  color: #666666;
   font-size: 16px;
   line-height: 24px;
+  opacity: 0.3;
 }
 
 .breadcrambs a:hover,
 .breadcrambs a:focus {
-  color: #8f8f8f;
+  opacity: 1;
 }
 
 .breadcrambs a:active {
-  color: #e5e5e5;
+  opacity: 0.1;
 }
 
-.filter h2 {
+.filter {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -395,20 +448,26 @@ a {
   background-color: #eeeeee;
 }
 
-.filter form {
+form {
   background-color: #eeeeee;
 }
 
-.filter fieldset {
+ fieldset {
   border: none;
 }
 
-.filter legend {
-  border-top: 2px solid black;
+fieldset li {
+  border: none;
+}
+
+fieldset legend {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
+
+  border-top: 2px solid black;
 }
 
 .filter-item {
@@ -586,8 +645,8 @@ a {
 .pagination-list {
   list-style: none;
 }
-/*Страница каталога закончилась*/
 
+/*Подвал*/
 .footer {
   color: white;
 
@@ -599,24 +658,22 @@ a {
 }
 
 .interface-footer a {
-  color: #bfbfbf;  
+  color: #e6e6e6; 
+  opacity: 0.7; 
 }
 
 .interface-footer li a:hover,
 .interface-footer li a:focus {
-  color: #f3f3f3;
+  opacity: 1;
 }
 
 .interface-footer li a:active {
-  color: #676767;
-}
-
-.exit {
-  color: #d4c281;
+  opacity: 0.3;
 }
 
 .contacts-footer {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -631,11 +688,15 @@ a {
 
 .contacts-footer a:hover,
 .contacts-footer a:focus {
-  color: #b5b5b5;
+  opacity: 0.6;
 }
 
 .contacts-footer li a:active {
-  color: #7e7e7e;
+  opacity: 0.3;
+}
+
+.social-media {
+  list-style: none;
 }
 
 /*Разобраться с изменением цвета SVG*/
