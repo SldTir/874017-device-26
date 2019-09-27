@@ -11,35 +11,44 @@
   <body>    
     <header class="main-header">      
       <nav class="main-navigation">
-        <a href="#">
-        <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
-        </a>
-        
-        <div class="header-interface font-2">
-        <form class="pole-header" action="https://echo.htmlacademy.ru" method="post">
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input class="search-header" id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="visually-hidden button-search" type="submit">Найти</button>
-        </form>   
 
         <a href="#">
-          <!-- Фоновая картика человчка -->
-          Войти
+          <img class="logo-device" src="img/background-black-logo.svg" alt="Логотип DEVICE">
         </a>
-        <a href="#">
-          <!-- Фоновая картинка диограмма-->
-          Сравнить
-        </a>
-        <a href="#">
-          <!--Фоновая картинка корзина-->
-          Корзина
-        </a>
-        </div>
         
-        <ul class="header-navigation font-1">
-          <li><a class="catalog-header" href="catalog.html">Каталог товаров
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+          <label for="search" class="lable-search visually-hidden">Поиск по сайту</label>
+          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="button-search visually-hidden" type="submit">Найти</button>
+        </form>   
+
+  
+          <ul class="interface-header">
+          <li>
+            <a href="#">
+            <!-- Фоновая картика человчка -->
+            Войти
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <!-- Фоновая картинка диограмма-->
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <!--Фоновая картинка корзина-->
+            Корзина
+            </a>
+          </li>
+          </ul>
+
+        
+        <ul class="product-catalog">
+          <li><a href="catalog.html">Каталог товаров
             <!--Декоративный элемент +--></a>
-            <ul class="dropdonw-header font-2">
+            <ul class="dropdonw-product-catalog">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камера</a></li>
@@ -48,6 +57,9 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
+        </ul>
+
+        <ul class="contacts-header">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -58,109 +70,138 @@
     <main class="page-main">
       <h1 class="visually-hidden">Device</h1>
 
-      <section>
-        <!--Этоn блок будет промослайдером-->
-        <img src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
-        <!--Фоновая картинка 01-->
-        <h2 class="font-1">Делай селфи, как Бен Стиллер!</h2>        
-        <p class="font-2">Самая длинная палка селфи доступна в нашем магазине
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.
-        </p>
-        <a class="button-info font-1" href="#">Подробнее</a>
-        <table>
+      <section class="container">
+        <h2 class="visually-hidden">Промо слайдер</h2>
+        <ol class="promo-slider-list">
+          <li class="slider-stick-selfie">
+            <img src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
+            <h3 class="">Делай селфи, как Бен Стиллер!</h3>  
+            <span>01</span>      
+            <p class="">Самая длинная палка селфи доступна в нашем магазине
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.
+            </p>
+        <a class="button-info" href="#">Подробнее</a>
+        <table class="">
           <tr class="">
             <td>8,5м</td>
             <td>5кг</td>
             <td>Карбон</td>
            </tr>
-          <tr class="font-2">
+          <tr class="">
             <td>Длина палки</td>
             <td>Вес палки</td>
             <td>Материал</td>
            </tr>
         </table>
+        </li>
+        <li class="slide-fitness-bracelet">
+          <img src="img/slider-fitness-bracelet.png" alt="Изоброжение Фитнесс браслет">
+          <h3>Худеем правильно!</h3>
+          <span>02</span>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+            не пропускать занятия и соблюдать диету.
+          </p>
+          <a class="button-info" href="#">Подробнее</a>
+        <table>
+          <tr>
+            <td>48 Часов</td>
+           </tr>
+          <tr>
+            <td>Без подзарядки</td>     
+           </tr>
+        </table>
+        </li>
+        <li>
+            <img src="img/slider-quadcopter.png" alt="Изоброжение Квадрокоптера">
+            <h3>Порхает как бабочка,
+              жалит как пчела!
+            </h3>
+            <span>03</span>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащён
+              мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="button-info" href="#">Подробнее</a>
+          <table>
+            <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+            <tr>
+              <td>Дальность полёта</td>
+              <td>Радиус поражения</td>         
+            </tr>
+          </table>
+        </li>
+      </ol>
       </section>
+      
       <!-- Фоновая картинка полосочки, таблица и переключатель -->
-      <section>
-        <h2 class="visually-hidden">Названия разделов</h2>
-        <ul>
+
+        <ul class="sections-list">
           <li class="section-main">
            <a href="#">
-             <h3>Виртуальная реальность</h3>
-             <img src="img/index-virtual-reality.svg" alt="Изоброжения раздела Виртуальная реальность">
+             Виртуальная реальность
            </a>
             </li>
           <li class="section-main">
             <a href="catalog.html">
-              <h3>Моноподы для селфи</h3>
-              <img src="img/index-monopods-for-selfi.svg" alt="Изоброжения раздела Моноподы для селфи">
+              Моноподы для селфи
             </a>
             </li>
           <li class="section-main">
             <a href="#">
-              <h3>Экшн-камеры</h3>
-              <img src="img/index-action-camera.svg" alt="Изоброжения раздела Экшн-камеры">
+              Экшн-камеры
             </a>
             </li>
           <li class="section-main">
             <a href="#">
-              <h3>Фитнес-браслеты</h3>
-              <img src="img/index-fitness-bracelet.svg" alt="Изоброжения раздела Фитнес-браслеты">
+              Фитнес-браслеты
             </a>
             </li>
           <li class="section-main">
               <a href="#">
-                <h3>Умные часы</h3>
-                <img src="img/index-smartwatch.svg" alt="Изоброжения раздела Умные часы">
+                Умные часы
               </a>
               </li>
           <li class="section-main">
               <a href="#">
-               <h3>Квадрокоптеры</h3>
-                <img src="img/index-quadcopter.svg" alt="Изоброжения раздела Квадрокоптеры">
+               Квадрокоптеры
               </a>
               </li>
         </ul>
-      </section>
 
-      <section>
-        <!--Этот блок будет слайдером-->
-        <h2 class="visually-hidden">Сервисы</h2>
-        <ul class="slider-main-2">
-          <li><a class="font-1" href="#">Доставка</a>
-            <div class="slider-item-1">
-              <h3 class="font-1">Доставка</h3>
-              <p class="list-main font-2">Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.
-              </p>
+
+      <!--Этот блок будет слайдером-->
+
+        <ul class="slider-services">
+          <li><a class="" href="#">Доставка</a>
+            <h3 class="delivery">Доставка</h3>
+            <p class="">Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.
+            </p>
                 <!--Декоративное изоброжение-->
-            </div>
-            </li>
-          <li class="">
-            <a class="font-1" href="#">Гарантия</a>
-            <div class="slider-item-2">
-            <h3 class="font-1">Гарантия</h3>
-              <p class="font-2">Если из-за возгорания купленного у нас товара у вас сгорит
-                дом- не переживайте, мы выдадим вам новый. 
-                Товар, не дом, конечно же.
-              </p>
-              <!--Декоративное изоброжение-->
-            </div>
           </li>
           <li class="">
-            <a class="font-1" href="#">Кретид</a>
-            <div class="slider-item-3">
-              <h3 class="font-1">Кредит</h3>
-              <p class="font-2">Залезть в долговую яму стало проще! Кредитные
+            <a class="" href="#">Гарантия</a>
+            <h3 class="guarantee">Гарантия</h3>
+            <p class="">Если из-за возгорания купленного у нас товара у вас сгорит
+              дом- не переживайте, мы выдадим вам новый. 
+              Товар, не дом, конечно же.
+            </p>
+              <!--Декоративное изоброжение-->
+          </li>
+          <li class="">
+            <a class="" href="#">Кредит</a>
+            <h3 class="loan">Кредит</h3>
+            <p class="">Залезть в долговую яму стало проще! Кредитные
               консультанты подберут для вас наиболее выгодные
               условия кредита. Выгодные для нашего банка, разумеется. 
-              </p>
+            </p>
             <!--Декоративное изоброжение-->
-            </div>
           </li>
         </ul>
-      </section>
+
 
       <section>
         <h2 class="visually-hidden">Партнёры</h2>
@@ -189,59 +230,62 @@
       </section>
       
       <div>
-      <section class="section-1">
-        <h2 class="section-1-title font-1">О нас</h2>
-        <p class="section-1-content font-2">Огромный выбор гаджетов не оставит равнодушным гика,
+      <section class="about-us">
+        <h2 >О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика,
         который есть в каждом из нас.</p>
-        <p class=" section-1-content font-2">Мы можем доставить ваш товар в самые отдалённые точки
+        <p>Мы можем доставить ваш товар в самые отдалённые точки
         Росси! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="section-1-list font-1">
+        <ul>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="section-1-a font-1" href="#">Подробнее о нас</a>
+        <a href="#">Подробнее о нас</a>
       </section>
 
       <!-- Фоновая картинка полосочки -->
 
-      <section class="section-2">
-          <h2 class="section-2-title font-1">Контакты</h2>
-          <p class="section-2-content font-2">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+      <section class="contacts-main">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="#"><img src="img/map-stroiteley-street-17.jpg" alt="г. Москва, ул. Строителей, 15"></a>
+          <a href="#"><img src="img/map-stroiteley-street-17.jpg" width="560" height="222"
+             alt="г. Москва, ул. Строителей, 15"></a>
           <a class="section-2-a font-1" href="#">Напишите нам</a>
-          
       </section>
       </div>
     </main>
-    <footer class="page-footer">   
-     
+    <footer class="footer">   
       <a>
         <img src="img/background-yellow-logo.svg" alt="Логотип DEVICE">
       </a>
 
-      <div class="footer-interface font-2">
-      <a href="#">
-        <!-- Фоновая картинка человечка -->
-        Войти
-      </a>         
-
-      <a href="#">
-        <!-- Фоновая картинка диограмма -->
-        Сравнить
-      </a>
-
-      <a href="#">
-        <!-- Фоновая картинка корзины -->
-        Корзина
-      </a>
-      </div>
+      <ul class="interface-footer">
+        <li>
+          <a href="#">
+          <!-- Фоновая картика человчка -->
+          Войти
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- Фоновая картинка диограмма-->
+            Сравнить
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <!--Фоновая картинка корзина-->
+          Корзина
+          </a>
+        </li>
+      </ul>
 
 
       <p class="font-2">г. Москва, ул. Строителей, 15</p>
 
-      <ul class="list-footer font-1">
+      <ul class="contacts-footer">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -251,7 +295,7 @@
  
 
       <!-- Фоновая картика полосочки -->
-      <ul>
+      <ul class="social-media">
         <li><a href="https://www.facebook.com"><!-- Фоновая картика Фейсбук --></a></li>
         <li><a href="https://www.instagram.com"><!-- Фоновая картика Инстаграмм --></a></li>
         <li><a href="https://twitter.com"><!-- Фоновая картика Твиттер --></a></li>
