@@ -55,6 +55,11 @@ a {
   opacity: 0.3;
 }
 
+.form-search {
+  background-color: #f7e296;
+}
+
+
 .button-search {
   font: inherit;
 
@@ -563,8 +568,10 @@ fieldset legend {
   text-align: right;
 }
 
-.filter ul {
+.checkbox-color li,
+.radio-bluetooth li {
   list-style: none;
+
   font-size: 14px;
   line-height: 40px; 
 }
@@ -626,12 +633,13 @@ fieldset legend {
   text-align: right;
 }
 
-.pagination {
+.pagination-list {
   background-color: #ebebeb;
 }
 
-.pagination a {
+.pagination-list a {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -641,6 +649,37 @@ fieldset legend {
 .pagination-list {
   list-style: none;
 }
+
+.pagination-list a {
+  opacity: 0.3;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  opacity: 0.6;
+}
+
+.pagination-list a:active {
+  opacity: 1;
+}
+
+.pagination-list li:first-child a,
+.pagination-list li:last-child a {
+  opacity: 1;
+}
+
+.pagination-list li:first-child:hover,
+.pagination-list li:first-child:focus,
+.pagination-list li:last-child:hover,
+.pagination-list li:last-child:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-list li:first-child a:active,
+.pagination-list  li:last-child a:active {
+  opacity: 0.3;
+}
+
 
 /*Подвал*/
 .footer {
