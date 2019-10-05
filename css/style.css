@@ -108,13 +108,11 @@ a {
 }
 
 .interface-header,
-.product-catalog,
-.contacts-header {
+.header-product-contacts {
   list-style: none;
   }
 
-.product-catalog,
-.contacts-header {
+.header-product-contacts {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -124,14 +122,12 @@ a {
 }
   
 .interface-header a:hover,
-.product-catalog a:hover,
-.contacts-header a:hover {
+.header-product-contacts a:hover {
   opacity: 0.6;
 }
 
 .interface-header a:active,
-.product-catalog a:active,
-.contacts-header a:active {
+.header-product-contacts a:active {
   opacity: 0.3;
 }
 
@@ -148,7 +144,7 @@ a {
   display: none;
 }
 
-.product-catalog a:hover + .dropdonw-product-catalog {
+.header-product-contacts a:hover + .dropdonw-product-catalog {
   display: inline;
  }
 
@@ -765,49 +761,43 @@ background-repeat: no-repeat;
 .main-header {
   background-color: green;
   opacity: 0.5;
+
+  margin: auto;
   margin-bottom: 60px;
-  min-height: 230px;
+
+  width: 1160px;
+  min-height: 190px;
 }
 
 .main-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
+  position: relative;
+  
+  margin-top: 40px;
+  padding: 0 40px;
 
   min-height: 172px;
 
   background-color: transparent;
 }
 
-.header-logo-container {
-  width: 1040px;
-  margin: 0 auto;
-  padding: 0 10px;
- 
-}
-
 .main-header-logo {
-  display: flex;
+  position: absolute;
   width: 165px;
   height: 35px;
 
+  top: -19px;
+  left: 60px;
+
   background-color: yellow;
   opacity: 0.5;
-}
-
-.header-interface-wrapper {
-  width: 100%;
-}
-
-.header-navigation-wrapper {
-  width: 100%; 
 }
 
 .form-search {
   width: 440px;
   height: 20px;
   
-  margin-top: 5px;
+  margin-top: 50px;
+  
   background-color: yellow;
   opacity: 0.5;
 }
@@ -818,14 +808,14 @@ background-repeat: no-repeat;
 
   list-style: none;
 
-  margin-top: 5px;
+  margin-top: 50px;
 
   background-color: yellow;
   opacity: 0.5;
 }
 
-.product-catalog {
-  width: 210px;
+.header-product-contacts {
+  width: 1400px;
   height: 17px;
 
   list-style: none;
@@ -836,14 +826,9 @@ background-repeat: no-repeat;
   opacity: 0.5;
 }
 
-.contacts-header {
-  width: 460px;
-  height: 17px;
-
-  list-style: none;
-
-  margin-top: 5px;
-
-  background-color: yellow;
-  opacity: 0.5;
-}
+/*Слайдер 1*/
+/*Навигация маин*/
+/*Слайдер 2*/
+/*Список логотипов*/
+/*О нас, Контакты*/
+/*Футер*/
