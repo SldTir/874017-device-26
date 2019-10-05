@@ -124,11 +124,8 @@ a {
 }
   
 .interface-header a:hover,
-.interface-header a:focus,
 .product-catalog a:hover,
-.product-catalog a:focus,
-.contacts-header a:hover,
-.contacts-header a:focus {
+.contacts-header a:hover {
   opacity: 0.6;
 }
 
@@ -151,8 +148,7 @@ a {
   display: none;
 }
 
-.product-catalog a:hover + .dropdonw-product-catalog,
-.product-catalog a:focus + .dropdonw-product-catalog {
+.product-catalog a:hover + .dropdonw-product-catalog {
   display: inline;
  }
 
@@ -165,7 +161,7 @@ a {
 .promo-slider-list h3 {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
-  text-transform: normal;
+  text-transform: none;
   font-size: 47px;
   line-height: 56px;
  }
@@ -173,7 +169,7 @@ a {
 .promo-slider-list span {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
-  text-transform: normal;
+  text-transform: none;
   font-size: 179px;
   line-height: 179px;
  }
@@ -189,7 +185,7 @@ a {
 .promo-slider-list .button-info {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
-  text-transform: normal;
+  text-transform: none;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 4px;
@@ -210,7 +206,7 @@ a {
 .promo-slider-list table tr:first-child {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: lighter;
-  text-transform: normal;
+  text-transform: none;
   font-size: 36px;
   line-height: 48px;
 }
@@ -218,7 +214,7 @@ a {
 .promo-slider-list table tr:last-child {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: lighter;
-  text-transform: normal;
+  text-transform: none;
   font-size: 13px;
   line-height: 20px;
 }
@@ -227,7 +223,7 @@ a {
 .sections-list li {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
-  text-transform: normal;
+  text-transform: none;
   font-size: 18px;
   line-height: 24px;
 
@@ -259,8 +255,7 @@ a {
 }
 
  Разобраться как изменять фоновое изображение кнопки
-.slider-services a:hover,
-.slider-services a:focus {
+.slider-services a:hover {
 
 }
 
@@ -351,8 +346,7 @@ a {
 }
 
 /* Разобраться с background
-.section-1-a:hover,
-.section-1-a:focus {
+.section-1-a:hover {
   background-color: #f0c52e;
 }
 */
@@ -419,8 +413,7 @@ a {
   opacity: 0.3;
 }
 
-.breadcrambs a:hover,
-.breadcrambs a:focus {
+.breadcrambs a:hover {
   opacity: 1;
 }
 
@@ -604,8 +597,7 @@ fieldset legend {
   line-height: 18px;
 }
 
-.sort a:hover,
-.sort a:focus {
+.sort a:hover {
   color: #666666;
 }
 
@@ -654,8 +646,7 @@ fieldset legend {
   opacity: 0.3;
 }
 
-.pagination-list a:hover,
-.pagination-list a:focus {
+.pagination-list a:hover {
   opacity: 0.6;
 }
 
@@ -697,8 +688,7 @@ fieldset legend {
   opacity: 0.7; 
 }
 
-.interface-footer li a:hover,
-.interface-footer li a:focus {
+.interface-footer li a:hover {
   opacity: 1;
 }
 
@@ -721,8 +711,7 @@ fieldset legend {
   color: #ffffff;
 }
 
-.contacts-footer a:hover,
-.contacts-footer a:focus {
+.contacts-footer a:hover {
   opacity: 0.6;
 }
 
@@ -777,12 +766,13 @@ background-repeat: no-repeat;
   background-color: green;
   opacity: 0.5;
   margin-bottom: 60px;
-  min-height: 172px;
+  min-height: 230px;
 }
 
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
 
   min-height: 172px;
 
@@ -810,9 +800,7 @@ background-repeat: no-repeat;
 }
 
 .header-navigation-wrapper {
-  width: 100%;
-
-  margin-bottom: 58px;
+  width: 100%; 
 }
 
 .form-search {
@@ -831,6 +819,7 @@ background-repeat: no-repeat;
   list-style: none;
 
   margin-top: 5px;
+
   background-color: yellow;
   opacity: 0.5;
 }
@@ -842,6 +831,7 @@ background-repeat: no-repeat;
   list-style: none;
 
   margin-top: 5px;
+
   background-color: yellow;
   opacity: 0.5;
 }
@@ -853,6 +843,7 @@ background-repeat: no-repeat;
   list-style: none;
 
   margin-top: 5px;
+
   background-color: yellow;
   opacity: 0.5;
 }
