@@ -741,17 +741,118 @@ fieldset legend {
 
 html,
 body {
-  min-width: 1122px;
-  min-height: 1750px;
+  min-width: 1440px;
+  min-height: 2795px;
 }
 
 body {
 /*Временно для сетки */
-/*background-image: url('../img/device-index.jpg');
-background-size: 1372 auto;
+background-image: url('../img/device-index.jpg');
 background-repeat: no-repeat;
+
+}
+
+.header-interface-container {
+  display: flex;
+  justify-content: space-between;
+  
+
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
+.header-navigation-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 26px;
 }
 
 .main-header {
+  background-color: green;
+  opacity: 0.5;
+  margin-bottom: 60px;
+  min-height: 172px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+
+  min-height: 172px;
+
+  background-color: transparent;
+}
+
+.header-logo-container {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 10px;
+ 
+}
+
+.main-header-logo {
+  display: flex;
+  width: 165px;
+  height: 35px;
+
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.header-interface-wrapper {
+  width: 100%;
+}
+
+.header-navigation-wrapper {
+  width: 100%;
+
+  margin-bottom: 58px;
+}
+
+.form-search {
+  width: 440px;
+  height: 20px;
   
+  margin-top: 5px;
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.interface-header {
+  width: 460px;
+  height: 20px;
+
+  list-style: none;
+
+  margin-top: 5px;
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.product-catalog {
+  width: 210px;
+  height: 17px;
+
+  list-style: none;
+
+  margin-top: 5px;
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.contacts-header {
+  width: 460px;
+  height: 17px;
+
+  list-style: none;
+
+  margin-top: 5px;
+  background-color: yellow;
+  opacity: 0.5;
 }
