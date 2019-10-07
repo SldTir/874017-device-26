@@ -12,31 +12,67 @@
     <header class="main-header">
       <nav class="main-navigation">
     
-        <a class="main-header-logo" href="#">  
+        <a class="main-header-logo" href="#"> 
+          <img class="logo-device" src="img/background-black-logo.svg" alt="Логотип DEVICE"> 
         </a>
-        
 
-       
         <div class="header-interface-container">
-          <form class="form-search" action="https://echo.htmlacademy.ru" method="post">              
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+            <label class="lable-search visually-hidden" for="search">Поиск по сайту</label>
+            <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="button-search visually-hidden" type="submit">Найти</button>              
           </form>   
       
-          <ul class="interface-header">              
+          <ul class="interface-header"> 
+            <li>
+              <a href="#">
+              <!-- Фоновая картика человчка -->
+              Войти
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- Фоновая картинка диограмма-->
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="#">
+               <!--Фоновая картинка корзина-->
+               Корзина
+              </a>
+            </li>             
           </ul>
         </div>
 
         <div class="header-navigation-container">
-          <ul class="header-product-contacts">                                     
+          <ul class="header-product-contacts">
+            <li><a href="catalog.html">Каталог товаров
+              <!--Декоративный элемент +--></a>
+              <ul class="dropdonw-product-catalog">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камера</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li> 
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>                                            
           </ul>
         </div>
            
       </nav>      
     </header>
     <main>
+      <h1 class="visually-hidden">Device</h1>
       <section class="container">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Промо слайдер</h2>
         <ol class="promo-slider-list">
           <li class="slider-stick-selfie">
+            <img src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
             <p class="selfie"></p>
 
             <div class="features">

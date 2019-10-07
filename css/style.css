@@ -724,19 +724,6 @@ fieldset legend {
 
 /*-------Строчные стили------*/
 
-html,
-body {
-  min-width: 1440px;
-  min-height: 2795px;
-}
-
-body {
-/*Временно для сетки */
-  background-image: url('../img/device-index.jpg');
-  background-repeat: no-repeat;
-
-}
-
 .header-interface-container {
   display: flex;
   justify-content: space-between;
@@ -760,7 +747,6 @@ body {
 
 .main-header {
   background-color: green;
-  opacity: 0.5;
 
   margin: auto;
   margin-bottom: 60px;
@@ -776,8 +762,6 @@ body {
   padding: 0 40px;
   
   min-height: 300px;
-
-  background-color: transparent;
 }
 
 .main-header-logo {
@@ -787,9 +771,6 @@ body {
 
   top: -19px;
   left: 60px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .form-search {
@@ -797,9 +778,6 @@ body {
   height: 60px;
   
   margin-top: 30px;
-  
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .interface-header {
@@ -809,9 +787,6 @@ body {
   list-style: none;
 
   margin-top: 30px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .header-product-contacts {
@@ -821,9 +796,6 @@ body {
   list-style: none;
 
   margin-top: -37px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 /*Слайдер 1*/
@@ -838,18 +810,12 @@ body {
 
   width: 1020px;
   min-height: 482px;
-
-  background-color: red;
-  opacity: 0.5;
 }
 
 .selfie {
   width: 384px;
   min-height: 450px;
   margin: 0;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .features {
@@ -857,9 +823,6 @@ body {
   flex-direction: column;
   width: 520px;
   min-height: 450px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .features span {
@@ -868,9 +831,6 @@ body {
 
   width: 180px;
   height: 130px;
-
-  background-color: black;
-  opacity: 0.5;
 }
 
 /*Навигация маин*/
@@ -883,20 +843,12 @@ body {
 
   margin: auto;
   margin-top: 95px;
-
-  background-color: yellow;
-  opacity: 0.5;
-  
 }
 /*Слайдер 2*/
 .slider-services-container { 
   margin-top: 182px;
   
   min-height: 170px;
-
-  background-color: green;
-  opacity: 0.5;
-
 }
 .slider-services-container ul {
   list-style: none;
@@ -909,20 +861,13 @@ body {
   height: 288px;
   margin: auto;
   padding: 0;
-
-  background-color: red;
-  opacity: 0.5;
 }
 
 .slider-services-interface { 
   width: 238px;
   min-height:  150px;
   margin-top: 25px;
-  margin-bottom: 68px;
-
-
-  background-color: yellow;
-  opacity: 0.5; 
+  margin-bottom: 68px; 
 }
 
 .delivery-button {
@@ -932,20 +877,13 @@ body {
 
   top: -20px;
   left: -2px;
-
-  background-color: black;
-  opacity: 0.5; 
-  z-index: 10;
 }
 .slider-services { 
   width: 390px;
   min-height:  171px;
   margin-left: 120px;
   margin-top: -20px;
-  margin-bottom: 180px;
-
-  background-color: yellow;
-  opacity: 0.5; 
+  margin-bottom: 180px; 
 }
 /*Список логотипов*/
 .list-logo {
@@ -958,9 +896,6 @@ body {
   margin: auto;
   margin-top: 80px;
   margin-bottom: 70px;
-
-  background-color: yellow;
-  opacity: 0.5; 
 }
 /*О нас, Контакты*/
 .intex-colums {
@@ -972,34 +907,22 @@ body {
   margin-bottom: 87px;
   width: 1165px;
   min-height: 570px;
-
-  background-color: green;
-  opacity: 0.5;
 }
 
 .about-us {
   width: 480px;
   min-height: 570px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .contacts-main {
   width: 565px;
   min-height: 570px;
-  
-  background-color: yellow;
-  opacity: 0.5;
 }
 /*Футер*/
 .footer {
   padding: 37px 0;
   margin: 0;
   min-height: 250px;
-
-  background-color: green;
-  opacity: 0.5;
 }
 
 .footer-logo-interface {
@@ -1009,9 +932,6 @@ body {
 
   margin: auto;
   margin-top: 15px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .contacts-services {
@@ -1021,9 +941,6 @@ body {
 
   margin: auto;
   margin-top: 5px;
- 
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .social-media-logo {
@@ -1033,7 +950,4 @@ body {
 
   margin: auto;
   margin-top: 35px;
-  
-  background-color: yellow;
-  opacity: 0.5;
 }
