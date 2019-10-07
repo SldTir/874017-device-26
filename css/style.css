@@ -890,13 +890,9 @@ body {
 }
 /*Слайдер 2*/
 .slider-services-container { 
-  display: flex;
-
-  margin: auto;
-  margin-top: 80px;
+  margin-top: 182px;
   
-  width: 1440px;
-  min-height: 391px;
+  min-height: 170px;
 
   background-color: green;
   opacity: 0.5;
@@ -906,25 +902,47 @@ body {
   list-style: none;
 }
 
+.slider-services-wrapper {
+  position: relative;
+  display: flex;
+  width: 1160px;
+  height: 288px;
+  margin: auto;
+  padding: 0;
+
+  background-color: red;
+  opacity: 0.5;
+}
+
 .slider-services-interface { 
   width: 238px;
-  min-height:  320px;
-  
-  margin-left: 140px;
-  margin-top: 4px;
-
+  min-height:  150px;
+  margin-top: 25px;
+  margin-bottom: 68px;
 
 
   background-color: yellow;
   opacity: 0.5; 
 }
 
-.slider-services {  
-  width: 460px;
-  min-height:  189px;
-  
-  margin-top: 5px;
-  margin-left: 100px;
+.delivery-button {
+  position: absolute;
+  width: 280px;
+  min-height: 40px;
+
+  top: -20px;
+  left: -2px;
+
+  background-color: black;
+  opacity: 0.5; 
+  z-index: 10;
+}
+.slider-services { 
+  width: 390px;
+  min-height:  171px;
+  margin-left: 120px;
+  margin-top: -20px;
+  margin-bottom: 180px;
 
   background-color: yellow;
   opacity: 0.5; 
