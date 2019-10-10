@@ -12,10 +12,11 @@
     <header class="main-header">      
       <nav class="main-navigation">
 
-        <a href="#">
+        <a class="main-header-logo" href="#">
           <img class="logo-device" src="img/background-black-logo.svg" alt="Логотип DEVICE">
         </a>
         
+        <div class="header-interface-container">
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="lable-search visually-hidden" for="search">Поиск по сайту</label>
           <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -42,7 +43,9 @@
             </a>
           </li>
           </ul>
-        
+        </div>
+
+        <div class="header-navigation-container">
         <ul class="header-product-contacts">
           <li><a href="catalog.html">Каталог товаров
             <!--Декоративный элемент +--></a>
@@ -59,7 +62,7 @@
             <li><a href="#">Контакты</a></li>
           </li>
         </ul>
-
+        </div>
       </nav>
     </header>
     <main class="page-main">
@@ -167,9 +170,14 @@
 
 
       <!--Этот блок будет слайдером-->
-
+      <div class="slider-services-container"> 
+          <ul class="slider-services-interface">
+              <li><a class="" href="#">Доставка</a></li>
+              <li><a class="" href="#">Гарантия</a></li>
+              <li><a class="" href="#">Кредит</a></li>
+            </ul>
         <ul class="slider-services">
-          <li><a class="" href="#">Доставка</a>
+
             <h3 class="delivery">Доставка</h3>
             <p class="">Мы с удовольствием доставим ваш товар прямо к вашему
               подъезду совершенно бесплатно! Ведь мы неплохо
@@ -178,7 +186,7 @@
                 <!--Декоративное изоброжение-->
           </li>
           <li class="">
-            <a class="" href="#">Гарантия</a>
+
             <h3 class="guarantee">Гарантия</h3>
             <p class="">Если из-за возгорания купленного у нас товара у вас сгорит
               дом- не переживайте, мы выдадим вам новый. 
@@ -187,7 +195,7 @@
               <!--Декоративное изоброжение-->
           </li>
           <li class="">
-            <a class="" href="#">Кредит</a>
+
             <h3 class="loan">Кредит</h3>
             <p class="">Залезть в долговую яму стало проще! Кредитные
               консультанты подберут для вас наиболее выгодные
@@ -196,6 +204,7 @@
             <!--Декоративное изоброжение-->
           </li>
         </ul>
+      </div>
 
 
       <section>
@@ -241,7 +250,7 @@
 
       <!-- Фоновая картинка полосочки -->
 
-      <section class="contacts-main">
+      <section class="-main">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
@@ -252,6 +261,7 @@
       </div>
     </main>
     <footer class="footer">   
+      <div class="footer-logo-interface">
       <a>
         <img src="img/background-yellow-logo.svg" alt="Логотип DEVICE">
       </a>
@@ -276,9 +286,10 @@
           </a>
         </li>
       </ul>
+      </div>
 
-
-      <p class="font-2">г. Москва, ул. Строителей, 15</p>
+      <div class="contacts-services">
+      <p class="">г. Москва, ул. Строителей, 15</p>
 
       <ul class="contacts-footer">
         <li><a href="#">Доставка</a></li>
@@ -286,9 +297,10 @@
         <li><a href="#">Контакты</a></li>
       </ul>
 
-      <p>Тел: +7 (495)495-95-95</p>
- 
+      <a class="tel" href="tel:+74954959595">Тел: +7 (495)495-95-95</a>
+      </div>
 
+      <div class="social-media-logo">
       <!-- Фоновая картика полосочки -->
       <ul class="social-media">
         <li><a href="https://www.facebook.com"><!-- Фоновая картика Фейсбук --></a></li>
@@ -299,7 +311,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/background-yellow-logo-html.svg" alt="Логотип HTML Academy">
       </a>
- 
+    </div>
     </footer>
 
     <section>  

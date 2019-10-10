@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;    
   
-  font-family: "Open Sans", Gilroy, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #000000;
   font-size: 15px;
   line-height: 30px;
@@ -389,6 +389,9 @@ a {
 }
 
 /*Страница каталога*/
+.exit {
+  opacity: 0.3;
+}
 
 .page-title {
   font-family: Gilroy, Arial, sans-serif;
@@ -404,7 +407,7 @@ a {
 
 .breadcrambs a {
   color: #666666;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   opacity: 0.3;
 }
@@ -565,6 +568,18 @@ fieldset legend {
   line-height: 40px; 
 }
 
+.button-to-show {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: none;
+  
+  background-color: linear-gradient(to bottom,white 5px,#f0c52e 5px, white 5px);
+}
+
 .filter-input:disabled + label {
   color: #a6a6a6;
 
@@ -575,8 +590,9 @@ fieldset legend {
   background-color: #ebebeb;
 }
 
-.sort h2 {
+.sort span {
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -613,7 +629,8 @@ fieldset legend {
 }
 
 .catalog-item span {
-  /*Здесь должен быть третий шрифт*/
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: lighter;
   font-size: 16px;
   line-height: 24px;
   text-transform: none;
@@ -623,6 +640,7 @@ fieldset legend {
 
 .pagination-list {
   background-color: #ebebeb;
+  list-style: none;
 }
 
 .pagination-list a {
@@ -632,13 +650,6 @@ fieldset legend {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
-}
-
-.pagination-list {
-  list-style: none;
-}
-
-.pagination-list a {
   opacity: 0.3;
 }
 
@@ -656,9 +667,7 @@ fieldset legend {
 }
 
 .pagination-list li:first-child:hover,
-.pagination-list li:first-child:focus,
-.pagination-list li:last-child:hover,
-.pagination-list li:last-child:focus {
+.pagination-list li:last-child:hover {
   background-color: #d9d9d9;
 }
 
@@ -667,6 +676,9 @@ fieldset legend {
   opacity: 0.3;
 }
 
+.pagination-list a.selected {
+  opacity: 1;
+}
 
 /*Подвал*/
 .footer {
@@ -680,7 +692,7 @@ fieldset legend {
 }
 
 .interface-footer a {
-  color: #e6e6e6; 
+  color: white; 
   opacity: 0.7; 
 }
 
@@ -703,6 +715,10 @@ fieldset legend {
   list-style: none;
 }
 
+.tel {
+  color: white;
+}
+
 .contacts-footer a {
   color: #ffffff;
 }
@@ -723,6 +739,19 @@ fieldset legend {
 /*Модальные окна и всплывающие элементы будут стилизоваться после 7го раздела*/
 
 /*-------Строчные стили------*/
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 2795px;
+}
+
+body {
+/*Временно для сетки */
+  hbackground-image: url('../img/device-index.jpg');
+  background-repeat: no-repeat;
+
+}
 
 .header-interface-container {
   display: flex;
@@ -747,6 +776,7 @@ fieldset legend {
 
 .main-header {
   background-color: green;
+  opacity: 0.5;
 
   margin: auto;
   margin-bottom: 60px;
@@ -762,6 +792,8 @@ fieldset legend {
   padding: 0 40px;
   
   min-height: 300px;
+
+  background-color: transparent;
 }
 
 .main-header-logo {
@@ -771,6 +803,9 @@ fieldset legend {
 
   top: -19px;
   left: 60px;
+
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .form-search {
@@ -778,6 +813,9 @@ fieldset legend {
   height: 60px;
   
   margin-top: 30px;
+  
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .interface-header {
@@ -787,6 +825,9 @@ fieldset legend {
   list-style: none;
 
   margin-top: 30px;
+
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .header-product-contacts {
@@ -796,6 +837,9 @@ fieldset legend {
   list-style: none;
 
   margin-top: -37px;
+
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 /*Слайдер 1*/
@@ -810,12 +854,18 @@ fieldset legend {
 
   width: 1020px;
   min-height: 482px;
+
+  background-color: red;
+  opacity: 0.5;
 }
 
 .selfie {
   width: 384px;
   min-height: 450px;
   margin: 0;
+
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .features {
@@ -823,6 +873,9 @@ fieldset legend {
   flex-direction: column;
   width: 520px;
   min-height: 450px;
+
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .features span {
@@ -831,6 +884,9 @@ fieldset legend {
 
   width: 180px;
   height: 130px;
+
+  background-color: black;
+  opacity: 0.5;
 }
 
 /*Навигация маин*/
@@ -843,47 +899,53 @@ fieldset legend {
 
   margin: auto;
   margin-top: 95px;
+
+  background-color: yellow;
+  opacity: 0.5;
+  
 }
 /*Слайдер 2*/
 .slider-services-container { 
-  margin-top: 182px;
+  display: flex;
+
+  margin: auto;
+  margin-top: 80px;
   
-  min-height: 170px;
+  width: 1440px;
+  min-height: 391px;
+ 
+  background-size: 300;
+
+  background-color: green;
+  opacity: 0.5;
+
 }
 .slider-services-container ul {
   list-style: none;
 }
 
-.slider-services-wrapper {
-  position: relative;
-  display: flex;
-  width: 1160px;
-  height: 288px;
-  margin: auto;
-  padding: 0;
-}
-
 .slider-services-interface { 
   width: 238px;
-  min-height:  150px;
-  margin-top: 25px;
-  margin-bottom: 68px; 
+  min-height:  300px;
+  
+  margin-left: 140px;
+  margin-top: 4px;
+
+
+
+  background-color: yellow;
+  opacity: 0.5; 
 }
 
-.delivery-button {
-  position: absolute;
-  width: 280px;
-  min-height: 40px;
+.slider-services {  
+  width: 460px;
+  min-height:  189px;
+  
+  margin-top: 5px;
+  margin-left: 100px;
 
-  top: -20px;
-  left: -2px;
-}
-.slider-services { 
-  width: 390px;
-  min-height:  171px;
-  margin-left: 120px;
-  margin-top: -20px;
-  margin-bottom: 180px; 
+  background-color: yellow;
+  opacity: 0.5; 
 }
 /*Список логотипов*/
 .list-logo {
@@ -896,6 +958,9 @@ fieldset legend {
   margin: auto;
   margin-top: 80px;
   margin-bottom: 70px;
+
+  background-color: yellow;
+  opacity: 0.5; 
 }
 /*О нас, Контакты*/
 .intex-colums {
@@ -907,22 +972,35 @@ fieldset legend {
   margin-bottom: 87px;
   width: 1165px;
   min-height: 570px;
+
+  background-color: green;
+  opacity: 0.5;
 }
 
 .about-us {
   width: 480px;
   min-height: 570px;
+
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .contacts-main {
   width: 565px;
   min-height: 570px;
+  right: 140px;
+  
+  background-color: yellow;
+  opacity: 0.5;
 }
 /*Футер*/
 .footer {
   padding: 37px 0;
   margin: 0;
   min-height: 250px;
+
+  background-color: green;
+  opacity: 0.5;
 }
 
 .footer-logo-interface {
@@ -932,6 +1010,9 @@ fieldset legend {
 
   margin: auto;
   margin-top: 15px;
+
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .contacts-services {
@@ -941,6 +1022,9 @@ fieldset legend {
 
   margin: auto;
   margin-top: 5px;
+ 
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 .social-media-logo {
@@ -950,4 +1034,7 @@ fieldset legend {
 
   margin: auto;
   margin-top: 35px;
+  
+  background-color: yellow;
+  opacity: 0.5;
 }
