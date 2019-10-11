@@ -739,20 +739,6 @@ fieldset legend {
 /*Модальные окна и всплывающие элементы будут стилизоваться после 7го раздела*/
 
 /*-------Строчные стили------*/
-
-html,
-body {
-  min-width: 1440px;
-  min-height: 2795px;
-}
-
-body {
-/*Временно для сетки */
-  background-image: url('../img/device-index.jpg');
-  background-repeat: no-repeat;
-
-}
-
 .header-interface-container {
   display: flex;
   justify-content: space-between;
@@ -775,9 +761,6 @@ body {
 }
 
 .main-header {
-  background-color: green;
-  opacity: 0.5;
-
   margin: auto;
   margin-bottom: 60px;
 
@@ -792,8 +775,6 @@ body {
   padding: 0 40px;
   
   min-height: 300px;
-
-  background-color: transparent;
 }
 
 .main-header-logo {
@@ -803,9 +784,6 @@ body {
 
   top: -19px;
   left: 60px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .form-search {
@@ -813,9 +791,6 @@ body {
   height: 60px;
   
   margin-top: 30px;
-  
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .interface-header {
@@ -825,9 +800,6 @@ body {
   list-style: none;
 
   margin-top: 30px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .header-product-contacts {
@@ -837,9 +809,6 @@ body {
   list-style: none;
 
   margin-top: -37px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 /*Слайдер 1*/
@@ -847,35 +816,28 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   margin: auto;
   margin-top: -180px;
   padding: 10px;
 
   width: 1020px;
-  min-height: 482px;
-
-  background-color: red;
-  opacity: 0.5;
+  min-height: 482px;;
 }
 
 .selfie {
   width: 384px;
   min-height: 450px;
   margin: 0;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .features {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
   width: 520px;
   min-height: 450px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .features span {
@@ -884,9 +846,6 @@ body {
 
   width: 180px;
   height: 130px;
-
-  background-color: black;
-  opacity: 0.5;
 }
 
 /*Навигация маин*/
@@ -899,11 +858,8 @@ body {
 
   margin: auto;
   margin-top: 95px;
-
-  background-color: yellow;
-  opacity: 0.5;
-  
 }
+
 /*Слайдер 2*/
 .slider-services-container { 
   display: flex;
@@ -916,11 +872,8 @@ body {
   min-height: 391px;
  
   background-size: 300;
-
-  background-color: green;
-  opacity: 0.5;
-
 }
+
 .slider-services-container ul {
   list-style: none;
 }
@@ -931,11 +884,6 @@ body {
   
   margin-left: 140px;
   margin-top: 4px;
-
-
-
-  background-color: yellow;
-  opacity: 0.5; 
 }
 
 .slider-services {  
@@ -943,11 +891,9 @@ body {
   min-height:  200px;
   
   margin-top: 80px;
-  margin-left: 100px;
-
-  background-color: yellow;
-  opacity: 0.5; 
+  margin-left: 100px; 
 }
+
 /*Список логотипов*/
 .list-logo {
   display: flex;
@@ -959,10 +905,8 @@ body {
   margin: auto;
   margin-top: 80px;
   margin-bottom: 70px;
-
-  background-color: yellow;
-  opacity: 0.5; 
 }
+
 /*О нас, Контакты*/
 .intex-colums {
   display: flex;
@@ -972,93 +916,64 @@ body {
   padding: 0;
   margin: auto;
   margin-bottom: 87px;
+
   width: 1165px;
   min-height: 570px;
-
-  background-color: green;
-  opacity: 0.5;
 }
 
 .about-us {
   width: 480px;
   min-height: 570px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .contacts-main {
   width: 565px;
   min-height: 570px;
+
   right: 140px;
-  
-  background-color: yellow;
-  opacity: 0.5;
 }
 /*Футер*/
 .footer {
   padding: 37px 0;
   margin: auto;
+
   width: 1440px;
   min-height: 250px;
-
-  background-color: green;
-  opacity: 0.5;
 }
 
 .footer-logo-interface {
   display: flex;
+
   width: 1160px;
   min-height: 60px;
 
   margin: auto;
   margin-top: 15px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .contacts-services {
   display: flex;
+
   width: 1160px;
   min-height: 60px;
 
   margin: auto;
   margin-top: 5px;
- 
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .social-media-logo {
   display: flex;
+
   width: 1160px;
   min-height: 60px;
 
   margin: auto;
   margin-top: 35px;
-  
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 /*----Сеточные стили Каталога----*/
-html,
-body {
-  min-width: 1440px;
-  min-height: 2015px;
-}
-
-.inner-page {
-  background-image: url("../img/device-catalog.jpg");
-  background-repeat: no-repeat;
-}
-
 /*----Cattalog Header----*/
 .inner-page .main-header {
-  background-color: green;
-  opacity: 0.5;
-
   margin: auto;
   margin-bottom: 60px;
 
@@ -1073,8 +988,6 @@ body {
   padding: 0 40px;
   
   min-height: 186px;
-
-  background-color: transparent;
 }
 
 /*---- Cattalog Main----*/
@@ -1083,72 +996,51 @@ body {
   margin-bottom: 15px;
   margin-top: -20px;
   padding: 0;
+
   width: 1040px;
   min-height: 50px;
-
-  background-color: green;
-  opacity: 0.5;
 }
 
 .breadcrambs {  
   margin: auto;
   padding: 0;
+
   width: 1040px;
   min-height: 30px;
-
-  background-color: green;
-  opacity: 0.5;
 }
 
 .inner-page .container {
   display: flex;
-  
 
   padding: 0;
   margin: auto;
   margin-top: 44px;
+
   width: 1440px;
   min-height: 1000px;
-
-  background-color: green;
-  opacity: 0.5;
 }
 
 .filters-wrapper {
   width: 469px;
   min-height: 1288px;
   margin-top: 0px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .filters {
   width: 205px;
   min-height: 760px;
   margin-left: 195px;
-
-  background-color:red;
-  opacity: 0.5;
 }
 
 .catalog-container {
 
   width: 973px;
   min-height: 1000px;
-
-  background-color: red;
-  opacity: 0.5;
-
 }
 
 .sort {
   width: 973px;
   min-height: 70px;
-
-  background-color: yellow;
-  opacity: 0.5;
-
 }
 
 
@@ -1157,14 +1049,12 @@ body {
   min-height: 963px;
   margin-top: 70px;
   margin-left: 74px;
-
-  background-color: yellow;
-  opacity: 0.5;
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+
   padding: 0;
   margin: 0;
 
@@ -1175,9 +1065,6 @@ body {
   min-height: 457px;
   margin-bottom: 47px;
   margin-right: 40px;
-
-  background-color: black;
-  opacity: 0.5;
 }
 
 .catalog-item:nth-child(2n) {
