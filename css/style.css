@@ -749,7 +749,7 @@ body {
 body {
 /*Временно для сетки */
   hbackground-image: url('../img/device-index.jpg');
-  background-repeat: no-repeat;
+  лbackground-repeat: no-repeat;
 
 }
 
@@ -996,7 +996,8 @@ body {
 /*Футер*/
 .footer {
   padding: 37px 0;
-  margin: 0;
+  margin: auto;
+  width: 1440px;
   min-height: 250px;
 
   background-color: green;
@@ -1038,3 +1039,157 @@ body {
   background-color: yellow;
   opacity: 0.5;
 }
+
+/*----Сеточные стили Каталога----*/
+html,
+body {
+  min-width: 1440px;
+  min-height: 2015px;
+}
+
+.inner-page {
+  background-image: url("../img/device-catalog.jpg");
+  background-repeat: no-repeat;
+}
+
+/*----Cattalog Header----*/
+.inner-page .main-header {
+  background-color: green;
+  opacity: 0.5;
+
+  margin: auto;
+  margin-bottom: 60px;
+
+  width: 1160px;
+  min-height: 186px;
+}
+
+.inner-page .main-navigation {
+  position: relative;
+  
+  margin-top: 40px;
+  padding: 0 40px;
+  
+  min-height: 186px;
+
+  background-color: transparent;
+}
+
+/*---- Cattalog Main----*/
+.page-title {  
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: -20px;
+  padding: 0;
+  width: 1040px;
+  min-height: 50px;
+
+  background-color: green;
+  opacity: 0.5;
+}
+
+.breadcrambs {  
+  margin: auto;
+  padding: 0;
+  width: 1040px;
+  min-height: 30px;
+
+  background-color: green;
+  opacity: 0.5;
+}
+
+.inner-page .container {
+  display: flex;
+  
+
+  padding: 0;
+  margin: auto;
+  margin-top: 44px;
+  width: 1440px;
+  min-height: 1000px;
+
+  background-color: green;
+  opacity: 0.5;
+}
+
+.filters-wrapper {
+  width: 469px;
+  min-height: 1288px;
+  margin-top: 0px;
+
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.filters {
+  width: 205px;
+  min-height: 760px;
+  margin-left: 195px;
+
+  background-color:red;
+  opacity: 0.5;
+}
+
+.catalog-container {
+
+  width: 973px;
+  min-height: 1000px;
+
+  background-color: red;
+  opacity: 0.5;
+
+}
+
+.sort {
+  width: 973px;
+  min-height: 70px;
+
+  background-color: yellow;
+  opacity: 0.5;
+
+}
+
+
+.catalog {
+  width: 760px;
+  min-height: 963px;
+  margin-top: 70px;
+  margin-left: 74px;
+
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+.catalog-item {
+  width: 360px;
+  min-height: 457px;
+  margin-bottom: 47px;
+  margin-right: 40px;
+
+  background-color: black;
+  opacity: 0.5;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  margin-top: -8px;
+
+  list-style: 0;
+
+  min-height: 70px;
+}
+
+
