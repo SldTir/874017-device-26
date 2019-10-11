@@ -748,8 +748,8 @@ body {
 
 body {
 /*Временно для сетки */
-  hbackground-image: url('../img/device-index.jpg');
-  лbackground-repeat: no-repeat;
+  background-image: url('../img/device-index.jpg');
+  background-repeat: no-repeat;
 
 }
 
@@ -907,6 +907,7 @@ body {
 /*Слайдер 2*/
 .slider-services-container { 
   display: flex;
+  align-items: flex-start;
 
   margin: auto;
   margin-top: 80px;
@@ -926,7 +927,7 @@ body {
 
 .slider-services-interface { 
   width: 238px;
-  min-height:  300px;
+  min-height:  318px;
   
   margin-left: 140px;
   margin-top: 4px;
@@ -938,10 +939,10 @@ body {
 }
 
 .slider-services {  
-  width: 460px;
-  min-height:  189px;
+  width: 675px;
+  min-height:  200px;
   
-  margin-top: 5px;
+  margin-top: 80px;
   margin-left: 100px;
 
   background-color: yellow;
@@ -966,6 +967,7 @@ body {
 .intex-colums {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   padding: 0;
   margin: auto;
