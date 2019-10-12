@@ -17,12 +17,13 @@
         </a>
         
         <div class="header-interface-container">
+
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="lable-search visually-hidden" for="search">Поиск по сайту</label>
-          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="button-search visually-hidden" type="submit">Найти</button>
+          <input class="search" id="search" type="search" name="search" value="Поиск по сайту">
+          <button class="button-search hidden-button" type="submit">Найти</button>
         </form>   
-  
+
           <ul class="interface-header">
           <li>
             <a href="#">
@@ -43,6 +44,7 @@
             </a>
           </li>
           </ul>
+
         </div>
 
         <div class="header-navigation-container">
@@ -68,18 +70,28 @@
     <main class="page-main">
       <h1 class="visually-hidden">Device</h1>
 
-      <section class="container">
+      <section class="promo-slider">
+        <div class="promo-slider-container">
         <h2 class="visually-hidden">Промо слайдер</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle" checked>
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
         <ol class="promo-slider-list">
-          <li class="slider-stick-selfie">
-            <img src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
-            <h3 class="">Делай селфи, как Бен Стиллер!</h3>  
-            <span>01</span>      
-            <p class="">Самая длинная палка селфи доступна в нашем магазине
+          <li class="slider-item">
+            <img class="selfie" src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
+            <div class="features">
+            <h3 class="features-item">Делай селфи,<br> как Бен Стиллер!</h3>  
+            <span class="features-item">01</span>      
+            <p class="features-item">Самая длинная палка селфи доступна в нашем магазине
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.
             </p>
         <a class="button-info" href="#">Подробнее</a>
-        <table class="">
+        <table class="promo-slider-table">
           <tr class="">
             <td>8,5м</td>
             <td>5кг</td>
@@ -91,10 +103,12 @@
             <td>Материал</td>
            </tr>
         </table>
+       </div>
         </li>
-        <li class="slide-fitness-bracelet">
-          <img src="img/slider-fitness-bracelet.png" alt="Изоброжение Фитнесс браслет">
-          <h3>Худеем правильно!</h3>
+        <li class="slider-item">
+          <img class="selfie" src="img/slider-fitness-bracelet.png" alt="Изоброжение Фитнесс браслет">
+          <div class="features">
+          <h3>Худеем правильно!</h3>         
           <span>02</span>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
@@ -108,9 +122,11 @@
             <td>Без подзарядки</td>     
            </tr>
         </table>
+        </div>
         </li>
-        <li>
-            <img src="img/slider-quadcopter.png" alt="Изоброжение Квадрокоптера">
+        <li class="slider-item">
+            <img class="selfie" src="img/slider-quadcopter.png" alt="Изоброжение Квадрокоптера">
+            <div class="features">
             <h3>Порхает как бабочка,
               жалит как пчела!
             </h3>
@@ -129,8 +145,10 @@
               <td>Радиус поражения</td>         
             </tr>
           </table>
+          </div>
         </li>
       </ol>
+      </div>
       </section>
       
       <!-- Фоновая картинка полосочки, таблица и переключатель -->
