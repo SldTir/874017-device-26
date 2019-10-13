@@ -20,7 +20,7 @@
 
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="lable-search visually-hidden" for="search">Поиск по сайту</label>
-          <input class="search" id="search" type="search" name="search" value="Поиск по сайту">
+          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
           <button class="button-search hidden-button" type="submit">Найти</button>
         </form>   
 
@@ -47,24 +47,30 @@
 
         </div>
 
-        <div class="header-navigation-container">
+
         <ul class="header-product-contacts">
           <li><a href="catalog.html">Каталог товаров
             <!--Декоративный элемент +--></a>
-            <ul class="dropdonw-product-catalog">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камера</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+            <ul class="sub-menu-catalog">
+              <li>
+                <a href="#">Виртуальная реальность</a>
+                <a href="catalog.html">Моноподы для селфи</a>
+                <a href="#">Экшн-камера</a>
+              </li>             
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
             </ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
           </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>        
         </ul>
-        </div>
+
       </nav>
     </header>
     <main class="page-main">
@@ -74,8 +80,8 @@
         <div class="promo-slider-container">
         <h2 class="visually-hidden">Промо слайдер</h2>
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
           <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
@@ -114,7 +120,7 @@
             не пропускать занятия и соблюдать диету.
           </p>
           <a class="button-info" href="#">Подробнее</a>
-        <table>
+        <table class="promo-slider-table">
           <tr>
             <td>48 Часов</td>
            </tr>
@@ -135,7 +141,7 @@
               мощным лазером, замаскированным под стандартную камеру.
             </p>
             <a class="button-info" href="#">Подробнее</a>
-          <table>
+          <table class="promo-slider-table">
             <tr>
               <td>800 м</td>
               <td>50 м</td>
