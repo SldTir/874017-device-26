@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic" 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" 
      rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -13,7 +13,7 @@
       <nav class="main-navigation">
 
         <a class="main-header-logo" href="#">
-          <img class="logo-device" src="img/background-black-logo.svg" alt="Логотип DEVICE">
+          <img class="logo-device" src="img/background-black-logo.svg" width="163px" height="35px" alt="Логотип DEVICE">
         </a>
         
         <div class="header-interface-container">
@@ -77,30 +77,30 @@
       <h1 class="visually-hidden">Device</h1>
 
       <section class="promo-slider">
+        <div class="decorative-strip"></div>
         <div class="promo-slider-container">
         <h2 class="visually-hidden">Промо слайдер</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle">
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle" checked>
         <div class="slider-controls">
           <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
           <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
         <ol class="promo-slider-list">
-          <li class="slider-item">
-            <img class="selfie" src="img/slider-stick-selfie.png" alt="Изоброжение самая длинная палка селфи!">
+          <li class="slider-item-selfie">
+            <img class="selfie" src="img/slider-stick-selfie.png" width="384" height="486" alt="Изоброжение самая длинная палка селфи!">
             <div class="features">
             <h3 class="features-item">Делай селфи,<br> как Бен Стиллер!</h3>  
             <span class="features-item">01</span>      
-            <p class="features-item">Самая длинная палка селфи доступна в нашем магазине
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм.
-            </p>
+            <p class="features-item">Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a class="button-info" href="#">Подробнее</a>
         <table class="promo-slider-table">
           <tr class="">
-            <td>8,5м</td>
-            <td>5кг</td>
+            <td>8,5 м</td>
+            <td>5 кг</td>
             <td>Карбон</td>
            </tr>
           <tr class="">
@@ -109,20 +109,19 @@
             <td>Материал</td>
            </tr>
         </table>
-       </div>
         </li>
-        <li class="slider-item">
-          <img class="selfie" src="img/slider-fitness-bracelet.png" alt="Изоброжение Фитнесс браслет">
+        <li class="slider-item-сlock">
+          <img class="сlock" src="img/slider-fitness-bracelet.png" width="345" height="485" alt="Изоброжение Фитнесс браслет">
           <div class="features">
-          <h3>Худеем правильно!</h3>         
+          <h3>Худеем<br> правильно!</h3>         
           <span>02</span>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-            не пропускать занятия и соблюдать диету.
+            <br>не пропускать занятия и соблюдать диету.
           </p>
           <a class="button-info" href="#">Подробнее</a>
         <table class="promo-slider-table">
           <tr>
-            <td>48 Часов</td>
+            <td>48 часов</td>
            </tr>
           <tr>
             <td>Без подзарядки</td>     
@@ -130,8 +129,8 @@
         </table>
         </div>
         </li>
-        <li class="slider-item">
-            <img class="selfie" src="img/slider-quadcopter.png" alt="Изоброжение Квадрокоптера">
+        <li class="slider-item-quadrocopter">
+            <img class="quadrocopter" src="img/slider-quadcopter.png" width="526" alt="Изоброжение Квадрокоптера">
             <div class="features">
             <h3>Порхает как бабочка,
               жалит как пчела!
@@ -191,7 +190,7 @@
               </a>
               </li>
         </ul>
-
+        
 
       <!--Этот блок будет слайдером-->
       <div class="slider-services-container"> 
