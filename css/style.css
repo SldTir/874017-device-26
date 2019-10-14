@@ -368,7 +368,7 @@ input[type="radio"].visually-hidden {
   min-height: 136px;
   left: -60px;
 
-  text-transform: lowercase;
+  text-transform: capitalize;
   letter-spacing: normal;
 
   list-style: none;
@@ -404,7 +404,6 @@ input[type="radio"].visually-hidden {
 /*---- Main ----*/
 /*----Промо слайдер----*/
 /*----Сеточные стили Промо Слайдера----*/
-
 .decorative-strip {
   position: absolute;
   top: 41px;
@@ -626,8 +625,10 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider-list .button-info:active {
-  opacity: 0.3;
+  color: rgba(0,0,0,.6);
 }
+  
+  
 
 .promo-slider-table {
   margin-top: 45px;
@@ -668,20 +669,137 @@ input[type="radio"].visually-hidden {
 }
 
 /*Список разделов*/
+.sections-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1120px;
+  min-height: 242px;
+
+  margin: auto;
+  margin-top: 86px;
+}
+
 .sections-list li {
+  position: relative;
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 700;
   text-transform: none;
   font-size: 18px;
   line-height: 24px;
-
-  background-color: #f7e296;
+  width: 160px;
+  margin-left: -40px;
+  letter-spacing: 0.3px;
 
   list-style: none;
 }
 
-.sections-list li:hover {
+.sections-list li div {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  
+  margin-bottom: 34px;
+
+  background-color: #f7e296;
+}
+
+.virtual-reality::after {
+  content: "";
+  
+  position: absolute;
+  width: 97px;
+  height: 55px;
+
+  top: 52px;
+  left: 31px;
+
+  background-image: url("../img/index-virtual-reality.svg");
+  background-repeat: no-repeat;
+}
+
+.monopods-for-selfie::after {
+  content: "";
+  
+  position: absolute;
+  width: 86px;
+  height: 117px;
+
+  top: 41px;
+  left: 38px;
+
+  background-image: url("../img/index-monopods-for-selfi.svg");
+  background-repeat: no-repeat;
+}
+
+.action-cameras::after {
+  content: "";
+  
+  position: absolute;
+  width: 71px;
+  height: 87px;
+
+  top: 38px;
+  left: 49px;
+
+  background-image: url("../img/index-action-camera.svg");
+  background-repeat: no-repeat;
+}
+
+.fitness-bracelets::after {
+  content: "";
+  
+  position: absolute;
+  width: 107px;
+  height: 65px;
+
+  top: 50px;
+  left: 28px;
+
+  background-image: url("../img/index-fitness-bracelet.svg");
+  background-repeat: no-repeat;
+}
+
+.fitness-bracelets {
+  white-space: nowrap;
+}
+
+.smart-watch::after {
+  content: "";
+  
+  position: absolute;
+  width: 56px;
+  height: 98px;
+
+  top: 32px;
+  left: 55px;
+
+  background-image: url("../img/index-smartwatch.svg");
+  background-repeat: no-repeat;
+}
+
+.quadcopters::after {
+  content: "";
+  
+  position: absolute;
+  width: 132px;
+  height: 69px;
+
+  top: 49px;
+  left: 13px;
+
+  background-image: url("../img/index-quadcopter.svg");
+  background-repeat: no-repeat;
+}
+
+.sections-list div:hover,
+.sections-list a:hover div{
   background-color: #f0c52e;
+}
+
+.virtual-reality:active::after,
+.sections-list a:active {
+  opacity: 0.3;
 }
 
 /*Слайдер услуг*/
@@ -1199,16 +1317,7 @@ fieldset legend {
 
 
 /*Навигация маин*/
-.sections-list {
-  display: flex;
-  justify-content: space-between;
 
-  width: 1130px;
-  min-height: 242px;
-
-  margin: auto;
-  margin-top: 95px;
-}
 
 /*Слайдер 2*/
 .slider-services-container { 
