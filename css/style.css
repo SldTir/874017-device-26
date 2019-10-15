@@ -803,32 +803,111 @@ input[type="radio"].visually-hidden {
 }
 
 /*Слайдер услуг*/
-.slider-services {
-  background-color: #e5e5e5;
+/* Сеточные стили Слайдер2 */
+.slider-services-controls{
+  display: flex;
+  flex-direction: column;
+  width: 278px;
+  min-height: 319px;
+  margin-left: -1px;
 
-  list-style: none;
+  border-right: 7px solid black;
 }
 
-.slider-services a {
+.slider-services { 
+  position: relative;
+  
+  width: 1440px;
+  min-height: 388px;
+
+  margin: auto;
+
+  list-style: none;
+
+  box-sizing: border-box;
+
+  background: linear-gradient(white 100px, #e5e5e5 100px);
+}
+
+.slider-services-container { 
+  display: flex;
+  align-items: flex-start;
+
+  margin: auto;
+  margin-top: 80px;
+
+  width: 1160px;
+  min-height: 388px;
+}
+
+.slider-services li {
+  width: 720px;
+  min-height: 260px;
+
+  margin-top: -5px;
+  margin-left: 78px;
+}
+
+
+.slider-services li {
+  display: none;
+}
+
+/* Оформление Слайдер 2 */
+
+
+.slider-services-controls label {
+  display: block;
+
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 24px;  
-  letter-spacing: 4px;
+  letter-spacing: 3.8px;
+  text-align: center;
+  
+  width: 156px;
+  
+  margin-top: 80px;
+  margin-left: 1px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 4px;
 
-  background-color: #f0c52e;
+  background: linear-gradient(white 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e5 60%);
 }
 
- Разобраться как изменять фоновое изображение кнопки
-.slider-services a:hover {
-
+.slider-services-controls label:nth-child(2),
+.slider-services-controls label:nth-child(3) {
+  margin-top: 22px;
+  background: linear-gradient(#e5e5e5 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e5 60%);
 }
 
-.slider-services a:active {
-  color: #f7e184;
 
-  background-color: black;
+
+.slider-services-controls label:hover {
+  color: black;
+
+  background: linear-gradient(white 0%, #f0c52e 0%, #f0c52e 100%, white 100%);
+}
+
+.slider-services-controls label:active {
+  color:  #f7e184;
+
+  padding-right: 120px;
+
+  background: linear-gradient(white -10%, black -10%, black 100%, white 0%);
+}
+
+#delivery-1:checked ~ .slider-services-controls label:nth-child(1),
+#guarantee-2:checked ~ .slider-services-controls label:nth-child(2),
+#loan-3:checked ~ .slider-services-controls label:nth-child(3) {
+  color:  #f7e184;
+
+  padding-right: 120px;
+
+  background: linear-gradient(white -10%, black -10%, black 100%, white 0%);
 }
 
 .slider-services h3 {
@@ -837,6 +916,9 @@ input[type="radio"].visually-hidden {
   text-transform: none;
   font-size: 47px;
   line-height: 48px;  
+  letter-spacing: 0.8px;
+
+  padding-top: 16px;
 }
 
 .slider-services p {
@@ -845,18 +927,47 @@ input[type="radio"].visually-hidden {
   text-transform: none;
   font-size: 15px;
   line-height: 30px;  
+  max-width: 450px;
+  letter-spacing: 0.29px;
+
+  margin-top: -16px;
+  margin-left: -2px;
 }
 
-.guarantee,
-.loan {
-  display: none;
+.slider-services-list .slider-item:nth-child(1) {
+
+  background-image: url("../img/picture-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 556px 28px;
 }
 
-.guarantee:active,
-.loan:active {
-  display: inline;
+.slider-services-list .slider-item:nth-child(2) {
+  background-image: url("../img/picture-pwarranty.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-position: 541px 4px;
 }
 
+.slider-services-list .slider-item:nth-child(3) {
+  background-image: url("../img/picture-credit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-position: 532px 4px;
+}
+
+#delivery-1:checked ~ .slider-services-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#guarantee-2:checked ~ .slider-services-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#loan-3:checked ~ .slider-services-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+/* Список логотипов */
 .list-logo {
   list-style: none;
 }
@@ -1320,38 +1431,7 @@ fieldset legend {
 
 
 /*Слайдер 2*/
-.slider-services-container { 
-  display: flex;
-  align-items: flex-start;
 
-  margin: auto;
-  margin-top: 80px;
-  
-  width: 1440px;
-  min-height: 391px;
- 
-  background-size: 300;
-}
-
-.slider-services-container ul {
-  list-style: none;
-}
-
-.slider-services-interface { 
-  width: 238px;
-  min-height:  318px;
-  
-  margin-left: 140px;
-  margin-top: 4px;
-}
-
-.slider-services {  
-  width: 675px;
-  min-height:  200px;
-  
-  margin-top: 80px;
-  margin-left: 100px; 
-}
 
 /*Список логотипов*/
 .list-logo {
