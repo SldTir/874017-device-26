@@ -817,7 +817,7 @@ input[type="radio"].visually-hidden {
 .slider-services { 
   position: relative;
   
-  width: 1440px;
+
   min-height: 388px;
 
   margin: auto;
@@ -866,6 +866,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;  
   letter-spacing: 3.8px;
   text-align: center;
+
+  cursor: pointer;
   
   width: 156px;
   
@@ -973,7 +975,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
 
   margin-top: 94px;
-  margin-bottom: 70px;
+  margin-bottom:58px;
 
 }
 
@@ -1059,37 +1061,46 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/logo-vive-hover.png");
 }
 
-
-
-
-
-
-
-
-
-
-/*Разобраться почему не вставляется картинка через background-color
-.logo-dji:hover,
-.logo-dji:focus {
-  background-color: url("img/logo-dji-bg.png");
-}
-
-
-.about-us h2 {
-  font-family: Gilroy, Arial, sans-serif;
-  font-size: 47px;
-  line-height: 48px;
-}
-
-/* Фотошоп не показывает размеры и отступы шрифта*/
-
 /*О нас*/
+/*Сеточные стили О нас, Контакты*/
+.intex-colums {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 0;
+  margin: auto;
+  margin-bottom: 87px;
+
+  width: 1170px;
+  min-height: 570px;
+}
+
+.about-us {
+  width: 480px;
+  min-height: 570px;
+
+  margin-left: 5px;
+  padding: 0;
+}
+
+.contacts-main {
+  width: 565px;
+  min-height: 570px;
+
+  padding-left: 10px;
+
+}
+
 .about-us h2 {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 700;
   text-transform: none;
   font-size: 47px;
   line-height: 48px;
+
+  margin-top: 45px;
+  margin-bottom: 43px;  
 }
 
 .about-us p {
@@ -1097,39 +1108,82 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
+
+  margin-top: 30px;
+
+  width: 475px; 
 }
 
 .about-us li{
+  position: relative;
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 30px;
+  letter-spacing: 0.6px;
 
+  margin-top: 70px;
+  margin-left: -3px;
+
+  list-style: none;
 }
 
+.about-us li::before{
+  position: absolute;
+  display: inline-block;
+  content: "";
+  
+  top: 12px;
+  left: -35px;
+  
+  border: 2px solid #e5e5e5;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.about-us li:nth-child(2),
+.about-us li:nth-child(3) {
+  margin-top: 10px;
+}
 .about-us a {
+  display: block;
+
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.8px;
+  text-align: center;
 
-  background-color: #f0c52e;
+  width: 260px;
+  padding: 12px 0; 
+
+  margin-top: 41px;
+  margin-left: 2px;
+
+  background: linear-gradient(white 41%, #f0c52e 41%, #f0c52e 59%, white 59%);
 }
 
+.about-us a:hover {
+  background: linear-gradient( white 0%, #f0c52e 0%, #f0c52e 100%, white 0%);
+}
+
+.about-us a:active {
+  color: rgba(0,0,0,.3);
+}
+
+.about-us div,
+.contacts-main div {
+  width: 80px;
+  border-top: 7px solid black;
+}
 /* Разобраться с background
 .section-1-a:hover {
   background-color: #f0c52e;
 }
 */
-
-.about-us a:active {
-  color: #f7e184;
-
-  background-color: black;
-}
-
 
 /*Контакты*/
 .contacts-main h2 {
@@ -1137,6 +1191,10 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.5px;
+
+  margin-top: 45px;
+  margin-left: -2px;
 }
 
 
@@ -1146,23 +1204,45 @@ input[type="radio"].visually-hidden {
   font-weight: 100;
   font-size: 15px;
   line-height: 30px;
+
+  margin-top: 43px;
+}
+
+.contacts-main img {
+  width: 560px;
+  height: 222px;
+}
+
+.contacts-map {
+  display: block;
+  margin-top: 39px;
 }
 
 .contacts-main a:last-child {
+  display: block;
+
   font-family: Gilroy, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.8px;
+  text-align: center;
 
-  background-color: #f0c52e;
+  width: 260px;
+
+  padding: 10px 0;
+  margin-top: 57px;
+
+  background: linear-gradient(white 41%, #f0c52e 41%, #f0c52e 59%, white 59%);
+}
+
+.contacts-main a:last-child:hover {
+  background: linear-gradient( white 0%, #f0c52e 0%, #f0c52e 100%, white 0%);
 }
 
 .contacts-main a:last-child:active {
-  color: #f7e184;
-
-  background-color: black;
+  color: rgba(0,0,0,.6);
 }
 
 /*Страница каталога*/
@@ -1458,6 +1538,86 @@ fieldset legend {
 }
 
 /*Подвал*/
+/*-- Сеточные стили подвал --*/
+/*Футер*/
+.footer {
+  padding: 37px 0;
+  margin: auto;
+  margin-top: -6px;
+  min-height: 250px;
+}
+
+.footer-logo-interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1160px;
+  min-height: 60px;
+
+  margin: auto;
+  margin-top: 15px;
+}
+
+.interface-footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 297px;
+  
+  margin-top: 6px;
+}
+
+.contacts-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1160px;
+  min-height: 60px;
+
+  margin: auto;
+  margin-top: 5px;
+}
+
+.contacts-footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 430px;
+  margin-left: -85px;
+}
+
+.social-media-logo {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  min-height: 60px;
+
+  margin: auto;
+  margin-top: 35px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 130px;
+}
+
+
+.decorative-strip-bot {
+  position: absolute;
+  border-top: 7px solid #ffc600;
+  width: 80px;
+  top: 24px;
+  left: 0px;
+
+}
+
+/*Оформление подвала*/
 .footer {
   color: white;
 
@@ -1512,88 +1672,6 @@ fieldset legend {
   list-style: none;
 }
 
-/*Разобраться с изменением цвета SVG*/
-/*Модальные окна и всплывающие элементы будут стилизоваться после 7го раздела*/
-
-/*-------Строчные стили------*/
-
-
-/*Слайдер 1*/
-
-
-
-
-/*Навигация маин*/
-
-
-/*Слайдер 2*/
-
-
-/*Список логотипов*/
-
-/*О нас, Контакты*/
-.intex-colums {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  padding: 0;
-  margin: auto;
-  margin-bottom: 87px;
-
-  width: 1165px;
-  min-height: 570px;
-}
-
-.about-us {
-  width: 480px;
-  min-height: 570px;
-}
-
-.contacts-main {
-  width: 565px;
-  min-height: 570px;
-
-  right: 140px;
-}
-/*Футер*/
-.footer {
-  padding: 37px 0;
-  margin: auto;
-
-  width: 1440px;
-  min-height: 250px;
-}
-
-.footer-logo-interface {
-  display: flex;
-
-  width: 1160px;
-  min-height: 60px;
-
-  margin: auto;
-  margin-top: 15px;
-}
-
-.contacts-services {
-  display: flex;
-
-  width: 1160px;
-  min-height: 60px;
-
-  margin: auto;
-  margin-top: 5px;
-}
-
-.social-media-logo {
-  display: flex;
-
-  width: 1160px;
-  min-height: 60px;
-
-  margin: auto;
-  margin-top: 35px;
-}
 
 /*----Сеточные стили Каталога----*/
 /*----Cattalog Header----*/
