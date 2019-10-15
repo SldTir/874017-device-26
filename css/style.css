@@ -968,9 +968,55 @@ input[type="radio"].visually-hidden {
 }
 
 /* Список логотипов */
+.list-logo-container{
+  margin: auto;
+  width: 1160px;
+
+  margin-top: 81px;
+  margin-bottom: 70px;
+
+}
+
 .list-logo {
+ 
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.list-logo li {
+  position: relative;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  margin-left: -40px;
+  width: 260px;
+  height: 100px;
+  min-height: 135px;
+
   list-style: none;
 }
+
+.list-logo li:nth-child(4) {
+  margin-right: 3px;
+}
+
+.list-logo li img:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*Разобраться почему не вставляется картинка через background-color
 .logo-dji:hover,
@@ -1434,17 +1480,6 @@ fieldset legend {
 
 
 /*Список логотипов*/
-.list-logo {
-  display: flex;
-  justify-content: space-around;
-
-  width: 1040px;
-  min-height: 135px;
-  
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 70px;
-}
 
 /*О нас, Контакты*/
 .intex-colums {
