@@ -12,16 +12,16 @@
     <header class="main-header">      
       <nav class="main-navigation">
 
-        <a href="#" class="logo-device">
-          <img src="img/background-black-logo.svg" alt="Логотип DEVICE">
+        <a class="main-header-logo" href="index.html">
+          <img class="logo-device" src="img/background-black-logo.svg" alt="Логотип DEVICE">
         </a>
         
+        <div class="header-interface-container">
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-          <label for="search" class="lable-search visually-hidden">Поиск по сайту</label>
+          <label class="lable-search visually-hidden" for="search">Поиск по сайту</label>
           <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
           <button class="button-search visually-hidden" type="submit">Найти</button>
         </form>   
-
   
           <ul class="interface-header">
           <li>
@@ -44,12 +44,13 @@
             </a>
           </li>
           </ul>
+        </div>
 
-        
-        <ul>
-          <li class="product-catalog"><a href="catalog.html">Каталог товаров
+        <div class="header-navigation-container">
+        <ul class="header-product-contacts">
+          <li><a href="catalog.html">Каталог товаров
             <!--Декоративный элемент +--></a>
-            <ul class="dropdonw-product-catalog">
+            <ul class="">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камера</a></li>
@@ -57,18 +58,17 @@
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
           </li>
         </ul>
-
-        <ul class="contacts-header">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        </div>
 
       </nav>
     </header>
     <main>
+
       <h1 class="page-title">Моноподы для селфи</h1>
 
       <nav>
@@ -79,7 +79,10 @@
         </ul>
       </nav>
 
-      <form action="https://echo.htmlacademy.ru" method="get"> 
+      <div class="container">
+
+        <div class="filters-wrapper">
+        <form class="filters" action="https://echo.htmlacademy.ru" method="get"> 
         <span class="filter">Фильтр:</span>
         <fieldset class="filter-item">
           <legend>Стоимость</legend>
@@ -99,7 +102,7 @@
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
-          <ul>
+          <ul class="checkbox-color">
             <li>      
               <input id="black" class="filter-input" type="checkbox" name="color" value="black" checked>
               <label for="black">Чёрный</label>
@@ -124,7 +127,7 @@
         </fieldset>
         <fieldset>
           <legend>Bluetooth</legend>
-          <ul>
+          <ul class="radio-bluetooth">
             <li>
               <input id="yes" type="radio" name="Bluetooth" value="yes" checked>
               <label for="yes">Есть</label>
@@ -134,19 +137,19 @@
               <label for="no">Нет</label>
             </li>
           </ul>
-          <button type="submit">Показать</button>
+          <button class="button-to-show" type="submit">Показать</button>
         </fieldset>
 
       </form>
+      </div>
 
-
+      <div class="catalog-container">
       <div class="sort">
         <span>Сортировка:</span>
         <ul>
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li> 
-        </ul>
         </ul>
         <ul>
           <li><a href="#"><!--Декоративный элемент триугольник--></a></li>
@@ -195,20 +198,23 @@
           </li>
         </ul>   
 
-        <ul class="pagination-list"></ul>
-          <li><a href="#">Назад</a></li>
-          <li><a href="#">1</a></li>
+        <ul class="pagination-list">
+          <li><a class="" href="#">Назад</a></li>
+          <li><a class="selected">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
-          <li><a href="#">Вперед</a></li>
+          <li><a class="" href="#">Вперед</a></li>
         </ul>
  
       </section>
+      </div>
+      </div>
       
       
     </main>
     <footer class="footer">
-
+         
+      <div class="footer-logo-interface">
       <a>
         <img src="img/background-yellow-logo.svg" alt="Логотип DEVICE">
       </a>
@@ -234,9 +240,10 @@
           </a>
         </li>
       </ul>
+      </div>
 
-
-      <p class="font-2">г. Москва, ул. Строителей, 15</p>
+      <div class="contacts-services">
+      <p class="">г. Москва, ул. Строителей, 15</p>
 
       <ul class="contacts-footer">
         <li><a href="#">Доставка</a></li>
@@ -244,11 +251,12 @@
         <li><a href="#">Контакты</a></li>
       </ul>
 
-      <p>Тел: +7 (495)495-95-95</p>
- 
+      <a class="tel" href="tel:+74954959595">Тел: +7 (495)495-95-95</a>
+      </div>
 
+      <div class="social-media-logo">
       <!-- Фоновая картика полосочки -->
-      <ul>
+      <ul class="social-media">
         <li><a href="https://www.facebook.com"><!-- Фоновая картика Фейсбук --></a></li>
         <li><a href="https://www.instagram.com"><!-- Фоновая картика Инстаграмм --></a></li>
         <li><a href="https://twitter.com"><!-- Фоновая картика Твиттер --></a></li>
@@ -257,8 +265,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/background-yellow-logo-html.svg" alt="Логотип HTML Academy">
       </a>
- 
-
+    </div>
     </footer>
     <section>  
       <h2 class="visually-hidden">Отправка письма</h2>
