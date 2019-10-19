@@ -1476,6 +1476,7 @@ fieldset legend {
 .catalog-item a:nth-child(2) {
   font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
+  font-weight: bold;
   line-height: 24px;
   text-transform: none;
 }
@@ -1846,8 +1847,7 @@ fieldset legend {
 .filters-wrapper {
   min-height: 1288px;
   margin-top: 0px;
-  margin-right: 55px;
-  margin-left: 192px;
+  margin-left: 271px;
 }
 
 .filters {
@@ -1858,9 +1858,9 @@ fieldset legend {
 }
 
 .catalog-container {
-
   width: 973px;
   min-height: 1000px;
+  margin-left: 135px;
 }
 
 
@@ -2045,7 +2045,9 @@ fieldset legend {
 }
 
 .filters li label:hover::before,
-.filters li label:hover::after {
+.filters li label:hover::after,
+.filter-input-radio:disabled + label,
+.filter-input-checkbox:disabled + label {
   opacity: 0.3;
 }
 
