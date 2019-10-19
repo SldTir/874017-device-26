@@ -1156,11 +1156,6 @@ input[type="radio"].visually-hidden {
   width: 80px;
   border-top: 7px solid black;
 }
-/* Разобраться с background
-.section-1-a:hover {
-  background-color: #f0c52e;
-}
-*/
 
 /*Контакты*/
 .contacts-main h2 {
@@ -1293,20 +1288,22 @@ fieldset legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
-
   border-top: 2px solid black;
+  width: 200px;
+  padding-top: 10px;
 }
 
 .filter-item {
   margin: 0;
   padding: 0;
+  margin-bottom: 26px;
 
   border: none;
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: -4px;
 }
 
 .filter-item legend {
@@ -1320,11 +1317,10 @@ fieldset legend {
 .range-controls {
   position: relative;
 
-  height: 41px;
-  margin-bottom: 15px;
+  height: 10px;
+
   padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 55px;
 }
 
 .range-controls .scale {
@@ -1334,7 +1330,7 @@ fieldset legend {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 60%;
   height: 2px;
 
   background: #91c92f;
@@ -1342,7 +1338,7 @@ fieldset legend {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 29px;
   left: 0;
 
   width: 4px;
@@ -1356,12 +1352,16 @@ fieldset legend {
   cursor: pointer;
 }
 
+.range-controls .toggle:active {
+  transform: scale(1.2);
+}
+
 .range-controls .toggle-min {
-  left: 18px;
+  left: -5px;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 108px;
 }
 
 .price-controls {
@@ -1372,15 +1372,15 @@ fieldset legend {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 100;
   display: inline-block;
-  width: 50%;
+  width: 28%;
+
+  margin-top: -2px;
 
   font-size: 14px;  
 }
 
 .price-controls input {
-  width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
+  width: 35px;
 
   font-size: 14px;
   text-align: center;
@@ -1388,6 +1388,11 @@ fieldset legend {
 
   border: none;
   background: #efefef;
+}
+
+.price-controls label:nth-child(1) input {
+  width: 10px;
+  margin-left: -2px;
 }
 
 .max-price {
@@ -1409,19 +1414,32 @@ fieldset legend {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  outline: none;
+
   border: none;
-  
-  background-color: linear-gradient(to bottom,white 5px,#f0c52e 5px, white 5px);
+
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 200px;
+  margin-top: 28px;
+
+  background: linear-gradient(#eeeeee 40%, #f0c52e 40%, #f0c52e 59%, #eeeeee 59%)
 }
+
+.button-to-show:hover {
+  background: linear-gradient( #eeeeee 0%, #f0c52e 0%, #f0c52e 100%, #eeeeee 0%);
+}
+
+.button-to-show:active {
+  color: rgba(0,0,0,.6);
+}
+  
 
 .filter-input:disabled + label {
   color: #a6a6a6;
 
   opacity: 0.5;
-}
-
-.sort {
-  background-color: #ebebeb;
 }
 
 .sort span {
@@ -1787,33 +1805,28 @@ fieldset legend {
 
 
   padding: 0;
-  margin-top: 44px;
   min-height: 1000px;
+
+  background: linear-gradient(to right, #eeeeee 36.8%, #ffffff 36.8%);
 }
 
 .sort-flter-container {
-  background: linear-gradient(to right, #dbdbdb 36.8%, #ebebeb 36.8%);
-}
-
-.sort-filter-wrappper {
-  display: flex;
-
-  margin: auto;
-
-}
-
-.flter {
-  margin: auto;
-
+  margin-top: 44px;
+  min-height: 70px;
+  background: linear-gradient(to right, #dcdcdc 36.8%, #ebebeb 36.8%);
 }
 
 .sort {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1040px;
+  
   margin: auto;
-
 }
 
 .sort ul {
+  padding: 0;
   display: flex;
 }
 
@@ -1821,9 +1834,248 @@ fieldset legend {
 .filters-catalog-container {
   display: flex;
   margin: auto;
+  margin-top: 69px;
+
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.filters-wrapper {
+  min-height: 1288px;
+  margin-top: 0px;
+  margin-right: 55px;
+  margin-left: 192px;
+}
+
+.filters {
+  width: 205px;
+  min-height: 760px;
+
+  padding: 0;
+}
+
+.catalog-container {
+
+  width: 973px;
+  min-height: 1000px;
+}
+
+
+
+.catalog {
+  width: 760px;
+  min-height: 963px;
+  margin-top: 70px;
+  margin-left: 74px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+.catalog-item {
+  width: 360px;
+  min-height: 457px;
+  margin-bottom: 47px;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  margin-top: -8px;
+
+  list-style: 0;
+
+  min-height: 70px;
+}
+
+
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.filters fieldset:nth-child(3) {
+  margin-left: 0px;
+}
+
+.filters fieldset:nth-child(2) {
+  
+  margin-top: 26px;
+  margin-bottom: 31px;
+}
+
+
+.filters fieldset:nth-child(3) {
+  margin-left: 0px;
+}
+
+.filters ul {
+  padding: 0;
+  margin: 0;
+}
+
+.filters ul li:nth-child(1) {
+  margin-top: 18px;
+}
+
+.filter-option {
+  padding-left: 39px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.filter-input-checkbox:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+
+  top: 8px;
+  left: -39px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  left: -39px;
+
+  width: 27px;
+  height: 23px;
+
+  width: 40px;
+  height: 40px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox + label:active::before {
+  position: absolute;
+
+  top: 8px;
+  left: -39px;
+
+  width: 27px;
+  height: 23px;
+
+  width: 40px;
+  height: 40px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox + label:active::after {
+  position: absolute;
+
+  top: 8px;
+  left: -39px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+.filter-input-radio:not(:checked) + label::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -39px;
+
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -39px;
+
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters li label:hover::before,
+.filters li label:hover::after {
+  opacity: 0.3;
+}
+
+.filters li label:active::before,
+.filters li label:active::after {
+  opacity: 1;
+}
+
+.filter-input-radio + label:active::before {
+  position: absolute;
+  top: 7px;
+  left: -39px;
+
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label:active::after {
+  position: absolute;
+  top: 7px;
+  left: -39px;
+
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }

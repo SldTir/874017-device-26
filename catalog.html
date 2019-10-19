@@ -88,7 +88,7 @@
       </nav>
 
       <div class="sort-flter-container">
-          <div class="sort-filter-wrappper">
+
           <div class="sort">
             <span class="">Фильтр:</span> 
             <span>Сортировка:</span>
@@ -102,12 +102,10 @@
               <li><a href="#"><!--Декоративный элемент триугольник--></a></li>
             </ul>
             </div>
-          </div>
+
          </div>
     
       <div class="container">
-
-
 
         <div class="filters-catalog-container">
         <div class="filters-wrapper">
@@ -132,24 +130,24 @@
         <fieldset>
           <legend>Цвет</legend>
           <ul class="checkbox-color">
-            <li>      
-              <input id="black" class="filter-input" type="checkbox" name="color" value="black" checked>
+            <li class="filter-option">      
+              <input id="black" class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="color" value="black" checked>
               <label for="black">Чёрный</label>
             </li>
-            <li> 
-              <input id="white" class="filter-input" type="checkbox" name="color" value="white">
+            <li class="filter-option"> 
+              <input id="white" class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="color" value="white">
               <label for="white">Белый</label>
             </li>
-            <li>
-              <input id="blue" class="filter-input" type="checkbox" name="color" value="blue" checked>
+            <li class="filter-option">
+              <input id="blue" class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="color" value="blue" checked>
               <label for="blue">Синий</label>
             </li>
-            <li>
-              <input id="red" class="filter-input" type="checkbox" name="color" value="red" checked>
+            <li class="filter-option">
+              <input id="red" class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="color" value="red" checked>
               <label for="red">Красный</label>
             </li>
-            <li>
-              <input id="pink" class="filter-input" type="checkbox" name="color" value="pink">
+            <li class="filter-option">
+              <input id="pink" class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="color" value="pink">
               <label for="pink">Розовый</label>
             </li>
           </ul>
@@ -157,12 +155,12 @@
         <fieldset>
           <legend>Bluetooth</legend>
           <ul class="radio-bluetooth">
-            <li>
-              <input id="yes" type="radio" name="Bluetooth" value="yes" checked>
+            <li class="filter-option">
+              <input class="filter-input-radio visually-hidden" id="yes" type="radio" name="Bluetooth" value="yes" checked>
               <label for="yes">Есть</label>
             </li>
-            <li>
-              <input id="no" type="radio" name="Bluetooth" value="no">
+            <li class="filter-option">
+              <input class="filter-input-radio visually-hidden" id="no" type="radio" name="Bluetooth" value="no">
               <label for="no">Нет</label>
             </li>
           </ul>
