@@ -1473,10 +1473,10 @@ fieldset legend {
   list-style: none;
 }
 
-.catalog-item a:nth-child(2) {
+.catalog-item a h3 {
   font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 24px;
   text-transform: none;
 }
@@ -1489,6 +1489,38 @@ fieldset legend {
   text-transform: none;
 
   text-align: right;
+}
+
+.button-in-garbage {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  outline: none;
+
+  border: none;
+
+  display: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 200px;
+
+  position: absolute;
+  top: 138px;
+  left: 80px;
+  margin-top: 28px;
+
+  background: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 59%, transparent 59%)
+}
+
+.button-in-garbage:hover {
+  background: linear-gradient( transparent 0%, #f0c52e 0%, #f0c52e 100%, transparent 0%);
+}
+
+.button-in-garbage:active {
+  color: rgba(0,0,0,.6);
 }
 
 .pagination-list {
@@ -1882,15 +1914,30 @@ fieldset legend {
   list-style: none;
 }
 .catalog-item {
+  position: relative;
   width: 360px;
   min-height: 457px;
   margin-bottom: 47px;
   margin-right: 40px;
 }
 
+.catalog-item a:first-child:hover {
+  opacity: 0.6;
+}
+
+.button-in-garbage:hover .catalog-item a:first-child  {
+  opacity: 0.6;
+}
+
+.catalog-item:hover .button-in-garbage {
+  display: block;
+}
+
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
+
+.
 
 .pagination-list {
   padding: 0;
