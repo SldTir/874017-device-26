@@ -1448,7 +1448,7 @@ fieldset legend {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.7px;
 }
 
 .sort ul {
@@ -1456,17 +1456,26 @@ fieldset legend {
 }
 
 .sort a {
-  color: #bcbcbc;
+  opacity: 0.2;
   font-size: 14px;
   line-height: 18px;
 }
 
-.sort a:hover {
-  color: #666666;
+.icon-triangle-up,
+.icon-triangle-down {
+  opacity: 0.2;
 }
 
-.sort a:active {
-  color: #000000;
+.sort a:hover,
+.icon-triangle-up:hover,
+.icon-triangle-down:hover {
+  opacity: 0.4;
+}
+
+.sort a:active,
+.icon-triangle-up:active,
+.icon-triangle-down:active {
+  opacity: 1;
 }
 
 .catalog-list {
@@ -1521,6 +1530,35 @@ fieldset legend {
 
 .button-in-garbage:active {
   color: rgba(0,0,0,.6);
+}
+
+.button-in-garbage:hover .catalog-items a:nth-child(1) img {
+  opacity: 0.1;
+}
+
+.add-to-comparison {
+  display: none;
+
+  position: absolute;
+  top: 220px;
+  left: 85px;
+
+  border: none;
+  background: transparent;
+
+  opacity: 0.5;
+  
+  cursor: pointer;
+
+  outline: none;
+}
+
+.add-to-comparison:hover {
+  opacity: 1;
+}
+
+.add-to-comparison:active {
+  opacity: 0.2;
 }
 
 .pagination-list {
@@ -1851,16 +1889,70 @@ fieldset legend {
 
 .sort {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  width: 1040px;
+  width: 1160px;
   
   margin: auto;
+}
+
+.sort span {
+  margin-top: 22px;
+}
+
+.sort span:nth-child(1) {
+  margin-left: 60px;
+}
+
+.sort span:nth-child(2) {
+  margin-left: 250px;
 }
 
 .sort ul {
   padding: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 0;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 23px;
+}
+
+.sort ul li {
+ margin-left: 27px;
+}
+
+.sort ul li:last-child {
+  margin-left: 31px;
+ }
+
+.sort ul:last-child {
+  margin-top: 20px;
+  margin-left: 210px;
+}
+
+.sort ul:last-child li {
+  margin-left: 20px;
+}
+
+.icon-triangle-up {
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-triangle-up.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-triangle-down {
+  width: 11px;
+  height: 10px;
+  
+  background-image: url("../img/icon-triangle-down.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
@@ -1929,7 +2021,8 @@ fieldset legend {
   opacity: 0.6;
 }
 
-.catalog-item:hover .button-in-garbage {
+.catalog-item:hover .button-in-garbage,
+.catalog-item:hover .add-to-comparison {
   display: block;
 }
 
