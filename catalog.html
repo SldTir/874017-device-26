@@ -25,23 +25,21 @@
         </form>   
 
           <ul class="interface-header">
-          <li>
+          <li class="to-come-in">
             <a href="#">
-            <!-- Фоновая картика человчка -->
             Валентин Петухов
             </a>
-            <a href="#" class="exit">Выйти</a>
-
           </li>
-          <li>
+          <li class="exit">
+            <a href="#">Выйти</a>
+          </li>
+          <li class="compare">
             <a href="#">
-              <!-- Фоновая картинка диограмма-->
               Сравнить
             </a>
           </li>
-          <li>
+          <li class="basket">
             <a href="#">
-            <!--Фоновая картинка корзина-->
             Корзина
             </a>
           </li>
@@ -93,13 +91,13 @@
             <span class="">Фильтр:</span> 
             <span>Сортировка:</span>
             <ul>
-              <li><a href="#">По цене</a></li>
+              <li><a clas="selected" href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По популярности</a></li> 
             </ul>
             <ul>
               <li><a href="#"><div class="icon-triangle-up"></div></a></li>
-              <li><a href="#"><div class="icon-triangle-down"></div></a></li>
+              <li><a class="" href="#"><div class="icon-triangle-down selected"></div></a></li>
             </ul>
             </div>
 
@@ -175,48 +173,49 @@
         <h2 class="visually-hidden">Изоброжение товаров</h2>  
         <ul class="catalog-list">
           <li class="catalog-item">
-            
-            <a href="#">
-              <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка">
-            </a>
-            <button class="button-in-garbage" type="submit">В КОРЗИНУ</button>
-            <button class="add-to-comparison" type="submit">Добавить к сравнению</button>
-            <a href="#">
-              <h3>Любительская селфи-палка</h3>
-            </a>
-            <span>500 руб</span>
+            <ul>
+              <li><a class="button-in-garbage" href="#">В КОРЗИНУ</a></li>
+              <li><a class="add-to-comparison" href="#">Добавить к сравнению</a></li>
+            </ul>
+            <img class="product-catalog" src="img/amateur-selfie-stick.jpg" width="360px" height="360px" alt="Любительская селфи-палка">
+            <div>
+              <h3><a href="#">Любительская селфи-палка</a></h3>
+              <span>500 руб.</span>
+            </div>
+          </li>
+          <li class="catalog-item">  
+            <ul>
+              <li><a class="button-in-garbage" href="#">В КОРЗИНУ</a></li>
+              <li><a class="add-to-comparison" href="#">Добавить к сравнению</a></li>
+            </ul>                           
+            <img class="product-catalog" src="img/professional-selfie-stick.jpg" width="360px" height="360px" alt="Профессиональная селфи-палка">   
+            <div>                      
+              <h3><a href="#">Профессиональная селфи-палка</a></h3>
+              <span>1 500 руб.</span>
+            </div>  
           </li>
           <li class="catalog-item">
-            <a href="#">
-              <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка">
-            </a>
-            <button class="button-in-garbage" type="submit">В КОРЗИНУ</button>
-            <button class="add-to-comparison" type="submit">Добавить к сравнению</button>
-            <a href="#">
-              <h3>Профессиональная селфи-палка</h3>
-            </a>
-            <span>1 500 руб</span>
-          </li>
-          <li class="catalog-item">
-            <a href="#">
-              <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка">
-            </a>
-            <button class="button-in-garbage" type="submit">В КОРЗИНУ</button>
-            <button class="add-to-comparison" type="submit">Добавить к сравнению</button>
-            <a href="#">
-              <h3>Непотопляемая селфи-палка</h3>
-            </a>
-            <span>2 500 руб</span> 
+            <ul>
+              <li><a class="button-in-garbage" href="#">В КОРЗИНУ</a></li>
+              <li><a class="add-to-comparison" href="#">Добавить к сравнению</a></li>
+            </ul> 
+            <img class="product-catalog" src="img/unsinkable-selfie-stick.jpg" width="360px" height="360px" alt="Непотопляемая селфи-палка">
+            <div>
+              <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+              <span>2 500 руб.</span>
+            </div>
            </li>
           <li class="catalog-item">
-            <a href="#">
-              <img src="img/selfie-stick-follow-me.jpg" alt="Селфи-палка Следуй за мной">
-              <!--Контентное изоброжение NEW которое наложено на картику-->
-              <button class="button-in-garbage" type="submit">В КОРЗИНУ</button> 
-              <button class="add-to-comparison" type="submit">Добавить к сравнению</button>
-              <h3>Селфи-палка Следуй за мной</h3>
-            </a>
-            <span>4 900 руб</span>
+            <ul>
+              <li><a class="button-in-garbage" href="#">В КОРЗИНУ</a></li>
+              <li><a class="add-to-comparison" href="#">Добавить к сравнению</a></li>
+            </ul>
+            <img class="product-catalog" src="img/selfie-stick-follow-me.jpg" width="360px" height="360px" alt="Селфи-палка Следуй за мной">
+            <span class="icon-new">NEW</span>
+            <div>           
+              <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+              <span>4 900 руб.</span>
+            </div>
           </li>
         </ul>   
         <ul class="pagination-list">
@@ -247,7 +246,7 @@
         </svg>
       </a>
 
-      <ul class="interface-footer">
+      <ul class="interface-footer-catalog">
         <li>
           <a href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -255,9 +254,9 @@
             <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
             C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z" fill="#ffc600"/>
             </svg>
-            <span>Валентин Петухов</span>
-            <a href="#" class="exit">Выйти</a>          
+            <span>Валентин Петухов</span>                    
         </li>
+        <li><a href="#" class="exit-footer">Выйти</a> </li>
         <li>
           <a href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
