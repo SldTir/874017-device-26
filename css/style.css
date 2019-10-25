@@ -4,7 +4,7 @@ body {
   padding: 0;    
   
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #000000;
   font-size: 15px;
   line-height: 30px;
@@ -45,6 +45,22 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden-search {
   position: absolute;
 
   width: 1px;
@@ -110,16 +126,16 @@ input[type="radio"].visually-hidden {
   height: 40px;
 
   margin-top: 43px;
+  margin-right: 100px;
   padding: 0px;
 }
 
 .interface-header li a {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #000000;
   font-size: 15px;
-  line-height: 30px;
-  
+  line-height: 30px; 
 }
 
 .interface-header {
@@ -299,6 +315,8 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/search-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0; 
+
+  z-index: 1;
 }
 
 .hidden-button {
@@ -334,13 +352,15 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
+  position: relative;
   font: inherit;
   color: #cab97b;
   width: 357px;
 
-  padding-left: 38px;
+  padding-left: 35px;
   padding-bottom: 10px;
-  
+  margin-left: 5px;
+ 
   border: 0;
   background-color: #f7e296; 
 }
@@ -359,6 +379,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search::placeholder {
+  text-align: left;
   opacity: 0.3;
 }
 
@@ -394,7 +415,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 36px;
 
@@ -625,7 +646,7 @@ input[type="radio"].visually-hidden {
 
  .promo-slider-list p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300px;
+  font-weight: 400px;
   letter-spacing: 0.14px;
 
   max-width: 480px;
@@ -964,7 +985,7 @@ input[type="radio"].visually-hidden {
 
 .slider-services p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   font-size: 15px;
   line-height: 30px;  
@@ -1100,7 +1121,7 @@ input[type="radio"].visually-hidden {
 
 .about-us p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 30px;
 
@@ -1191,7 +1212,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-main p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 15px;
   line-height: 30px;
 
@@ -1755,7 +1776,7 @@ fieldset legend {
 
 .contacts-services {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
 
@@ -2445,6 +2466,173 @@ fieldset legend {
   color: white;
   opacity: 0.3;
 }
+
+
+
+.sending-letter-form { 
+  position: relative;
+  margin: auto;
+  width: 760px;
+  min-height: 350px;
+
+  margin-top: 50px;
+
+  padding-top: 82px;
+  padding-bottom: 72px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal-close-index {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+
+  width: 55px;
+  min-height: 55px;
+
+  background-image: url(../img/modal-close-index.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: 1;
+
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.modal-close-index:hover {
+  opacity: 1;
+}
+
+.modal-close-index:active {
+  opacity: 0.3;
+}
+
+.sending-letter-form label {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+
+  border: none;
+}
+
+.sending-letter-form input,
+.sending-letter-form textarea {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  border: none;
+
+  background-color: rgba(229, 229, 229, 0.5);
+
+  outline: none;
+}
+
+.sending-letter-form input:hover,
+.sending-letter-form textarea:hover {
+  background-color: rgba(229, 229, 229, 0.8);
+}
+
+.sending-letter-form input:focus,
+.sending-letter-form textarea:focus {
+  background-color: white;
+}
+
+.sending-letter-form input:invalid,
+.sending-letter-form textarea:invalid {
+  background-color: rgba(237, 181, 181, 0.5);
+}
+
+.sending-letter-form input::placeholder,
+.sending-letter-form textarea::placeholder {
+  opacity: 0.4;
+}
+
+.sending-letter-form div {
+  display: flex;
+}
+
+.sending-letter-form div:nth-child(2) {
+  margin-top: 10px;
+}
+
+.sending-letter-form div:nth-child(2) label:nth-child(1) {
+  margin-right: 312px;
+}
+
+.sending-letter-form div:nth-child(3) input:nth-child(1),
+.sending-letter-form div:nth-child(3) input:nth-child(2) {
+  width: 380px;
+  min-height: 50px;
+
+  box-sizing: border-box;
+  padding-left: 20px;
+
+  margin-top: 5px;
+}
+
+.sending-letter-form div:nth-child(3) input:nth-child(1) {
+  margin-right: 40px;
+}
+
+.sending-letter-form div:nth-child(4) label {
+  margin-top: 34px;
+  margin-left: 2px;
+}
+
+.sending-letter-form textarea {
+  margin-top: 8px;
+  resize: none;
+
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+
+  width: 720px;
+}
+
+.to-send-sending-letter {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  outline: none;
+
+  border: none;
+
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 200px;
+
+  margin-top: 28px;
+
+  cursor: pointer;
+
+  background: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 59%, transparent 59%)
+}
+
+.to-send-sending-letter:hover {
+  background: linear-gradient( transparent 0%, #f0c52e 0%, #f0c52e 100%, transparent 0%);
+}
+
+.to-send-sending-letter:active {
+  color: rgba(0,0,0,.6);
+}
+
 
 
   

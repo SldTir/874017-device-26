@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" 
      rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -19,7 +19,7 @@
         <div class="header-interface-container">
 
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="lable-search visually-hidden" for="search">Поиск по сайту</label>
+          <label class="lable-search visually-hidden-search" for="search">Поиск по сайту</label>
           <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
           <button class="button-search hidden-button" type="submit">Найти</button>
         </form>   
@@ -410,25 +410,23 @@
     </div>
     </footer>
 
-    <section class="visually-hidden">  
+    <section class="sending-letter">  
     <h2 class="visually-hidden">Отправка письма</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">      
-        <button type="button">Закрыть</button>
-          <label>
-            Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-
-          <label>
-            Ваш e-mail:
-            <input type="email"  name="email" placeholder="email@example.com">
-          </label>
-
-          <label>
-            Текст пиьсма:
-            <textarea cols="50" rows="5" name="text-letter"  placeholder="В свободной форме">В свободной форме</textarea>
-          </label>
-        <button type="submit">Отправить</button>        
+    <form class="sending-letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <span class="modal-close-index"></span>      
+        <div>
+          <label id="login-sending-letter">Ваше имя:</label> 
+          <label id="email-sending-letter">Ваш e-mail:</label> 
+        </div> 
+        <div>     
+          <input for="login-sending-letter" type="text" name="name" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">                         
+          <input for="email-sending-letter" type="email"  name="email" placeholder="email@example.com">          
+        </div>    
+        <div>          
+          <label>Текст письма:</label>  
+        </div>   
+        <textarea cols="106" rows="7" name="text-letter"  placeholder="В свободной форме"></textarea>  
+        <button class="to-send-sending-letter" type="submit">Отправить</button>                   
     </form>
     </section>  
 
