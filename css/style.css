@@ -98,6 +98,10 @@ input[type="radio"].visually-hidden {
   left: 60px;
 }
 
+.inner-page .main-header-logo {
+  margin-top: 3px;
+}
+
 .form-search {
   display: flex;
   justify-content: space-between;
@@ -107,6 +111,15 @@ input[type="radio"].visually-hidden {
 
   margin-top: 43px;
   padding: 0px;
+}
+
+.interface-header li a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 15px;
+  line-height: 30px;
+  
 }
 
 .interface-header {
@@ -127,6 +140,14 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-top: 30px;
+}
+
+.inner-page .interface-header li:nth-child(2) {
+  margin-right: 55px;
+}
+
+.inner-page .interface-header li:nth-child(3) {
+  margin-right: 35px;
 }
 
 .interface-header .to-come-in {
@@ -154,7 +175,7 @@ input[type="radio"].visually-hidden {
 .interface-header .compare {
   position: relative;
   padding-left: 26px;
-  margin-right: 35px;
+  margin-right: 40px;
 }
 
 .interface-header .compare::before {
@@ -182,7 +203,7 @@ input[type="radio"].visually-hidden {
   
   position: absolute;
   top: 9px;
-  left: 6px;
+  left: 4px;
 
   width: 16px;
   height: 18px;
@@ -210,6 +231,7 @@ input[type="radio"].visually-hidden {
 
 .header-product-contacts > li:nth-child(1) {
   margin-left: 0;
+  padding-right: 35px;
 }
 
 .header-product-contacts > li:nth-child(1)::before {
@@ -230,7 +252,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-product-contacts > li:nth-child(2) {
-  margin-left: 213px;
+  margin-left: 177px;
 }
 
 .header-product-contacts > li:nth-child(3) {
@@ -382,7 +404,7 @@ input[type="radio"].visually-hidden {
   min-height: 136px;
   left: -60px;
 
-  text-transform: capitalize;
+  text-transform: none;
   letter-spacing: normal;
 
   list-style: none;
@@ -406,8 +428,8 @@ input[type="radio"].visually-hidden {
   margin-left: 72px;
 }
 
-.header-product-contacts a:hover + .sub-menu-catalog,
-.header-product-contacts a:active + .sub-menu-catalog {
+.header-product-contacts li:hover a + .sub-menu-catalog,
+.header-product-contacts li:active a + .sub-menu-catalog {
   display: flex;
  }
 
@@ -1373,6 +1395,8 @@ fieldset legend {
   margin-top: -2px;
 
   font-size: 14px;  
+
+  opacity: 0.2;
 }
 
 .price-controls input {
@@ -1452,9 +1476,13 @@ fieldset legend {
 }
 
 .sort a {
-  opacity: 0.2;
+  opacity: 0.3;
   font-size: 14px;
   line-height: 18px;
+}
+
+.sort li:nth-child(1) a {
+  opacity: 1;
 }
 
 .icon-triangle-up,
@@ -1679,11 +1707,33 @@ fieldset legend {
 .interface-footer-catalog {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   width: 325px;
   margin-top: -3px;
 }
+
+.interface-footer-index {
+  width: 345px;
+}
+
+.interface-footer-index li:nth-child(1) {
+  margin-right: 45px;
+}
+
+.interface-footer-index li:nth-child(2) {
+  margin-right: 40px;
+}
+
+.interface-footer-index li:nth-child(2) span {
+  margin-left: 7px;
+}
+
+.interface-footer-index li:nth-child(3) span {
+  margin-left: 7px;
+}
+
+
 
 .interface-footer-index li,
 .interface-footer-catalog li {
@@ -1699,7 +1749,16 @@ fieldset legend {
   margin-right: 4px;
 }
 
+.interface-footer-index li span {
+  margin-left: 9px;
+}
+
 .contacts-services {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 30px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1710,6 +1769,7 @@ fieldset legend {
   margin: auto;
   margin-top: -8px;
 }
+
 
 .contacts-services ul {
   margin-left: -40px;
@@ -1760,6 +1820,7 @@ fieldset legend {
   width: 80px;
   top: 24px;
   left: 0px;
+  margin-top: 2px;
 }
 
 /*Оформление подвала*/
@@ -1774,19 +1835,29 @@ fieldset legend {
   list-style: none;  
 }
 
-.interface-footer-index a,
-.interface-footer-catalog a {
+.interface-footer-index a span,
+.interface-footer-catalog a span {
   color: white; 
   opacity: 0.7; 
 }
 
-.interface-footer-index li a:hover,
-.interface-footer-catalog li a:hover {
+.interface-footer-index li:hover span,
+.interface-footer-catalog li:hover span {
   opacity: 1;
 }
 
-.interface-footer-index li a:active,
-.interface-footer-catalog li a:active {
+.interface-footer-index li:active  span,
+.interface-footer-catalog li:active  span {
+  opacity: 0.3;
+}
+
+.interface-footer-index li:hover svg,
+.interface-footer-catalog li:hover svg {
+  opacity: 0.6;
+}
+
+.interface-footer-index li:active  svg,
+.interface-footer-catalog li:active  svg {
   opacity: 0.3;
 }
 
@@ -1831,6 +1902,10 @@ fieldset legend {
 
 .social-media li:active {
   opacity: 0.1
+}
+
+.html-academy-logo {
+  margin-top: 5px;
 }
 
 .html-academy-logo:hover {
@@ -2343,7 +2418,7 @@ fieldset legend {
 }
 
 .inner-page .interface-footer-catalog {
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 500px;
 
@@ -2351,18 +2426,24 @@ fieldset legend {
 
 .inner-page .interface-footer-catalog li:nth-child(1) {
   margin-left: 1px;
+  margin-right: 17px;
 }
 
 .inner-page .interface-footer-catalog li:nth-child(2) {
-  margin-left: -5px;
+  margin-right: 44px;
 }
 
 .inner-page .interface-footer-catalog li:nth-child(3) {
- 
+  margin-right: 40px;
 }
 
-.inner-page .interface-footer-catalog li:nth-child(4) {
- 
+.inner-page .interface-footer-catalog li:nth-child(4) span {
+  margin-left: 5px;
+}
+
+.exit-footer {
+  color: white;
+  opacity: 0.3;
 }
 
 
