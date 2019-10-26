@@ -290,7 +290,7 @@
           проверить работоспособность покупки. Всякое бывает.</p>
           <a class="contacts-map" href="#"><img src="img/map-stroiteley-street-17.jpg" width="560" height="222"
              alt="г. Москва, ул. Строителей, 15"></a>
-          <a class="section-2-a font-1" href="#">Напишите нам</a>
+          <a class="write-to-us-a" href="#">Напишите нам</a>
       </section>      
       </div>
 
@@ -410,10 +410,10 @@
     </div>
     </footer>
 
-    <section class="sending-letter">  
+    <section class="modal-sending-letter">  
     <h2 class="visually-hidden">Отправка письма</h2>
     <form class="sending-letter-form" action="https://echo.htmlacademy.ru" method="post">
-        <span class="modal-close-index"></span>      
+        <button class="modal-close-index" type="button"></button>      
         <div>
           <label id="login-sending-letter">Ваше имя:</label> 
           <label id="email-sending-letter">Ваш e-mail:</label> 
@@ -463,6 +463,22 @@
         Закрыть
       </button>
     </section>
+
+    <script>
+      var link = document.querySelector(".write-to-us-a");
+      var modalSendingLetter = document.querySelector(".modal-sending-letter");
+      var close = document.querySelector(".modal-close-index");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalSendingLetter.classList.add("modal-show");
+      } );
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalSendingLetter.classList.remove("modal-show");
+      });
+    </script>
   </body>
 </html>
    

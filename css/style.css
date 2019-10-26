@@ -2489,9 +2489,23 @@ fieldset legend {
 
 .modal-close-index {
   position: absolute;
-  top: 20px;
-  right: 22px;
+  top: 19px;
+  right: 71px;
 
+  font-size: 0;
+
+  background-color: transparent;
+
+  border: 0;
+
+  cursor: pointer;
+  outline: none;
+}
+
+
+.modal-close-index::before {
+  content: "";
+  position: absolute;
   width: 55px;
   min-height: 55px;
 
@@ -2506,11 +2520,11 @@ fieldset legend {
   cursor: pointer;
 }
 
-.modal-close-index:hover {
+.modal-close-index:hover::before {
   opacity: 1;
 }
 
-.modal-close-index:active {
+.modal-close-index:active::before {
   opacity: 0.3;
 }
 
@@ -2633,9 +2647,13 @@ fieldset legend {
   color: rgba(0,0,0,.6);
 }
 
+.modal-sending-letter {
+  display: none;
+}
 
+.modal-show {
+  display: block;
+}
 
   
-
-
 
