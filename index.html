@@ -288,7 +288,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts-map" href="#"><img src="img/map-stroiteley-street-17.jpg" width="560" height="222"
+          <a class="contacts-map" href="#"><img src="img/map-index.png" width="560" height="222"
              alt="г. Москва, ул. Строителей, 15"></a>
           <a class="write-to-us-a" href="#">Напишите нам</a>
       </section>      
@@ -430,37 +430,12 @@
     </form>
     </section>  
 
-    <section class="visually-hidden">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!--Кнопка изображение закрыть-->
-      <img src="img/popup-map-big.png" alt="г. Москва, ул. Строителей, 15">
-    </section>
-
-    <section class="visually-hidden">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="user-login">Логин</label>
-          <input id="user-login" type="text" name="login" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="user-password">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="••••••••">
-        </p>
-        <p>
-          <label>
-            <input type="checkbox" name="remember">
-            Запомните меня
-          </label>
-          <a href="#">Я забыл пароль!</a>
-        </p>
-        <button type="submit">
-          Войти
-        </button>
-      </form>
-      <button type="button">
-        Закрыть
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>      
+      <p><img class="big-map-index" src="img/big-map-index.png" width="960px" height="559px" alt="г. Москва, ул. Строителей, 15">
+      </p>
+      <button class="modal-close-index" type="button">
+        <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
 
@@ -474,7 +449,7 @@
       var storageName = localStorage.getItem("firstNameLastName");
       var storageEMail = localStorage.getItem("eMail");
       var isStorageSupport = true;
-      var storage = "";
+      var storageName = "";
  
 
       link.addEventListener("click", function (evt) {
@@ -498,6 +473,8 @@
       formLetter.addEventListener("submit", function (evt) {
         if (!firstNameLastName.value || !eMail.value) {
         evt.preventDefault();
+        modalSendingLetter.classList.remove("modal-error");
+        modalSendingLetter.offsetWidth = modalSendingLetter.offsetWidth;
         modalSendingLetter.classList.add("modal-error");
         } else { 
           if (isStorageSupport) {
@@ -517,8 +494,18 @@
           if (modalSendingLetter.classList.contains("modal-show")) {
             evt.preventDefault();
             modalSendingLetter.classList.remove("modal-show");
+            modalSendingLetter.classList.remove("modal-error");
           }
         }
+      });
+
+      var mapLink = document.querySelector(".contacts-map");
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = document.querySelector(".modal-close");
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
       });
     </script>
   </body>
