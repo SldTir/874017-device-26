@@ -77,7 +77,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*---- Header ----*/
-/*---- Сеточные стили Header ----*/
 .main-header {
   margin: auto;
 
@@ -120,14 +119,12 @@ input[type="radio"].visually-hidden {
 
 .form-search {
   display: flex;
-  justify-content: space-between;
 
   width: 440px;
   height: 40px;
 
   margin-top: 43px;
   margin-right: 100px;
-  padding: 0px;
 }
 
 .interface-header li a {
@@ -1708,7 +1705,6 @@ fieldset legend {
 }
 
 .footer ul {
-  padding: 0;
   margin: 0;
 }
 
@@ -1821,7 +1817,7 @@ fieldset legend {
 
 .social-media-logo ul {
   margin-top: 7px;
-  margin-left: 485px; 
+
 }
 
 .social-media li a {
@@ -1831,16 +1827,19 @@ fieldset legend {
 .social-media {
   display: flex;
   justify-content: space-between;
-  width: 130px;
+  width: 150px;
+
+  margin: 0px;
+  padding: 0px;
+  padding-right: 90px;
 }
 
 
 .decorative-strip-bot {
-  position: absolute;
+
   border-top: 7px solid #ffc600;
   width: 80px;
-  top: 24px;
-  left: 0px;
+
   margin-top: 2px;
 }
 
@@ -2118,9 +2117,12 @@ fieldset legend {
 
 .filters-catalog-container {
   display: flex;
+  justify-content: space-around;
+
+  width: 1200px;
+
   margin: auto;
   margin-top: 69px;
-
 }
 
 .catalog-list {
@@ -2131,7 +2133,7 @@ fieldset legend {
 .filters-wrapper {
   min-height: 1288px;
   margin-top: 0px;
-  margin-left: 271px;
+  margin-left: 60px;
 }
 
 .filters {
@@ -2685,6 +2687,9 @@ fieldset legend {
 
   margin-top: -280px;
   margin-left: -480px;
+  z-index: 11;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .modal-map p {
@@ -2694,15 +2699,15 @@ fieldset legend {
 .modal-map button {
   position: absolute;
 
-  top: 35px;
-  right: 85px;
+  top: 21px;
+  right: 70px;
 
   z-index: 100;
 }
 
 .modal-map iframe {
   position: relative;
-  z-index: 99;
+  z-index: 2;
 
   border: none;
 }
@@ -2710,10 +2715,9 @@ fieldset legend {
 .modal-map p {
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 98;
-
+  left: 0;  
   margin: 0;
+  z-index: 1;
 }
 
 .modal-show {
