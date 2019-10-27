@@ -47,7 +47,7 @@
 
         <ul class="header-product-contacts">
           <li><a href="catalog.html">Каталог товаров
-            <!--Декоративный элемент +--></a>
+          </a>
             <ul class="sub-menu-catalog">
               <li>
                 <a href="#">Виртуальная реальность</a>
@@ -430,8 +430,11 @@
     </form>
     </section>  
 
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>      
+    <section class="modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>  
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.5437952595332!2d37.528818732559095!3d55.68746491062414!2m3!1f0!2f0!3f0!
+      3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ
+      !5e0!3m2!1sru!2sru!4v1572183371979!5m2!1sru!2sru" width="960px" height="559px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  
       <p><img class="big-map-index" src="img/big-map-index.png" width="960px" height="559px" alt="г. Москва, ул. Строителей, 15">
       </p>
       <button class="modal-close-index" type="button">
@@ -501,11 +504,25 @@
 
       var mapLink = document.querySelector(".contacts-map");
       var mapPopup = document.querySelector(".modal-map");
-      var mapClose = document.querySelector(".modal-close");
+      var mapClose = document.querySelector(".modal-map button");
 
       mapLink.addEventListener("click", function (evt) {
         evt.preventDefault();
         mapPopup.classList.add("modal-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            mapPopup.classList.remove("modal-show");
+          }
+        }
       });
     </script>
   </body>

@@ -431,7 +431,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 
   background-color: #f7e296; 
-  z-index: 100;
+  z-index: 5;
 }
 
 .sub-menu-catalog a {
@@ -492,7 +492,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 71%;
   top: 281px;
-  z-index: 100;
+  z-index: 1;
   
   width: 160px;
   height: 18px;
@@ -2471,7 +2471,7 @@ fieldset legend {
   position: fixed;
   top: 150px;
   left: 50%;
-  z-index: 100;
+  z-index: 10;
   margin-left: -480px;
 
   display: none;
@@ -2660,20 +2660,11 @@ fieldset legend {
   100% { transform: translateY(0px); }
 }
 
-.modal-show {
-  display: block;
-
-}
 
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
   20%, 40%, 60%, 80% { transform: translateX(10px); }
-}
-
-.modal-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
 }
 
 .big-map-index {
@@ -2705,8 +2696,34 @@ fieldset legend {
 
   top: 35px;
   right: 85px;
+
+  z-index: 100;
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 99;
 
-  
+  border: none;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 98;
+
+  margin: 0;
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
 
