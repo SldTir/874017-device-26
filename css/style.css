@@ -1,8 +1,5 @@
 
-body {
-  margin: 0;
-  padding: 0;    
-  
+body { 
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   color: #000000;
@@ -10,6 +7,9 @@ body {
   line-height: 30px;
   text-transform: none;
 
+  margin: 0;
+  padding: 0;    
+ 
   background-color: #ffffff;
   background-position: top center;
 }
@@ -79,7 +79,6 @@ input[type="radio"].visually-hidden {
 /*---- Header ----*/
 .main-header {
   margin: auto;
-
   width: 1160px;
   min-height: 299px;
 }
@@ -88,7 +87,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   
-
   width: 1040px;
   margin: 0 auto;
   padding: 0 10px;
@@ -100,17 +98,16 @@ input[type="radio"].visually-hidden {
   
   margin-top: 40px;
   padding: 0 40px;
-  
   min-height: 299px;
 }
 
 .main-header-logo {
   position: absolute;
-  width: 165px;
-  height: 35px;
-
   top: -19px;
   left: 60px;
+
+  width: 165px;
+  height: 35px;
 }
 
 .inner-page .main-header-logo {
@@ -122,7 +119,6 @@ input[type="radio"].visually-hidden {
 
   width: 440px;
   height: 40px;
-
   margin-top: 43px;
   margin-right: 100px;
 }
@@ -136,23 +132,21 @@ input[type="radio"].visually-hidden {
 }
 
 .interface-header {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
-  position: relative;
-
-
-
   width: 500px;
   min-height: 55px;
-
-  list-style: none;
-
+  
   margin: 0;
   padding: 0;
   margin-top: 30px;
+
+  list-style: none;
 }
 
 .inner-page .interface-header li:nth-child(2) {
@@ -165,8 +159,8 @@ input[type="radio"].visually-hidden {
 
 .interface-header .to-come-in {
   position: relative;
-  padding-left: 26px;
 
+  padding-left: 26px;
   margin-right: auto;
 }
 
@@ -187,6 +181,7 @@ input[type="radio"].visually-hidden {
 
 .interface-header .compare {
   position: relative;
+  
   padding-left: 26px;
   margin-right: 40px;
 }
