@@ -2020,7 +2020,7 @@ fieldset legend {
   background-position: 1 1;
 }
 
-.inner-page .container {
+.inner-page .filters-catalog {
   display: flex;
   flex-direction: column;
 
@@ -2110,47 +2110,40 @@ fieldset legend {
 }
 
 
-.filters-catalog-container {
+.container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
 
   width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 0 80px;
 
-  margin: auto;
-  margin-top: 69px;
+  box-sizing: border-box;
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.filters-wrapper {
-  min-height: 1288px;
-  margin-top: 0px;
-  margin-left: 60px;
-}
+} 
 
 .filters {
   width: 205px;
-  min-height: 760px;
+  min-height: 1288px;
 
   padding: 0;
+  margin-top: 0px;
 }
 
-.catalog-container {
-  width: 973px;
-  min-height: 1000px;
-  margin-left: 135px;
+.filters-catalog section {
+ width: calc(360px + 360px + 3.8%);
 }
-
-
 
 .catalog {
-  width: 760px;
-  min-height: 963px;
+  width: 973px;
+  min-height: 1000px;
   margin-top: 70px;
-  margin-left: 74px;
+  margin-left: 135px;
 }
 
 .catalog-list {
