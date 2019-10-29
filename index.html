@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" 
-     rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>    
-    <header class="main-header">      
-      <nav class="main-navigation">
 
-        <a class="main-header-logo" href="#">
-          <img class="logo-device" src="img/background-black-logo.svg" width="163" height="35" alt="Логотип DEVICE">
-        </a>
-        
-        <div class="header-interface-container">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+
+      <a class="main-header-logo" href="#">
+        <img class="logo-device" src="img/background-black-logo.svg" width="163" height="35" alt="Логотип DEVICE">
+      </a>
+
+      <div class="header-interface-container">
 
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="lable-search visually-hidden-search" for="search">Поиск по сайту</label>
           <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
           <button class="button-search hidden-button" type="submit">Найти</button>
-        </form>   
+        </form>
 
-          <ul class="interface-header">
+        <ul class="interface-header">
           <li class="to-come-in">
             <a href="#">
-            Войти
+              Войти
             </a>
           </li>
           <li class="compare">
@@ -37,45 +38,45 @@
           </li>
           <li class="basket">
             <a href="#">
-            Корзина
+              Корзина
             </a>
           </li>
-          </ul>
-
-        </div>
-
-
-        <ul class="header-product-contacts">
-          <li><a href="catalog.html">Каталог товаров
-          </a>
-            <ul class="sub-menu-catalog">
-              <li>
-                <a href="#">Виртуальная реальность</a>
-                <a href="catalog.html">Моноподы для селфи</a>
-                <a href="#">Экшн-камера</a>
-              </li>             
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>        
         </ul>
 
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Device</h1>
+      </div>
 
-      <section class="promo-slider">
-        <div class="decorative-strip"></div>
-        <div class="promo-slider-container">
+
+      <ul class="header-product-contacts">
+        <li><a href="catalog.html">Каталог товаров
+          </a>
+          <ul class="sub-menu-catalog">
+            <li>
+              <a href="#">Виртуальная реальность</a>
+              <a href="catalog.html">Моноподы для селфи</a>
+              <a href="#">Экшн-камера</a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+              <a href="#">Умные часы</a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Device</h1>
+
+    <section class="promo-slider">
+      <div class="decorative-strip"></div>
+      <div class="promo-slider-container">
         <h2 class="visually-hidden">Промо слайдер</h2>
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
@@ -87,117 +88,119 @@
         </div>
         <ol class="promo-slider-list">
           <li class="slider-item-selfie">
-            <img class="selfie" src="img/slider-stick-selfie.png" width="384" height="486" alt="Изоброжение самая длинная палка селфи!">
+            <img class="selfie" src="img/slider-stick-selfie.png" width="384" height="486"
+              alt="Изоброжение самая длинная палка селфи!">
             <div class="features">
-            <h3 class="features-item">Делай селфи,<br> как Бен Стиллер!</h3>  
-            <span class="features-item">01</span>      
-            <p class="features-item">Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <a class="button-info" href="#">Подробнее</a>
-        <table class="promo-slider-table">
-          <tr class="">
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
-           </tr>
-          <tr class="">
-            <td>Длина палки</td>
-            <td>Вес палки</td>
-            <td>Материал</td>
-           </tr>
-        </table>
-        </div>
-        </li>
-        <li class="slider-item-сlock">
-          <img class="сlock" src="img/slider-fitness-bracelet.png" width="345" height="485" alt="Изоброжение Фитнесс браслет">
-          <div class="features">
-          <h3>Худеем<br> правильно!</h3>         
-          <span>02</span>
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-            <br>не пропускать занятия и соблюдать диету.
-          </p>
-          <a class="button-info" href="#">Подробнее</a>
-        <table class="promo-slider-table">
-          <tr>
-            <td>48 часов</td>
-           </tr>
-          <tr>
-            <td>Без подзарядки</td>     
-           </tr>
-        </table>
-        </div>
-        </li>
-        <li class="slider-item-quadrocopter">
+              <h3 class="features-item">Делай селфи,<br> как Бен Стиллер!</h3>
+              <span class="features-item">01</span>
+              <p class="features-item">Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="button-info" href="#">Подробнее</a>
+              <table class="promo-slider-table">
+                <tr class="">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr class="">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="slider-item-сlock">
+            <img class="сlock" src="img/slider-fitness-bracelet.png" width="345" height="485"
+              alt="Изоброжение Фитнесс браслет">
+            <div class="features">
+              <h3>Худеем<br> правильно!</h3>
+              <span>02</span>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                <br>не пропускать занятия и соблюдать диету.
+              </p>
+              <a class="button-info" href="#">Подробнее</a>
+              <table class="promo-slider-table">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="slider-item-quadrocopter">
             <img class="quadrocopter" src="img/slider-quadcopter.png" width="526" alt="Изоброжение Квадрокоптера">
             <div class="features">
-            <h3>Порхает как бабочка,
-              жалит как пчела!
-            </h3>
-            <span>03</span>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащён
-              мощным лазером, замаскированным под стандартную камеру.
-            </p>
-            <a class="button-info" href="#">Подробнее</a>
-          <table class="promo-slider-table">
-            <tr>
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr>
-              <td>Дальность полёта</td>
-              <td>Радиус поражения</td>         
-            </tr>
-          </table>
-          </div>
-        </li>
-      </ol>
+              <h3>Порхает как бабочка,
+                жалит как пчела!
+              </h3>
+              <span>03</span>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащён
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="button-info" href="#">Подробнее</a>
+              <table class="promo-slider-table">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <td>Дальность полёта</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ol>
       </div>
-      </section>
-      
-      <!-- Фоновая картинка полосочки, таблица и переключатель -->
+    </section>
 
-        <ul class="sections-list">
-          <li>
-           <a href="#">
-             <div class="virtual-reality-icon"></div>
-             <span class="virtual-reality">Виртуальная реальность</span>
-           </a>
-            </li>
-          <li class="section-main">
-            <a href="catalog.html">
-              <div class="monopods-for-selfie-icon"></div>               
-              <span class="monopods-for-selfie">Моноподы<br> для селфи</span>
-            </a>
-            </li>
-          <li class="">
-            <a href="#">
-              <div class="action-cameras-icon"></div>
-              <span class="action-cameras">Экшн-камеры</span>
-            </a>
-            </li>
-          <li class="section-main">
-            <a href="#">
-              <div class="fitness-bracelets-icon"></div>
-              <span  class="fitness-bracelets">Фитнес-браслеты</span>
-            </a>
-            </li>
-          <li class="section-main">
-              <a href="#">
-                <div class="smart-watch-icon"></div>
-                <span  class="smart-watch">Умные часы</span>
-              </a>
-              </li>
-          <li class="section-main">
-              <a href="">
-                <div class="quadcopters-icon"></div>
-                <span class="quadcopters">Квадрокоптеры</span>
-              </a>
-              </li>
-        </ul>
-        
-<!--Слайдер 2-->        
-      <div class="slider-services"> 
-        <div class="slider-services-container">
+    <!-- Фоновая картинка полосочки, таблица и переключатель -->
+
+    <ul class="sections-list">
+      <li>
+        <a href="#">
+          <div class="virtual-reality-icon"></div>
+          <span class="virtual-reality">Виртуальная реальность</span>
+        </a>
+      </li>
+      <li class="section-main">
+        <a href="catalog.html">
+          <div class="monopods-for-selfie-icon"></div>
+          <span class="monopods-for-selfie">Моноподы<br> для селфи</span>
+        </a>
+      </li>
+      <li class="">
+        <a href="#">
+          <div class="action-cameras-icon"></div>
+          <span class="action-cameras">Экшн-камеры</span>
+        </a>
+      </li>
+      <li class="section-main">
+        <a href="#">
+          <div class="fitness-bracelets-icon"></div>
+          <span class="fitness-bracelets">Фитнес-браслеты</span>
+        </a>
+      </li>
+      <li class="section-main">
+        <a href="#">
+          <div class="smart-watch-icon"></div>
+          <span class="smart-watch">Умные часы</span>
+        </a>
+      </li>
+      <li class="section-main">
+        <a href="">
+          <div class="quadcopters-icon"></div>
+          <span class="quadcopters">Квадрокоптеры</span>
+        </a>
+      </li>
+    </ul>
+
+    <!--Слайдер 2-->
+    <div class="slider-services">
+      <div class="slider-services-container">
         <h2 class="visually-hidden">Услуги</h2>
         <input class="visually-hidden" type="radio" id="delivery-1" name="toggle-services" checked>
         <input class="visually-hidden" type="radio" id="guarantee-2" name="toggle-services">
@@ -207,73 +210,73 @@
           <label class="" for="guarantee-2">Гарантия</label>
           <label class="" for="loan-3">Кредит</label>
         </div>
-          <ul class="slider-services-list">
+        <ul class="slider-services-list">
           <li class="slider-item">
-              <h3 class="delivery">Доставка</h3>
-              <p class="">Мы с удовольствием доставим ваш товар прямо к вашему 
-                подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-               поднимая его на ваш этаж.
-              </p>
+            <h3 class="delivery">Доставка</h3>
+            <p class="">Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж.
+            </p>
           </li>
 
           <li class="slider-item">
             <h3 class="guarantee">Гарантия</h3>
             <p class="">Если из-за возгорания купленного у нас товара у вас
-                сгорит дом — не переживайте, мы выдадим вам новый.<br>
-                Товар, не дом, конечно же.
+              сгорит дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.
             </p>
           </li>
 
           <li class="slider-item">
             <h3 class="loan">Кредит</h3>
-            <p class="">Залезть в долговую яму стало проще! 
-              Кредитные консультанты подберут для вас наиболее выгодные<br> 
-              условия кредита. Выгодные для нашего банка, разумеется. 
+            <p class="">Залезть в долговую яму стало проще!
+              Кредитные консультанты подберут для вас наиболее выгодные<br>
+              условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </li>
-          </ul>
-        </div>
-      </div>
-
-
-      <section class="list-logo-container">
-        <h2 class="visually-hidden">Партнёры</h2>
-        <ul class="list-logo">
-          <li>
-            <a class="logo-dji" href=#>
-              <img src="img/logo-dji.png" width="260" height="160" alt="Логотип DJI">
-              <img src="img/logo-dji-hover.png" width="260" height="160" alt="Логотип DJI">
-            </a>
-          </li>
-          <li>
-            <a  class="logo-sp-gadgets" href=#>
-              <img src="img/logo-sp-gadgets.png" width="260" height="160" alt="Логотип SP-gadgets">
-              <img src="img/logo-sp-gadgets-hover.png" width="260" height="160" alt="Логотип SP-gadgets">
-            </a>
-           </li>
-          <li>
-            <a  class="logo-gopro" href=#>
-              <img src="img/logo-gopro.png" width="260" height="160" alt="Логотип GoPro">
-              <img src="img/logo-gopro-hover.png" width="260" height="160" alt="Логотип GoPro">
-            </a>
-           </li>
-          <li>
-            <a  class="logo-vive" href=#>
-              <img src="img/logo-vive.png" width="260" height="160" alt="Логотип Vive">
-              <img src="img/logo-vive-hover.png" width="260" height="160" alt="Логотип Vive"> 
-            </a>
-          </li>
         </ul>
-      </section>
-      
-      <div class="intex-colums">      
+      </div>
+    </div>
+
+
+    <section class="list-logo-container">
+      <h2 class="visually-hidden">Партнёры</h2>
+      <ul class="list-logo">
+        <li>
+          <a class="logo-dji" href=#>
+            <img src="img/logo-dji.png" width="260" height="160" alt="Логотип DJI">
+            <img src="img/logo-dji-hover.png" width="260" height="160" alt="Логотип DJI">
+          </a>
+        </li>
+        <li>
+          <a class="logo-sp-gadgets" href=#>
+            <img src="img/logo-sp-gadgets.png" width="260" height="160" alt="Логотип SP-gadgets">
+            <img src="img/logo-sp-gadgets-hover.png" width="260" height="160" alt="Логотип SP-gadgets">
+          </a>
+        </li>
+        <li>
+          <a class="logo-gopro" href=#>
+            <img src="img/logo-gopro.png" width="260" height="160" alt="Логотип GoPro">
+            <img src="img/logo-gopro-hover.png" width="260" height="160" alt="Логотип GoPro">
+          </a>
+        </li>
+        <li>
+          <a class="logo-vive" href=#>
+            <img src="img/logo-vive.png" width="260" height="160" alt="Логотип Vive">
+            <img src="img/logo-vive-hover.png" width="260" height="160" alt="Логотип Vive">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="intex-colums">
       <section class="about-us">
         <div></div>
-        <h2 >О нас</h2>
+        <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика,
-        который есть в каждом из нас.</p>
+          который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдалённые точки
-        России! DEVICE работает со многими транспортными компаниями:</p>
+          России! DEVICE работает со многими транспортными компаниями:</p>
         <ul>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
@@ -285,73 +288,84 @@
       <!-- Фоновая картинка полосочки -->
 
       <section class="contacts-main">
-          <div></div>
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+        <div></div>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts-map" href="#"><img src="img/map-index.png" width="560" height="222"
-             alt="г. Москва, ул. Строителей, 15"></a>
-          <a class="write-to-us-a" href="#">Напишите нам</a>
-      </section>      
-      </div>
+        <a class="contacts-map" href="#"><img src="img/map-index.png" width="560" height="222"
+            alt="г. Москва, ул. Строителей, 15"></a>
+        <a class="write-to-us-a" href="#">Напишите нам</a>
+      </section>
+    </div>
 
-    </main>
-    <footer class="footer">   
-      <div class="footer-logo-interface">
+  </main>
+  <footer class="footer">
+    <div class="footer-logo-interface">
       <a class="logo-device-footer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
-            <defs>
-                <style>
-                    .cls-1{fill-rule:evenodd}
-                </style>
-            </defs>
-            <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" fill="#ffc600" class="cls-1" data-name="-e-logo"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
+          <defs>
+            <style>
+              .cls-1 {
+                fill-rule: evenodd
+              }
+            </style>
+          </defs>
+          <path id="_-e-logo"
+            d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z"
+            fill="#ffc600" class="cls-1" data-name="-e-logo" />
         </svg>
       </a>
 
       <ul class="interface-footer-index">
         <li>
           <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
-            <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
-            C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z" fill="#ffc600"/>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12"
+              enable-background="new 0 0 13 12" xml:space="preserve">
+              <path
+                d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+            C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"
+                fill="#ffc600" />
             </svg>
             <span>Войти</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
-           <rect x="8" y="2" width="1.984" height="8" fill="#ffc600"/>
-           <rect y="3" width="1.984" height="7" fill="#ffc600"/>
-           <rect x="4" width="2" height="10" fill="#ffc600"/>
-           </svg>
-           <span>Сравнить</span>
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10"
+              enable-background="new 0 0 10 10" xml:space="preserve">
+              <rect x="8" y="2" width="1.984" height="8" fill="#ffc600" />
+              <rect y="3" width="1.984" height="7" fill="#ffc600" />
+              <rect x="4" width="2" height="10" fill="#ffc600" />
+            </svg>
+            <span>Сравнить</span>
           </a>
         </li>
         <li>
           <a href="#">
-              <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12"
+              enable-background="new 0 0 12 12" xml:space="preserve">
               <g>
-              <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+                <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
                c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
                c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
-               c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z" fill="#ffc600"/>
-              <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+               c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z" fill="#ffc600" />
+                <path
+                  d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
               c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
-              C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z" fill="#ffc600"/>
-            </g>
+              C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"
+                  fill="#ffc600" />
+              </g>
             </svg>
             <span>Корзина</span>
           </a>
         </li>
       </ul>
-      </div>
+    </div>
 
-      <div class="contacts-services">
+    <div class="contacts-services">
       <p class="">г. Москва, ул. Строителей, 15</p>
 
       <ul class="contacts-footer">
@@ -361,169 +375,183 @@
       </ul>
 
       <a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      </div>
+    </div>
 
-      <div class="social-media-logo">
+    <div class="social-media-logo">
       <div class="decorative-strip-bot"></div>
       <ul class="social-media">
-        <li><a href="https://www.facebook.com"><svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-          <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
-          v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
-          </svg></a>
-        </li>
-        <li><a href="https://www.instagram.com"><span class="visually-hidden">Инстаграм</span><svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-            <g>
-            <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
-             h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
-             <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
-             c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
-             <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
-             <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
-             M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
-             h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
-             </g>
+        <li><a href="https://www.facebook.com"><svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"
+              enable-background="new 0 0 32 32" xml:space="preserve">
+              <path fill="#FFFFFF"
+                d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
+          v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z" />
             </svg></a>
         </li>
-        <li><a href="https://twitter.com"><span class="visually-hidden">Твиттер</span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
-          height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-          <g id="Layer_6">
-          </g>
-          <g id="Layer_7">
-          <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+        <li><a href="https://www.instagram.com"><span class="visually-hidden">Инстаграм</span><svg version="1.1"
+              id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+              <g>
+                <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
+             h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z" />
+                <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
+             c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z" />
+                <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039" />
+                <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+             M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
+             h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z" />
+              </g>
+            </svg></a>
+        </li>
+        <li><a href="https://twitter.com"><span class="visually-hidden">Твиттер</span><svg version="1.1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+              height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+              <g id="Layer_6">
+              </g>
+              <g id="Layer_7">
+                <path fill="#FFFFFF"
+                  d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
             M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
            c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
            c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643
            c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643
            c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685
-           c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"/>
-          </g>
-          </svg></a>
+           c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z" />
+              </g>
+            </svg></a>
         </li>
       </ul>
 
-      <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span>
-        <svg version="1.1" id="Layer_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" fill="#ffc600"/>
+      <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML
+          Academy</span>
+        <svg version="1.1" id="Layer_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
+          enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path
+            d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"
+            fill="#ffc600" />
         </svg>
       </a>
     </div>
-    </footer>
+  </footer>
 
-    <section class="modal-sending-letter">  
+  <section class="modal-sending-letter">
     <h2 class="visually-hidden">Отправка письма</h2>
     <form class="sending-letter-form" action="https://echo.htmlacademy.ru" method="post">
-        <button class="modal-close-index" type="button"></button>      
-        <div>
-          <label for="login-sending-letter">Ваше имя:</label> 
-          <label for="email-sending-letter">Ваш e-mail:</label> 
-        </div> 
-        <div>     
-          <input id="login-sending-letter" type="text" name="first-name-last-name" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">                         
-          <input id="email-sending-letter" type="email"  name="email" placeholder="email@example.com">          
-        </div>    
-        <div>          
-          <label>Текст письма:</label>  
-        </div>   
-        <textarea cols="106" rows="7" name="text-letter"  placeholder="В свободной форме"></textarea>  
-        <button class="to-send-sending-letter" type="submit">Отправить</button>                   
+      <button class="modal-close-index" type="button"></button>
+      <div>
+        <label for="login-sending-letter">Ваше имя:</label>
+        <label for="email-sending-letter">Ваш e-mail:</label>
+      </div>
+      <div>
+        <input id="login-sending-letter" type="text" name="first-name-last-name" placeholder="Имя Фамилия"
+          pattern="[А-Яа-я]*?\s[А-Яа-я]*">
+        <input id="email-sending-letter" type="email" name="email" placeholder="email@example.com">
+      </div>
+      <div>
+        <label>Текст письма:</label>
+      </div>
+      <textarea cols="106" rows="7" name="text-letter" placeholder="В свободной форме"></textarea>
+      <button class="to-send-sending-letter" type="submit">Отправить</button>
     </form>
-    </section>  
+  </section>
 
-    <section class="modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>  
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.5437952595332!2d37.528818732559095!3d55.68746491062414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572183371979!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  
-      <p><img class="big-map-index" src="img/big-map-index.png" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
-      </p>
-      <button class="modal-close-index" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
+  <section class="modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.5437952595332!2d37.528818732559095!3d55.68746491062414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572183371979!5m2!1sru!2sru"
+      width="960" height="559" style="border:0;" allowfullscreen=""></iframe>
+    <p><img class="big-map-index" src="img/big-map-index.png" width="960" height="559"
+        alt="г. Москва, ул. Строителей, 15">
+    </p>
+    <button class="modal-close-index" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
 
-    <script>
-      var link = document.querySelector(".write-to-us-a");
-      var modalSendingLetter = document.querySelector(".modal-sending-letter");
-      var close = document.querySelector(".modal-close-index");
-      var firstNameLastName = modalSendingLetter.querySelector("[name=first-name-last-name]");
-      var formLetter = modalSendingLetter.querySelector(".sending-letter-form");
-      var eMail = modalSendingLetter.querySelector(".email-sending-letter");
-      var storageName = localStorage.getItem("firstNameLastName");
-      var storageEMail = localStorage.getItem("eMail");
-      var isStorageSupport = true;
-      var storageName = "";
- 
+  <script>
+    var link = document.querySelector(".write-to-us-a");
+    var modalSendingLetter = document.querySelector(".modal-sending-letter");
+    var close = document.querySelector(".modal-close-index");
+    var firstNameLastName = modalSendingLetter.querySelector("[name=first-name-last-name]");
+    var formLetter = modalSendingLetter.querySelector(".sending-letter-form");
+    var eMail = modalSendingLetter.querySelector(".email-sending-letter");
+    var storageName = localStorage.getItem("firstNameLastName");
+    var storageEMail = localStorage.getItem("eMail");
+    var isStorageSupport = true;
+    var storageName = "";
 
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalSendingLetter.classList.add("modal-show");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modalSendingLetter.classList.add("modal-show");
+      firstNameLastName.focus();
+      if (storageName) {
+        firstNameLastName.value = storageName;
+        eMail.focus();
+      } else {
         firstNameLastName.focus();
-        if (storageName) {
-          firstNameLastName.value = storageName;
-          eMail.focus();
-        } else {
-          firstNameLastName.focus();
-        }
-      } );
+      }
+    });
 
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalSendingLetter.classList.remove("modal-show");
-        modalSendingLetter.classList.remove("modal-error");
-      });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modalSendingLetter.classList.remove("modal-show");
+      modalSendingLetter.classList.remove("modal-error");
+    });
 
-      formLetter.addEventListener("submit", function (evt) {
-        if (!firstNameLastName.value || !eMail.value) {
+    formLetter.addEventListener("submit", function (evt) {
+      if (!firstNameLastName.value || !eMail.value) {
         evt.preventDefault();
         modalSendingLetter.classList.remove("modal-error");
         modalSendingLetter.offsetWidth = modalSendingLetter.offsetWidth;
         modalSendingLetter.classList.add("modal-error");
-        } else { 
-          if (isStorageSupport) {
+      } else {
+        if (isStorageSupport) {
           localStorage.setItem("firstNameLastName", firstNameLastName.value);
-          }
         }
-      });
-
-      try {
-        storageName = localStorage.getItem("firstNameLastName");
-      } catch (err) {
-        isStorageSupport = false;
       }
+    });
 
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (modalSendingLetter.classList.contains("modal-show")) {
-            evt.preventDefault();
-            modalSendingLetter.classList.remove("modal-show");
-            modalSendingLetter.classList.remove("modal-error");
-          }
+    try {
+      storageName = localStorage.getItem("firstNameLastName");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (modalSendingLetter.classList.contains("modal-show")) {
+          evt.preventDefault();
+          modalSendingLetter.classList.remove("modal-show");
+          modalSendingLetter.classList.remove("modal-error");
         }
-      });
+      }
+    });
 
-      var mapLink = document.querySelector(".contacts-map");
-      var mapPopup = document.querySelector(".modal-map");
-      var mapClose = document.querySelector(".modal-map button");
+    var mapLink = document.querySelector(".contacts-map");
+    var mapPopup = document.querySelector(".modal-map");
+    var mapClose = document.querySelector(".modal-map button");
 
-      mapLink.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.add("modal-show");
-      });
+    mapLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("modal-show");
+    });
 
-      mapClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.remove("modal-show");
-      });
+    mapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    });
 
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-show")) {
-            evt.preventDefault();
-            mapPopup.classList.remove("modal-show");
-          }
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("modal-show")) {
+          evt.preventDefault();
+          mapPopup.classList.remove("modal-show");
         }
-      });
-    </script>
-  </body>
+      }
+    });
+  </script>
+</body>
+
 </html>
-   

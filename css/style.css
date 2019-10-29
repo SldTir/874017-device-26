@@ -81,6 +81,8 @@ input[type="radio"].visually-hidden {
   margin: auto;
   width: 1160px;
   min-height: 299px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .header-interface-container {
@@ -183,7 +185,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   
   padding-left: 26px;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .interface-header .compare::before {
@@ -638,10 +640,11 @@ input[type="radio"].visually-hidden {
 
  .promo-slider-list p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400px;
-  letter-spacing: 0.14px;
+  font-weight: 100px;
 
-  max-width: 480px;
+  white-space: 0.1px;
+
+  max-width: 500px;
   margin-top: -28px;
   margin-left: 11px;
 
@@ -722,11 +725,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  width: 1120px;
+  width: 1160px;
   min-height: 242px;
 
   margin: auto;
   margin-top: 86px;
+  padding: 0;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .sections-list li {
@@ -737,7 +743,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   width: 160px;
-  margin-left: -40px;
+
   letter-spacing: 0.3px;
 
   list-style: none;
@@ -887,6 +893,8 @@ input[type="radio"].visually-hidden {
 
   margin: auto;
   margin-top: 80px;
+  padding-left: 5px;
+  padding-right: 5px;
 
   width: 1160px;
   min-height: 388px;
@@ -977,7 +985,7 @@ input[type="radio"].visually-hidden {
 
 .slider-services p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   text-transform: none;
   font-size: 15px;
   line-height: 30px;  
@@ -1024,28 +1032,28 @@ input[type="radio"].visually-hidden {
 /* Список логотипов */
 .list-logo-container{
   margin: auto;
-  width: 1160px;
+  width: 1200px;
 
   margin-top: 94px;
   margin-bottom:58px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  box-sizing: border-box;
 
 }
 
 .list-logo {
- 
   display: flex;
-  justify-content: space-between;
+
   margin: 0;
+  padding: 0;
 }
 
 .list-logo li {
   position: relative;
-
-  justify-content: space-between;
-  align-items: center;
   flex-direction: row;
 
-  margin-left: -40px;
   width: 260px;
   height: 100px;
   min-height: 135px;
@@ -1053,8 +1061,16 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.list-logo li:nth-child(4) {
-  margin-right: 3px;
+.list-logo li:nth-child(1) {
+  margin-right: 40px;
+}
+
+.list-logo li:nth-child(2) {
+  margin-right: 40px;
+}
+
+.list-logo li:nth-child(3) {
+  margin-right: 37px;
 }
 
 .list-logo a img:last-child  {
@@ -1113,7 +1129,7 @@ input[type="radio"].visually-hidden {
 
 .about-us p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 15px;
   line-height: 30px;
 
@@ -1204,7 +1220,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-main p {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 15px;
   line-height: 30px;
 
@@ -1713,6 +1729,8 @@ fieldset legend {
 
   margin: auto;
   margin-top: 27px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .interface-footer-index,
@@ -1726,6 +1744,11 @@ fieldset legend {
 }
 
 .interface-footer-index {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 30px;
+
   width: 345px;
 }
 
@@ -1767,7 +1790,7 @@ fieldset legend {
 
 .contacts-services {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 15px;
   line-height: 30px;
 
@@ -1780,6 +1803,8 @@ fieldset legend {
 
   margin: auto;
   margin-top: -8px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -1808,34 +1833,28 @@ fieldset legend {
 
   margin: auto;
   margin-top: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .social-media-logo ul {
   margin-top: 7px;
-
-}
-
-.social-media li a {
-  margin-left: 23px;
+  margin-right: 50px;
 }
 
 .social-media {
   display: flex;
   justify-content: space-between;
-  width: 150px;
+  width: 140px;
 
   margin: 0px;
   padding: 0px;
-  padding-right: 90px;
 }
 
 
 .decorative-strip-bot {
-
   border-top: 7px solid #ffc600;
   width: 80px;
-
-  margin-top: 2px;
 }
 
 /*Оформление подвала*/
@@ -2425,7 +2444,6 @@ fieldset legend {
 }
 
 .inner-page .footer {
-  margin-top: -140px;
 }
 
 .inner-page .interface-footer-catalog {
