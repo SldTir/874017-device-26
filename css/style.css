@@ -1094,7 +1094,7 @@ input[type="radio"].visually-hidden {
 
   padding: 0;
   margin: auto;
-  margin-bottom: 87px;
+  margin-bottom: 79px;
 
   width: 1170px;
   min-height: 570px;
@@ -1275,6 +1275,11 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 48px;
   text-transform: none;
+}
+
+.breadcrambs-nav{
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .breadcrambs {
@@ -1701,7 +1706,8 @@ fieldset legend {
   opacity: 0.3;
 }
 
-.pagination-list a.selected {
+.pagination-list a.selected,
+.sort div.selected {
   opacity: 1;
 }
 
@@ -1711,7 +1717,6 @@ fieldset legend {
 .footer {
   padding: 37px 0;
   margin: auto;
-  margin-top: -8px;
   min-height: 250px;
 }
 
@@ -1876,12 +1881,14 @@ fieldset legend {
 }
 
 .interface-footer-index li:hover span,
-.interface-footer-catalog li:hover span {
+.interface-footer-catalog li:hover span,
+.interface-footer-catalog li:hover a {
   opacity: 1;
 }
 
 .interface-footer-index li:active  span,
-.interface-footer-catalog li:active  span {
+.interface-footer-catalog li:active  span,
+.interface-footer-catalog li:active  a {
   opacity: 0.3;
 }
 
@@ -2050,10 +2057,10 @@ fieldset legend {
   background: linear-gradient(to right, #eeeeee 36.8%, #ffffff 36.8%);
 }
 
-.sort-flter-container {
+.sort-flter {
   margin-top: 44px;
   min-height: 70px;
-  background: linear-gradient(to right, #dcdcdc 36.8%, #ebebeb 36.8%);
+  background: linear-gradient(to right, #dcdcdc 698px, #ebebeb 698px);
 }
 
 .sort {
@@ -2106,10 +2113,6 @@ fieldset legend {
   margin-left: 20px;
 }
 
-.selected {
-  opacity: 1;
-}
-
 .icon-triangle-up {
   width: 11px;
   height: 10px;
@@ -2148,14 +2151,15 @@ fieldset legend {
 
 .filters {
   width: 205px;
-  min-height: 1288px;
+  min-height: 1000px;
 
   padding: 0;
-  margin-top: 0px;
+  margin-top: 69px;
 }
 
 .filters-catalog section {
  width: calc(360px + 360px + 3.8%);
+ margin-bottom: 77px;
 }
 
 .catalog {
