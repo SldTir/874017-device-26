@@ -86,23 +86,27 @@ input[type="radio"].visually-hidden {
   padding-right: 5px;
 }
 
+.main-navigation {
+  position: relative;
+  
+  margin-top: 40px;
+  padding: 0 40px;
+  padding-top: 20px;
+  min-height: 299px;
+
+  box-sizing: border-box;
+}
+
 .header-interface-container {
   display: flex;
   justify-content: space-between;
   
   width: 1040px;
   margin: 0 auto;
-  padding: 0 10px;
-  margin-top: 30px;
+  min-height: 10px;
+  margin-top: 10px;
 }
 
-.main-navigation {
-  position: relative;
-  
-  margin-top: 40px;
-  padding: 0 40px;
-  min-height: 299px;
-}
 
 .main-header-logo {
   position: absolute;
@@ -113,17 +117,17 @@ input[type="radio"].visually-hidden {
   min-height: 35px;
 }
 
-.inner-page .main-header-logo {
-  margin-top: 3px;
-}
-
 .form-search {
   display: flex;
 
   width: 440px;
-  margin-top: 43px;
   margin-right: 100px;
 }
+
+.inner-page .main-header-logo {
+  margin-top: 3px;
+}
+
 
 .interface-header li a {
   font-family: "Open Sans", Arial, sans-serif;
@@ -146,7 +150,6 @@ input[type="radio"].visually-hidden {
   
   margin: 0;
   padding: 0;
-  margin-top: 30px;
 
   list-style: none;
 }
@@ -303,7 +306,7 @@ input[type="radio"].visually-hidden {
   content: "";
   
   position: absolute;
-  top: 8px;
+  top: 20px;
   left: 3px;
   
   width: 16px;
@@ -327,7 +330,7 @@ input[type="radio"].visually-hidden {
   width: 85px;
   min-height: 50px;
 
-  margin-top: -10px;
+  margin-bottom: 3px;
 
   border: 2px solid black;
   background-color:  #f7e296;
@@ -358,11 +361,12 @@ input[type="radio"].visually-hidden {
   width: 357px;
 
   padding-left: 35px;
-  padding-bottom: 10px;
+  padding-top: 5px;
   margin-left: 3px;
   margin-bottom: 3px;
  
-  border: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
   background-color: #f7e296; 
 }
 
@@ -371,7 +375,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search:focus {
-  padding-bottom: 7px;
   border-bottom: 2px solid black;
 
   outline: none;
@@ -2062,8 +2065,11 @@ fieldset legend {
   
   margin-top: 40px;
   padding: 0 40px;
-  
+  padding-top: 20px;
+
   min-height: 186px;
+
+  box-sizing: border-box;
 }
 
 /*---- Cattalog Main----*/
