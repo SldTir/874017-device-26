@@ -76,6 +76,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.pagination-list a.selected,
+.sort .selected,
+.breadcrambs a.selected {
+  opacity: 1;
+}
+
 /*---- Header ----*/
 .main-header {
   margin: auto;
@@ -485,7 +491,6 @@ input[type="radio"].visually-hidden {
 
   width: 1160px;
   min-height: 510px;
-
 }
 
 .slider-controls {
@@ -563,6 +568,14 @@ input[type="radio"].visually-hidden {
   background-color: inherit;
   border: 1px solid black;
   border-radius: 50%;
+}
+
+#product-1:focus ~ .slider-controls .slider-controls-item--1::after,
+#product-2:focus ~ .slider-controls .slider-controls-item--2::after,
+#product-3:focus ~ .slider-controls .slider-controls-item--3::after {
+  outline-style: solid;
+  outline-color: #aac6ff;
+  outline-width: 2px;
 }
 
 .promo-slider-list {
@@ -958,8 +971,7 @@ input[type="radio"].visually-hidden {
 
 
 
-.slider-services-controls label:hover,
-.slider-services-controls label:focus {
+.slider-services-controls label:hover {
   color: black;
 
   background: linear-gradient(white 0%, #f0c52e 0%, #f0c52e 100%, white 100%);
@@ -981,6 +993,14 @@ input[type="radio"].visually-hidden {
   padding-right: 120px;
 
   background: linear-gradient(white -10%, black -10%, black 100%, white 0%);
+}
+
+#delivery-1:focus ~ .slider-services-controls label:nth-child(1),
+#guarantee-2:focus ~ .slider-services-controls label:nth-child(2),
+#loan-3:focus ~ .slider-services-controls label:nth-child(3) {
+  outline-style: solid;
+  outline-color: #aac6ff;
+  outline-width: 2px;
 }
 
 .slider-services h3 {
@@ -1544,10 +1564,10 @@ fieldset legend {
 }
 
 .sort a:hover,
+.sort a:focus,
 .icon-triangle-up:hover,
 .icon-triangle-up:focus,
-.icon-triangle-down:hover,
-.icon-triangle-down:focus {
+.icon-triangle-down:hover {
   opacity: 0.4;
 }
 
@@ -1673,10 +1693,11 @@ fieldset legend {
   list-style: none;
 }
 
-.pagination-list li:nth-child(1) {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 32px;
+.pagination-list li:nth-child(1) a {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 30px;
   padding-right: 23px;
 }
 
@@ -1689,11 +1710,12 @@ fieldset legend {
 }
 
 
-.pagination-list li:nth-child(5) {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.pagination-list li:nth-child(5) a {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
   padding-left: 32px;
-  padding-right: 23px;
+  padding-right: 24px;
 }
 
 .pagination-list a {
@@ -1720,20 +1742,16 @@ fieldset legend {
   opacity: 1;
 }
 
-.pagination-list li:first-child:hover,
-.pagination-list li:last-child:hover {
+.pagination-list li:first-child a:hover,
+.pagination-list li:last-child a:hover,
+.pagination-list li:first-child a:focus,
+.pagination-list li:last-child a:focus {
   background-color: #d9d9d9;
 }
 
 .pagination-list li:first-child a:active,
 .pagination-list  li:last-child a:active {
   opacity: 0.3;
-}
-
-.pagination-list a.selected,
-.sort div.selected,
-.breadcrambs a.selected {
-  opacity: 1;
 }
 
 /*Подвал*/
@@ -2333,10 +2351,6 @@ fieldset legend {
   margin-top: 18px;
 }
 
-.filter-option {
-  padding-left: 39px;
-}
-
 .filter-option label {
   position: relative;
 
@@ -2345,6 +2359,8 @@ fieldset legend {
   cursor: pointer;
 
   user-select: none;
+
+  padding-left: 39px;
 }
 
 .filter-input-checkbox:not(:checked) + label::before {
@@ -2352,7 +2368,7 @@ fieldset legend {
   position: absolute;
 
   top: 8px;
-  left: -39px;
+  left: -2px;
 
   width: 23px;
   height: 23px;
@@ -2368,7 +2384,7 @@ fieldset legend {
   position: absolute;
 
   top: 8px;
-  left: -39px;
+  left: -2px;
 
   width: 27px;
   height: 23px;
@@ -2385,7 +2401,7 @@ fieldset legend {
   position: absolute;
 
   top: 8px;
-  left: -39px;
+  left: -2px;
 
   width: 27px;
   height: 23px;
@@ -2402,7 +2418,7 @@ fieldset legend {
   position: absolute;
 
   top: 8px;
-  left: -39px;
+  left: -2px;
 
   width: 23px;
   height: 23px;
@@ -2418,7 +2434,7 @@ fieldset legend {
 
   position: absolute;
   top: 7px;
-  left: -39px;
+  left: -2px;
 
   width: 25px;
   height: 25px;
@@ -2433,7 +2449,7 @@ fieldset legend {
 
   position: absolute;
   top: 7px;
-  left: -39px;
+  left: -2px;
 
   width: 25px;
   height: 25px;
@@ -2450,6 +2466,20 @@ fieldset legend {
   opacity: 0.3;
 }
 
+.filter-input:focus + label::before,
+.filter-input:focus + label::after,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:focus + label::after {
+  opacity: 0.3;
+}
+
+.filter-input:focus + label,
+.filter-input-radio:focus + label {
+  outline-style: solid;
+  outline-color: #aac6ff;
+  outline-width: 2px;
+}
+
 .filters li label:active::before,
 .filters li label:active::after {
   opacity: 1;
@@ -2458,7 +2488,7 @@ fieldset legend {
 .filter-input-radio + label:active::before {
   position: absolute;
   top: 7px;
-  left: -39px;
+  left: -2px;
 
   width: 25px;
   height: 25px;
@@ -2471,7 +2501,7 @@ fieldset legend {
 .filter-input-radio + label:active::after {
   position: absolute;
   top: 7px;
-  left: -39px;
+  left: -2px;
 
   width: 25px;
   height: 25px;
