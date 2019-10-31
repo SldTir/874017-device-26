@@ -18,7 +18,6 @@
       </a>
 
       <div class="header-interface-container">
-
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="lable-search visually-hidden-search" for="search">Поиск по сайту</label>
           <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -42,10 +41,8 @@
             </a>
           </li>
         </ul>
-
       </div>
-
-
+      
       <ul class="header-product-contacts">
         <li><a href="#">Каталог товаров
           </a>
@@ -381,17 +378,18 @@
     <div class="social-media-logo">
       <div class="decorative-strip-bot"></div>
       <ul class="social-media">
-        <li><a class="social-media-logo-item" href="https://www.facebook.com"><svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"
-              enable-background="new 0 0 32 32" xml:space="preserve">
+        <li><a class="social-media-logo-item" href="https://www.facebook.com"><svg version="1.1" id="Layer_4"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+              height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
               <path fill="#FFFFFF"
                 d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
           v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z" />
             </svg></a>
         </li>
-        <li><a class="social-media-logo-item" href="https://www.instagram.com"><span class="visually-hidden">Инстаграм</span><svg version="1.1"
-              id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+        <li><a class="social-media-logo-item" href="https://www.instagram.com"><span
+              class="visually-hidden">Инстаграм</span><svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"
+              enable-background="new 0 0 32 32" xml:space="preserve">
               <g>
                 <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
              h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z" />
@@ -404,9 +402,10 @@
               </g>
             </svg></a>
         </li>
-        <li><a class="social-media-logo-item" href="https://twitter.com"><span class="visually-hidden">Твиттер</span><svg version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
-              height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+        <li><a class="social-media-logo-item" href="https://twitter.com"><span
+              class="visually-hidden">Твиттер</span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"
+              enable-background="new 0 0 32 32" xml:space="preserve">
               <g id="Layer_6">
               </g>
               <g id="Layer_7">
@@ -452,7 +451,7 @@
         </p>
       </div>
       <p>
-        <label for="text-letter">Текст письма:</label> 
+        <label for="text-letter">Текст письма:</label>
         <textarea id="text-letter" cols="106" rows="7" name="text-letter" placeholder="В свободной форме"></textarea>
       </p>
       <button class="to-send-sending-letter" type="submit">Отправить</button>
@@ -472,83 +471,8 @@
     </button>
   </section>
 
-  <script>
-    var link = document.querySelector(".write-to-us-a");
-    var modalSendingLetter = document.querySelector(".modal-sending-letter");
-    var close = document.querySelector(".modal-close-index");
-    var firstNameLastName = modalSendingLetter.querySelector("[name=first-name-last-name]");
-    var formLetter = modalSendingLetter.querySelector(".sending-letter-form");
-    var eMail = modalSendingLetter.querySelector(".email-sending-letter");
-    var storageName = localStorage.getItem("firstNameLastName");
-    var storageEMail = localStorage.getItem("eMail");
-    var isStorageSupport = true;
-    var storageName = "";
-
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modalSendingLetter.classList.add("modal-show");
-      firstNameLastName.focus();
-      if (storageName) {
-        firstNameLastName.value = storageName;
-        eMail.focus();
-      } else {
-        firstNameLastName.focus();
-      }
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modalSendingLetter.classList.remove("modal-show");
-      modalSendingLetter.classList.remove("modal-error");
-    });
-
-    formLetter.addEventListener("submit", function (evt) {
-      if (!firstNameLastName.value || !eMail.value) {
-        evt.preventDefault();
-        modalSendingLetter.classList.remove("modal-error");
-        modalSendingLetter.offsetWidth = modalSendingLetter.offsetWidth;
-        modalSendingLetter.classList.add("modal-error");
-      } else {
-        if (isStorageSupport) {
-          localStorage.setItem("firstNameLastName", firstNameLastName.value);
-        }
-      }
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        if (modalSendingLetter.classList.contains("modal-show")) {
-          evt.preventDefault();
-          modalSendingLetter.classList.remove("modal-show");
-          modalSendingLetter.classList.remove("modal-error");
-        }
-      }
-    });
-
-    var mapLink = document.querySelector(".contacts-map");
-    var mapPopup = document.querySelector(".modal-map");
-    var mapClose = document.querySelector(".modal-map button");
-
-    mapLink.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      mapPopup.classList.add("modal-show");
-    });
-
-    mapClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      mapPopup.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        if (mapPopup.classList.contains("modal-show")) {
-          evt.preventDefault();
-          mapPopup.classList.remove("modal-show");
-        }
-      }
-    });
-  </script>
+  <script src="js/popup.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
