@@ -756,11 +756,16 @@ input[type="radio"].visually-hidden {
   text-transform: none;
   font-size: 18px;
   line-height: 24px;
+
   width: 160px;
 
   letter-spacing: 0.3px;
 
   list-style: none;
+}
+
+.sections-list li:nth-child(4) {
+  white-space: nowrap;
 }
 
 .sections-list li div {
@@ -2101,13 +2106,13 @@ fieldset legend {
   padding: 0;
   min-height: 1000px;
 
-  background: linear-gradient(to right,  #eeeeee calc(50% - 250px), #ffffff calc(50% - 250px));
+  background: linear-gradient(to right,  #eeeeee 36.8%, #ffffff 36.8%);
 }
 
 .sort-flter {
   margin-top: 44px;
   min-height: 70px;
-  background: linear-gradient(to right, #dcdcdc calc(50% - 250px), #ebebeb calc(50% - 250px));
+  background: linear-gradient(to right, #dcdcdc 36.8%, #ebebeb 36.8%);
 }
 
 .sort {
