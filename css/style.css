@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 
   width: 1040px;
   min-height: 73px;
@@ -237,6 +237,9 @@ input[type="radio"].visually-hidden {
   margin: auto;
   margin-top: 2px;
   padding: 0px;  
+  padding-top: 25px;
+
+  box-sizing: border-box;
 }
 
 .header-product-contacts > li:nth-child(1) {
@@ -356,7 +359,8 @@ input[type="radio"].visually-hidden {
 
   padding-left: 35px;
   padding-bottom: 10px;
-  margin-left: 5px;
+  margin-left: 3px;
+  margin-bottom: 3px;
  
   border: 0;
   background-color: #f7e296; 
@@ -668,8 +672,11 @@ input[type="radio"].visually-hidden {
 
  .promo-slider-list .button-info {
   display: block;
+
   width: 220px;
+
   padding: 12px 0;
+  padding-left: 4px;
   margin-top: 27px;
   margin-left: 10px;
  
@@ -678,9 +685,11 @@ input[type="radio"].visually-hidden {
 
   font-size: 18px;
   line-height: 18px;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.8px;
   text-transform: uppercase;
   text-align: center;
+
+  box-sizing: border-box;
 
   background: linear-gradient(white 41%, #f0c52e 41%, #f0c52e 59%, white 59%);
 }
@@ -709,7 +718,7 @@ input[type="radio"].visually-hidden {
   width: 135px;
 }
 
-.promo-slider-table tr:nth-child(2) th {
+.promo-slider-table tr:nth-child(2) td {
   padding-top: 5px;
 }
 
@@ -722,8 +731,8 @@ input[type="radio"].visually-hidden {
   
 }
 
-.promo-slider-list table tr:last-child th {
-  font-family: Gilroy, Arial, sans-serif;
+.promo-slider-list table tr:last-child td {
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   text-transform: none;
   font-size: 13px;
@@ -955,8 +964,9 @@ input[type="radio"].visually-hidden {
   
   margin-top: 80px;
   margin-left: 1px;
+  margin-bottom: 2px;
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
   padding-left: 4px;
 
   background: linear-gradient(white 40%, #f0c52e 40%, #f0c52e 60%, #e5e5e5 60%);
@@ -1210,14 +1220,18 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 3.8px;
+  letter-spacing: 3.5px;
   text-align: center;
 
   width: 260px;
-  padding: 12px 0; 
+  
 
   margin-top: 55px;
-  margin-left: 2px;
+  margin-left: 0px;
+  padding: 12px 0; 
+  padding-left: 5px;
+
+  box-sizing: border-box;
 
   background: linear-gradient(white 41%, #f0c52e 41%, #f0c52e 59%, white 59%);
 }
@@ -1278,13 +1292,16 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 3.8px;
+  letter-spacing: 3.5px;
   text-align: center;
 
   width: 260px;
 
   padding: 10px 0;
   margin-top: 57px;
+  padding-left: 5px;
+
+  box-sizing: border-box;
 
   background: linear-gradient(white 41%, #f0c52e 41%, #f0c52e 59%, white 59%);
 }
@@ -1855,15 +1872,21 @@ fieldset legend {
   padding-right: 5px;
 }
 
-
 .contacts-services ul {
-  margin-left: -40px;
+  margin-right: 35px;
   margin-top: 5px;
+}
+.contacts-services ul li:nth-child(1) {
+  margin-right: 35px
+}
+
+.contacts-services ul li:nth-child(2) {
+  margin-right: 34px
 }
 
 .contacts-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   width: 430px;
 
@@ -1954,7 +1977,7 @@ fieldset legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.5px;
   
   list-style: none;
 }
@@ -2018,6 +2041,7 @@ fieldset legend {
 }
 
 .logo-device-footer {
+  margin-top: 2px;
   margin-left: 20px;
 }
 
@@ -2209,6 +2233,15 @@ fieldset legend {
   margin-top: 69px;
 }
 
+.filters label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 100;
+  color: #000000;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: none;
+}
+
 .filters-catalog section {
  width: calc(360px + 360px + 3.8%);
  margin-bottom: 77px;
@@ -2332,8 +2365,7 @@ fieldset legend {
 }
 
 .filters fieldset:nth-child(2) {
-  
-  margin-top: 26px;
+  margin-top: 21px;
   margin-bottom: 31px;
 }
 
@@ -2807,6 +2839,7 @@ fieldset legend {
 
 .pagination-list a.selected,
 .sort ul:nth-child(4) div.icon-triangle-down,
-.sort ul:nth-child(3) a.selected {
+.sort ul:nth-child(3) a.selected,
+.breadcrambs a.selected {
   opacity: 1;
 }
