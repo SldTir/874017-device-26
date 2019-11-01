@@ -2136,13 +2136,13 @@ fieldset legend {
   padding: 0;
   min-height: 1000px;
 
-  background: linear-gradient(to right,  #eeeeee 36.8%, #ffffff 36.8%);
+  background: linear-gradient(to right,  #eeeeee calc(50% - 250px), #ffffff calc(50% - 250px));
 }
 
 .sort-flter {
   margin-top: 44px;
   min-height: 70px;
-  background: linear-gradient(to right, #dcdcdc 36.8%, #ebebeb 36.8%);
+  background: linear-gradient(to right, #dcdcdc calc(50% - 250px), #ebebeb calc(50% - 250px));
 }
 
 .sort {
