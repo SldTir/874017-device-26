@@ -1561,6 +1561,8 @@ fieldset legend {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.7px;
+
+  z-index: 3;
 }
 
 .sort ul {
@@ -2135,14 +2137,40 @@ fieldset legend {
 
   padding: 0;
   min-height: 1000px;
-
-  background: linear-gradient(to right,  #eeeeee calc(50% - 250px), #ffffff calc(50% - 250px));
 }
 
 .sort-flter {
   margin-top: 44px;
   min-height: 70px;
-  background: linear-gradient(to right, #dcdcdc calc(50% - 250px), #ebebeb calc(50% - 250px));
+  background: #ebebeb;
+}
+
+.sort-flter:before {
+  content: "";
+  position: absolute;
+
+  width: calc(50% - 250px);
+  min-height: 70px;
+
+  background: #dcdcdc;
+
+  z-index: 1;
+
+  box-sizing: border-box;
+}
+
+.filters-catalog::before {
+  content: "";
+  position: absolute;
+
+  width: calc(50% - 250px);
+  min-height: 1300px;
+
+  background: #eeeeee;
+
+  z-index: -1;
+
+  box-sizing: border-box;
 }
 
 .sort {
