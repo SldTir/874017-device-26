@@ -2149,7 +2149,7 @@ fieldset legend {
   content: "";
   position: absolute;
 
-  width: calc(50% - 250px);
+  min-width: calc(50% - 250px);
   min-height: 70px;
 
   background: #dcdcdc;
@@ -2163,7 +2163,7 @@ fieldset legend {
   content: "";
   position: absolute;
 
-  width: calc(50% - 250px);
+  min-width: calc(50% - 250px);
   min-height: 1300px;
 
   background: #eeeeee;
